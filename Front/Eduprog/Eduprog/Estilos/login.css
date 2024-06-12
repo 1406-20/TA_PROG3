@@ -1,0 +1,95 @@
+﻿body{
+    display:flex;
+    flex-direction:row;
+    flex:1;
+    overflow:hidden;
+}
+
+.contenedor-form {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 95vh;
+    margin: 0;
+}
+
+.contenedor-credenciales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 350px;
+    height: 350px;
+}
+
+.credenciales {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom: 10px;
+    border:solid 1px #808080;
+    border-radius:5px;
+    margin-top:20px;
+}
+    .credenciales span {
+        margin-left: 10px;
+    }
+
+    .credenciales input {
+        font-size: 16px;
+        height: 30px;
+        width: 280px;
+        margin-left:10px;
+    }
+        .credenciales input:focus{
+            outline:none;
+        }
+
+.opciones-login {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+    .opciones-login a {
+        display:flex;
+        padding: 10px;
+        background-color: #042354;
+        border: 0px;
+        color: white;
+        width: 326px;
+        height: 29px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        align-items:center;
+        justify-content:center;
+        text-decoration:none;
+    }
+    .opciones-login button {
+        display: flex;
+        padding: 10px;
+        background-color: #042354;
+        border: 0px;
+        color: white;
+        width: 326px;
+        height: 29px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+.olvido-contraseña {
+    margin-top: 5px;
+    color: #042354;
+}
+
+.mensaje-error{
+    font-weight:bold;
+    color:red;
+}

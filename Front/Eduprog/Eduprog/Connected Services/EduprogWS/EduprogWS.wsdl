@@ -1,0 +1,1538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.eduprog.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="EduprogWS" targetNamespace="http://services.eduprog.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/EduprogWS/EduprogWS?xsd=1" namespace="http://services.eduprog.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="obtenerUsuarioIncidencia">
+    <part name="parameters" element="tns:obtenerUsuarioIncidencia" />
+  </message>
+  <message name="obtenerUsuarioIncidenciaResponse">
+    <part name="parameters" element="tns:obtenerUsuarioIncidenciaResponse" />
+  </message>
+  <message name="insertarDocente">
+    <part name="parameters" element="tns:insertarDocente" />
+  </message>
+  <message name="insertarDocenteResponse">
+    <part name="parameters" element="tns:insertarDocenteResponse" />
+  </message>
+  <message name="eliminarAula">
+    <part name="parameters" element="tns:eliminarAula" />
+  </message>
+  <message name="eliminarAulaResponse">
+    <part name="parameters" element="tns:eliminarAulaResponse" />
+  </message>
+  <message name="listarTodosAlumnos">
+    <part name="parameters" element="tns:listarTodosAlumnos" />
+  </message>
+  <message name="listarTodosAlumnosResponse">
+    <part name="parameters" element="tns:listarTodosAlumnosResponse" />
+  </message>
+  <message name="modificarAlumno">
+    <part name="parameters" element="tns:modificarAlumno" />
+  </message>
+  <message name="modificarAlumnoResponse">
+    <part name="parameters" element="tns:modificarAlumnoResponse" />
+  </message>
+  <message name="insertarMerito">
+    <part name="parameters" element="tns:insertarMerito" />
+  </message>
+  <message name="insertarMeritoResponse">
+    <part name="parameters" element="tns:insertarMeritoResponse" />
+  </message>
+  <message name="modificarDocente">
+    <part name="parameters" element="tns:modificarDocente" />
+  </message>
+  <message name="modificarDocenteResponse">
+    <part name="parameters" element="tns:modificarDocenteResponse" />
+  </message>
+  <message name="insertarAula">
+    <part name="parameters" element="tns:insertarAula" />
+  </message>
+  <message name="insertarAulaResponse">
+    <part name="parameters" element="tns:insertarAulaResponse" />
+  </message>
+  <message name="insertarAlumno">
+    <part name="parameters" element="tns:insertarAlumno" />
+  </message>
+  <message name="insertarAlumnoResponse">
+    <part name="parameters" element="tns:insertarAlumnoResponse" />
+  </message>
+  <message name="eliminarDocente">
+    <part name="parameters" element="tns:eliminarDocente" />
+  </message>
+  <message name="eliminarDocenteResponse">
+    <part name="parameters" element="tns:eliminarDocenteResponse" />
+  </message>
+  <message name="listarTodasAulas">
+    <part name="parameters" element="tns:listarTodasAulas" />
+  </message>
+  <message name="listarTodasAulasResponse">
+    <part name="parameters" element="tns:listarTodasAulasResponse" />
+  </message>
+  <message name="eliminarAlumno">
+    <part name="parameters" element="tns:eliminarAlumno" />
+  </message>
+  <message name="eliminarAlumnoResponse">
+    <part name="parameters" element="tns:eliminarAlumnoResponse" />
+  </message>
+  <message name="obtenerAlumnoPorID">
+    <part name="parameters" element="tns:obtenerAlumnoPorID" />
+  </message>
+  <message name="obtenerAlumnoPorIDResponse">
+    <part name="parameters" element="tns:obtenerAlumnoPorIDResponse" />
+  </message>
+  <message name="insertarDemerito">
+    <part name="parameters" element="tns:insertarDemerito" />
+  </message>
+  <message name="insertarDemeritoResponse">
+    <part name="parameters" element="tns:insertarDemeritoResponse" />
+  </message>
+  <message name="modificarApoderado">
+    <part name="parameters" element="tns:modificarApoderado" />
+  </message>
+  <message name="modificarApoderadoResponse">
+    <part name="parameters" element="tns:modificarApoderadoResponse" />
+  </message>
+  <message name="eliminarApoderado">
+    <part name="parameters" element="tns:eliminarApoderado" />
+  </message>
+  <message name="eliminarApoderadoResponse">
+    <part name="parameters" element="tns:eliminarApoderadoResponse" />
+  </message>
+  <message name="modificarAula">
+    <part name="parameters" element="tns:modificarAula" />
+  </message>
+  <message name="modificarAulaResponse">
+    <part name="parameters" element="tns:modificarAulaResponse" />
+  </message>
+  <message name="insertarApoderado">
+    <part name="parameters" element="tns:insertarApoderado" />
+  </message>
+  <message name="insertarApoderadoResponse">
+    <part name="parameters" element="tns:insertarApoderadoResponse" />
+  </message>
+  <message name="insertarTrabajador">
+    <part name="parameters" element="tns:insertarTrabajador" />
+  </message>
+  <message name="insertarTrabajadorResponse">
+    <part name="parameters" element="tns:insertarTrabajadorResponse" />
+  </message>
+  <message name="eliminarTrabajador">
+    <part name="parameters" element="tns:eliminarTrabajador" />
+  </message>
+  <message name="eliminarTrabajadorResponse">
+    <part name="parameters" element="tns:eliminarTrabajadorResponse" />
+  </message>
+  <message name="modificarCurso">
+    <part name="parameters" element="tns:modificarCurso" />
+  </message>
+  <message name="modificarCursoResponse">
+    <part name="parameters" element="tns:modificarCursoResponse" />
+  </message>
+  <message name="modificarDemerito">
+    <part name="parameters" element="tns:modificarDemerito" />
+  </message>
+  <message name="modificarDemeritoResponse">
+    <part name="parameters" element="tns:modificarDemeritoResponse" />
+  </message>
+  <message name="insertarTareas">
+    <part name="parameters" element="tns:insertarTareas" />
+  </message>
+  <message name="insertarTareasResponse">
+    <part name="parameters" element="tns:insertarTareasResponse" />
+  </message>
+  <message name="listarnotasxalumno">
+    <part name="parameters" element="tns:listarnotasxalumno" />
+  </message>
+  <message name="listarnotasxalumnoResponse">
+    <part name="parameters" element="tns:listarnotasxalumnoResponse" />
+  </message>
+  <message name="eliminarSesion">
+    <part name="parameters" element="tns:eliminarSesion" />
+  </message>
+  <message name="eliminarSesionResponse">
+    <part name="parameters" element="tns:eliminarSesionResponse" />
+  </message>
+  <message name="eliminarMerito">
+    <part name="parameters" element="tns:eliminarMerito" />
+  </message>
+  <message name="eliminarMeritoResponse">
+    <part name="parameters" element="tns:eliminarMeritoResponse" />
+  </message>
+  <message name="listarTareas">
+    <part name="parameters" element="tns:listarTareas" />
+  </message>
+  <message name="listarTareasResponse">
+    <part name="parameters" element="tns:listarTareasResponse" />
+  </message>
+  <message name="listarReunion">
+    <part name="parameters" element="tns:listarReunion" />
+  </message>
+  <message name="listarReunionResponse">
+    <part name="parameters" element="tns:listarReunionResponse" />
+  </message>
+  <message name="eliminarTarea">
+    <part name="parameters" element="tns:eliminarTarea" />
+  </message>
+  <message name="eliminarTareaResponse">
+    <part name="parameters" element="tns:eliminarTareaResponse" />
+  </message>
+  <message name="insertarEvaluacion">
+    <part name="parameters" element="tns:insertarEvaluacion" />
+  </message>
+  <message name="insertarEvaluacionResponse">
+    <part name="parameters" element="tns:insertarEvaluacionResponse" />
+  </message>
+  <message name="listarMerito">
+    <part name="parameters" element="tns:listarMerito" />
+  </message>
+  <message name="listarMeritoResponse">
+    <part name="parameters" element="tns:listarMeritoResponse" />
+  </message>
+  <message name="insertarReunion">
+    <part name="parameters" element="tns:insertarReunion" />
+  </message>
+  <message name="insertarReunionResponse">
+    <part name="parameters" element="tns:insertarReunionResponse" />
+  </message>
+  <message name="eliminarDemerito">
+    <part name="parameters" element="tns:eliminarDemerito" />
+  </message>
+  <message name="eliminarDemeritoResponse">
+    <part name="parameters" element="tns:eliminarDemeritoResponse" />
+  </message>
+  <message name="modificarTareas">
+    <part name="parameters" element="tns:modificarTareas" />
+  </message>
+  <message name="modificarTareasResponse">
+    <part name="parameters" element="tns:modificarTareasResponse" />
+  </message>
+  <message name="listarSesion">
+    <part name="parameters" element="tns:listarSesion" />
+  </message>
+  <message name="listarSesionResponse">
+    <part name="parameters" element="tns:listarSesionResponse" />
+  </message>
+  <message name="eliminarReunion">
+    <part name="parameters" element="tns:eliminarReunion" />
+  </message>
+  <message name="eliminarReunionResponse">
+    <part name="parameters" element="tns:eliminarReunionResponse" />
+  </message>
+  <message name="modificarSesion">
+    <part name="parameters" element="tns:modificarSesion" />
+  </message>
+  <message name="modificarSesionResponse">
+    <part name="parameters" element="tns:modificarSesionResponse" />
+  </message>
+  <message name="insertarCurso">
+    <part name="parameters" element="tns:insertarCurso" />
+  </message>
+  <message name="insertarCursoResponse">
+    <part name="parameters" element="tns:insertarCursoResponse" />
+  </message>
+  <message name="eliminarEvaluacion">
+    <part name="parameters" element="tns:eliminarEvaluacion" />
+  </message>
+  <message name="eliminarEvaluacionResponse">
+    <part name="parameters" element="tns:eliminarEvaluacionResponse" />
+  </message>
+  <message name="modificarReunion">
+    <part name="parameters" element="tns:modificarReunion" />
+  </message>
+  <message name="modificarReunionResponse">
+    <part name="parameters" element="tns:modificarReunionResponse" />
+  </message>
+  <message name="modificarMerito">
+    <part name="parameters" element="tns:modificarMerito" />
+  </message>
+  <message name="modificarMeritoResponse">
+    <part name="parameters" element="tns:modificarMeritoResponse" />
+  </message>
+  <message name="insertarSesion">
+    <part name="parameters" element="tns:insertarSesion" />
+  </message>
+  <message name="insertarSesionResponse">
+    <part name="parameters" element="tns:insertarSesionResponse" />
+  </message>
+  <message name="listarCurso">
+    <part name="parameters" element="tns:listarCurso" />
+  </message>
+  <message name="listarCursoResponse">
+    <part name="parameters" element="tns:listarCursoResponse" />
+  </message>
+  <message name="listarDemerito">
+    <part name="parameters" element="tns:listarDemerito" />
+  </message>
+  <message name="listarDemeritoResponse">
+    <part name="parameters" element="tns:listarDemeritoResponse" />
+  </message>
+  <message name="listarEvaluacion">
+    <part name="parameters" element="tns:listarEvaluacion" />
+  </message>
+  <message name="listarEvaluacionResponse">
+    <part name="parameters" element="tns:listarEvaluacionResponse" />
+  </message>
+  <message name="eliminarPublicaciones">
+    <part name="parameters" element="tns:eliminarPublicaciones" />
+  </message>
+  <message name="eliminarPublicacionesResponse">
+    <part name="parameters" element="tns:eliminarPublicacionesResponse" />
+  </message>
+  <message name="modificarPublicaciones">
+    <part name="parameters" element="tns:modificarPublicaciones" />
+  </message>
+  <message name="modificarPublicacionesResponse">
+    <part name="parameters" element="tns:modificarPublicacionesResponse" />
+  </message>
+  <message name="listarAlumnossAulasXId">
+    <part name="parameters" element="tns:listarAlumnossAulasXId" />
+  </message>
+  <message name="listarAlumnossAulasXIdResponse">
+    <part name="parameters" element="tns:listarAlumnossAulasXIdResponse" />
+  </message>
+  <message name="obtenerApoderadoPorID">
+    <part name="parameters" element="tns:obtenerApoderadoPorID" />
+  </message>
+  <message name="obtenerApoderadoPorIDResponse">
+    <part name="parameters" element="tns:obtenerApoderadoPorIDResponse" />
+  </message>
+  <message name="modificarTrabajador">
+    <part name="parameters" element="tns:modificarTrabajador" />
+  </message>
+  <message name="modificarTrabajadorResponse">
+    <part name="parameters" element="tns:modificarTrabajadorResponse" />
+  </message>
+  <message name="listarTodosDocentes">
+    <part name="parameters" element="tns:listarTodosDocentes" />
+  </message>
+  <message name="listarTodosDocentesResponse">
+    <part name="parameters" element="tns:listarTodosDocentesResponse" />
+  </message>
+  <message name="modificarAtencionMedica">
+    <part name="parameters" element="tns:modificarAtencionMedica" />
+  </message>
+  <message name="modificarAtencionMedicaResponse">
+    <part name="parameters" element="tns:modificarAtencionMedicaResponse" />
+  </message>
+  <message name="obtenerDocentePorID">
+    <part name="parameters" element="tns:obtenerDocentePorID" />
+  </message>
+  <message name="obtenerDocentePorIDResponse">
+    <part name="parameters" element="tns:obtenerDocentePorIDResponse" />
+  </message>
+  <message name="listarTodosSuperusuarios">
+    <part name="parameters" element="tns:listarTodosSuperusuarios" />
+  </message>
+  <message name="listarTodosSuperusuariosResponse">
+    <part name="parameters" element="tns:listarTodosSuperusuariosResponse" />
+  </message>
+  <message name="insertarAtencionMedica">
+    <part name="parameters" element="tns:insertarAtencionMedica" />
+  </message>
+  <message name="insertarAtencionMedicaResponse">
+    <part name="parameters" element="tns:insertarAtencionMedicaResponse" />
+  </message>
+  <message name="Obtener_sesionesxDocente">
+    <part name="parameters" element="tns:Obtener_sesionesxDocente" />
+  </message>
+  <message name="Obtener_sesionesxDocenteResponse">
+    <part name="parameters" element="tns:Obtener_sesionesxDocenteResponse" />
+  </message>
+  <message name="insertarPublicaciones">
+    <part name="parameters" element="tns:insertarPublicaciones" />
+  </message>
+  <message name="insertarPublicacionesResponse">
+    <part name="parameters" element="tns:insertarPublicacionesResponse" />
+  </message>
+  <message name="listarTodasPublicaciones">
+    <part name="parameters" element="tns:listarTodasPublicaciones" />
+  </message>
+  <message name="listarTodasPublicacionesResponse">
+    <part name="parameters" element="tns:listarTodasPublicacionesResponse" />
+  </message>
+  <message name="eliminarSuperusuario">
+    <part name="parameters" element="tns:eliminarSuperusuario" />
+  </message>
+  <message name="eliminarSuperusuarioResponse">
+    <part name="parameters" element="tns:eliminarSuperusuarioResponse" />
+  </message>
+  <message name="listarTodosTrabajadores">
+    <part name="parameters" element="tns:listarTodosTrabajadores" />
+  </message>
+  <message name="listarTodosTrabajadoresResponse">
+    <part name="parameters" element="tns:listarTodosTrabajadoresResponse" />
+  </message>
+  <message name="eliminarPublicacion">
+    <part name="parameters" element="tns:eliminarPublicacion" />
+  </message>
+  <message name="eliminarPublicacionResponse">
+    <part name="parameters" element="tns:eliminarPublicacionResponse" />
+  </message>
+  <message name="modificarEvaluacion">
+    <part name="parameters" element="tns:modificarEvaluacion" />
+  </message>
+  <message name="modificarEvaluacionResponse">
+    <part name="parameters" element="tns:modificarEvaluacionResponse" />
+  </message>
+  <message name="eliminarAtencionMedica">
+    <part name="parameters" element="tns:eliminarAtencionMedica" />
+  </message>
+  <message name="eliminarAtencionMedicaResponse">
+    <part name="parameters" element="tns:eliminarAtencionMedicaResponse" />
+  </message>
+  <message name="modificarSuperusuario">
+    <part name="parameters" element="tns:modificarSuperusuario" />
+  </message>
+  <message name="modificarSuperusuarioResponse">
+    <part name="parameters" element="tns:modificarSuperusuarioResponse" />
+  </message>
+  <message name="listarAlumnosApoderado">
+    <part name="parameters" element="tns:listarAlumnosApoderado" />
+  </message>
+  <message name="listarAlumnosApoderadoResponse">
+    <part name="parameters" element="tns:listarAlumnosApoderadoResponse" />
+  </message>
+  <message name="obtenerAulaxIDAlumno">
+    <part name="parameters" element="tns:obtenerAulaxIDAlumno" />
+  </message>
+  <message name="obtenerAulaxIDAlumnoResponse">
+    <part name="parameters" element="tns:obtenerAulaxIDAlumnoResponse" />
+  </message>
+  <message name="listarTodosApoderados">
+    <part name="parameters" element="tns:listarTodosApoderados" />
+  </message>
+  <message name="listarTodosApoderadosResponse">
+    <part name="parameters" element="tns:listarTodosApoderadosResponse" />
+  </message>
+  <message name="obtenerUsuarioPorCE">
+    <part name="parameters" element="tns:obtenerUsuarioPorCE" />
+  </message>
+  <message name="obtenerUsuarioPorCEResponse">
+    <part name="parameters" element="tns:obtenerUsuarioPorCEResponse" />
+  </message>
+  <message name="listarAtencionMedica">
+    <part name="parameters" element="tns:listarAtencionMedica" />
+  </message>
+  <message name="listarAtencionMedicaResponse">
+    <part name="parameters" element="tns:listarAtencionMedicaResponse" />
+  </message>
+  <message name="insertarSuperUsuario">
+    <part name="parameters" element="tns:insertarSuperUsuario" />
+  </message>
+  <message name="insertarSuperUsuarioResponse">
+    <part name="parameters" element="tns:insertarSuperUsuarioResponse" />
+  </message>
+  <message name="obtenerUsuarioTrabajadorPorID">
+    <part name="parameters" element="tns:obtenerUsuarioTrabajadorPorID" />
+  </message>
+  <message name="obtenerUsuarioTrabajadorPorIDResponse">
+    <part name="parameters" element="tns:obtenerUsuarioTrabajadorPorIDResponse" />
+  </message>
+  <message name="obtenerUsuarioSUperUsuarioPorID">
+    <part name="parameters" element="tns:obtenerUsuarioSUperUsuarioPorID" />
+  </message>
+  <message name="obtenerUsuarioSUperUsuarioPorIDResponse">
+    <part name="parameters" element="tns:obtenerUsuarioSUperUsuarioPorIDResponse" />
+  </message>
+  <message name="obtenerCursoXId">
+    <part name="parameters" element="tns:obtenerCursoXId" />
+  </message>
+  <message name="obtenerCursoXIdResponse">
+    <part name="parameters" element="tns:obtenerCursoXIdResponse" />
+  </message>
+  <message name="listarAlumnosEnAula">
+    <part name="parameters" element="tns:listarAlumnosEnAula" />
+  </message>
+  <message name="listarAlumnosEnAulaResponse">
+    <part name="parameters" element="tns:listarAlumnosEnAulaResponse" />
+  </message>
+  <message name="listarAlumnosSinSalon">
+    <part name="parameters" element="tns:listarAlumnosSinSalon" />
+  </message>
+  <message name="listarAlumnosSinSalonResponse">
+    <part name="parameters" element="tns:listarAlumnosSinSalonResponse" />
+  </message>
+  <message name="listarTareasXAlumnoId">
+    <part name="parameters" element="tns:listarTareasXAlumnoId" />
+  </message>
+  <message name="listarTareasXAlumnoIdResponse">
+    <part name="parameters" element="tns:listarTareasXAlumnoIdResponse" />
+  </message>
+  <message name="listarTareasXDocenteId">
+    <part name="parameters" element="tns:listarTareasXDocenteId" />
+  </message>
+  <message name="listarTareasXDocenteIdResponse">
+    <part name="parameters" element="tns:listarTareasXDocenteIdResponse" />
+  </message>
+  <message name="ObtenerAulaxAlumnoID">
+    <part name="parameters" element="tns:ObtenerAulaxAlumnoID" />
+  </message>
+  <message name="ObtenerAulaxAlumnoIDResponse">
+    <part name="parameters" element="tns:ObtenerAulaxAlumnoIDResponse" />
+  </message>
+  <message name="listarSesionesXAlumnoId">
+    <part name="parameters" element="tns:listarSesionesXAlumnoId" />
+  </message>
+  <message name="listarSesionesXAlumnoIdResponse">
+    <part name="parameters" element="tns:listarSesionesXAlumnoIdResponse" />
+  </message>
+  <message name="listarSesionesXDocenteId">
+    <part name="parameters" element="tns:listarSesionesXDocenteId" />
+  </message>
+  <message name="listarSesionesXDocenteIdResponse">
+    <part name="parameters" element="tns:listarSesionesXDocenteIdResponse" />
+  </message>
+  <portType name="EduprogWS">
+    <operation name="obtenerUsuarioIncidencia">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerUsuarioIncidenciaRequest" message="tns:obtenerUsuarioIncidencia" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerUsuarioIncidenciaResponse" message="tns:obtenerUsuarioIncidenciaResponse" />
+    </operation>
+    <operation name="insertarDocente">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarDocenteRequest" message="tns:insertarDocente" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarDocenteResponse" message="tns:insertarDocenteResponse" />
+    </operation>
+    <operation name="eliminarAula">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarAulaRequest" message="tns:eliminarAula" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarAulaResponse" message="tns:eliminarAulaResponse" />
+    </operation>
+    <operation name="listarTodosAlumnos">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosAlumnosRequest" message="tns:listarTodosAlumnos" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosAlumnosResponse" message="tns:listarTodosAlumnosResponse" />
+    </operation>
+    <operation name="modificarAlumno">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarAlumnoRequest" message="tns:modificarAlumno" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarAlumnoResponse" message="tns:modificarAlumnoResponse" />
+    </operation>
+    <operation name="insertarMerito">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarMeritoRequest" message="tns:insertarMerito" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarMeritoResponse" message="tns:insertarMeritoResponse" />
+    </operation>
+    <operation name="modificarDocente">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarDocenteRequest" message="tns:modificarDocente" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarDocenteResponse" message="tns:modificarDocenteResponse" />
+    </operation>
+    <operation name="insertarAula">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarAulaRequest" message="tns:insertarAula" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarAulaResponse" message="tns:insertarAulaResponse" />
+    </operation>
+    <operation name="insertarAlumno">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarAlumnoRequest" message="tns:insertarAlumno" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarAlumnoResponse" message="tns:insertarAlumnoResponse" />
+    </operation>
+    <operation name="eliminarDocente">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarDocenteRequest" message="tns:eliminarDocente" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarDocenteResponse" message="tns:eliminarDocenteResponse" />
+    </operation>
+    <operation name="listarTodasAulas">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodasAulasRequest" message="tns:listarTodasAulas" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodasAulasResponse" message="tns:listarTodasAulasResponse" />
+    </operation>
+    <operation name="eliminarAlumno">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarAlumnoRequest" message="tns:eliminarAlumno" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarAlumnoResponse" message="tns:eliminarAlumnoResponse" />
+    </operation>
+    <operation name="obtenerAlumnoPorID">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerAlumnoPorIDRequest" message="tns:obtenerAlumnoPorID" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerAlumnoPorIDResponse" message="tns:obtenerAlumnoPorIDResponse" />
+    </operation>
+    <operation name="insertarDemerito">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarDemeritoRequest" message="tns:insertarDemerito" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarDemeritoResponse" message="tns:insertarDemeritoResponse" />
+    </operation>
+    <operation name="modificarApoderado">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarApoderadoRequest" message="tns:modificarApoderado" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarApoderadoResponse" message="tns:modificarApoderadoResponse" />
+    </operation>
+    <operation name="eliminarApoderado">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarApoderadoRequest" message="tns:eliminarApoderado" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarApoderadoResponse" message="tns:eliminarApoderadoResponse" />
+    </operation>
+    <operation name="modificarAula">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarAulaRequest" message="tns:modificarAula" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarAulaResponse" message="tns:modificarAulaResponse" />
+    </operation>
+    <operation name="insertarApoderado">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarApoderadoRequest" message="tns:insertarApoderado" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarApoderadoResponse" message="tns:insertarApoderadoResponse" />
+    </operation>
+    <operation name="insertarTrabajador">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarTrabajadorRequest" message="tns:insertarTrabajador" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarTrabajadorResponse" message="tns:insertarTrabajadorResponse" />
+    </operation>
+    <operation name="eliminarTrabajador">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarTrabajadorRequest" message="tns:eliminarTrabajador" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarTrabajadorResponse" message="tns:eliminarTrabajadorResponse" />
+    </operation>
+    <operation name="modificarCurso">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarCursoRequest" message="tns:modificarCurso" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarCursoResponse" message="tns:modificarCursoResponse" />
+    </operation>
+    <operation name="modificarDemerito">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarDemeritoRequest" message="tns:modificarDemerito" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarDemeritoResponse" message="tns:modificarDemeritoResponse" />
+    </operation>
+    <operation name="insertarTareas">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarTareasRequest" message="tns:insertarTareas" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarTareasResponse" message="tns:insertarTareasResponse" />
+    </operation>
+    <operation name="listarnotasxalumno">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarnotasxalumnoRequest" message="tns:listarnotasxalumno" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarnotasxalumnoResponse" message="tns:listarnotasxalumnoResponse" />
+    </operation>
+    <operation name="eliminarSesion">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarSesionRequest" message="tns:eliminarSesion" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarSesionResponse" message="tns:eliminarSesionResponse" />
+    </operation>
+    <operation name="eliminarMerito">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarMeritoRequest" message="tns:eliminarMerito" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarMeritoResponse" message="tns:eliminarMeritoResponse" />
+    </operation>
+    <operation name="listarTareas">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTareasRequest" message="tns:listarTareas" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTareasResponse" message="tns:listarTareasResponse" />
+    </operation>
+    <operation name="listarReunion">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarReunionRequest" message="tns:listarReunion" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarReunionResponse" message="tns:listarReunionResponse" />
+    </operation>
+    <operation name="eliminarTarea">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarTareaRequest" message="tns:eliminarTarea" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarTareaResponse" message="tns:eliminarTareaResponse" />
+    </operation>
+    <operation name="insertarEvaluacion">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarEvaluacionRequest" message="tns:insertarEvaluacion" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarEvaluacionResponse" message="tns:insertarEvaluacionResponse" />
+    </operation>
+    <operation name="listarMerito">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarMeritoRequest" message="tns:listarMerito" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarMeritoResponse" message="tns:listarMeritoResponse" />
+    </operation>
+    <operation name="insertarReunion">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarReunionRequest" message="tns:insertarReunion" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarReunionResponse" message="tns:insertarReunionResponse" />
+    </operation>
+    <operation name="eliminarDemerito">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarDemeritoRequest" message="tns:eliminarDemerito" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarDemeritoResponse" message="tns:eliminarDemeritoResponse" />
+    </operation>
+    <operation name="modificarTareas">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarTareasRequest" message="tns:modificarTareas" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarTareasResponse" message="tns:modificarTareasResponse" />
+    </operation>
+    <operation name="listarSesion">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarSesionRequest" message="tns:listarSesion" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarSesionResponse" message="tns:listarSesionResponse" />
+    </operation>
+    <operation name="eliminarReunion">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarReunionRequest" message="tns:eliminarReunion" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarReunionResponse" message="tns:eliminarReunionResponse" />
+    </operation>
+    <operation name="modificarSesion">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarSesionRequest" message="tns:modificarSesion" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarSesionResponse" message="tns:modificarSesionResponse" />
+    </operation>
+    <operation name="insertarCurso">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarCursoRequest" message="tns:insertarCurso" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarCursoResponse" message="tns:insertarCursoResponse" />
+    </operation>
+    <operation name="eliminarEvaluacion">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarEvaluacionRequest" message="tns:eliminarEvaluacion" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarEvaluacionResponse" message="tns:eliminarEvaluacionResponse" />
+    </operation>
+    <operation name="modificarReunion">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarReunionRequest" message="tns:modificarReunion" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarReunionResponse" message="tns:modificarReunionResponse" />
+    </operation>
+    <operation name="modificarMerito">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarMeritoRequest" message="tns:modificarMerito" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarMeritoResponse" message="tns:modificarMeritoResponse" />
+    </operation>
+    <operation name="insertarSesion">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarSesionRequest" message="tns:insertarSesion" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarSesionResponse" message="tns:insertarSesionResponse" />
+    </operation>
+    <operation name="listarCurso">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarCursoRequest" message="tns:listarCurso" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarCursoResponse" message="tns:listarCursoResponse" />
+    </operation>
+    <operation name="listarDemerito">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarDemeritoRequest" message="tns:listarDemerito" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarDemeritoResponse" message="tns:listarDemeritoResponse" />
+    </operation>
+    <operation name="listarEvaluacion">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarEvaluacionRequest" message="tns:listarEvaluacion" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarEvaluacionResponse" message="tns:listarEvaluacionResponse" />
+    </operation>
+    <operation name="eliminarPublicaciones">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarPublicacionesRequest" message="tns:eliminarPublicaciones" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarPublicacionesResponse" message="tns:eliminarPublicacionesResponse" />
+    </operation>
+    <operation name="modificarPublicaciones">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarPublicacionesRequest" message="tns:modificarPublicaciones" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarPublicacionesResponse" message="tns:modificarPublicacionesResponse" />
+    </operation>
+    <operation name="listarAlumnossAulasXId">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAlumnossAulasXIdRequest" message="tns:listarAlumnossAulasXId" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAlumnossAulasXIdResponse" message="tns:listarAlumnossAulasXIdResponse" />
+    </operation>
+    <operation name="obtenerApoderadoPorID">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerApoderadoPorIDRequest" message="tns:obtenerApoderadoPorID" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerApoderadoPorIDResponse" message="tns:obtenerApoderadoPorIDResponse" />
+    </operation>
+    <operation name="modificarTrabajador">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarTrabajadorRequest" message="tns:modificarTrabajador" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarTrabajadorResponse" message="tns:modificarTrabajadorResponse" />
+    </operation>
+    <operation name="listarTodosDocentes">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosDocentesRequest" message="tns:listarTodosDocentes" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosDocentesResponse" message="tns:listarTodosDocentesResponse" />
+    </operation>
+    <operation name="modificarAtencionMedica">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarAtencionMedicaRequest" message="tns:modificarAtencionMedica" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarAtencionMedicaResponse" message="tns:modificarAtencionMedicaResponse" />
+    </operation>
+    <operation name="obtenerDocentePorID">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerDocentePorIDRequest" message="tns:obtenerDocentePorID" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerDocentePorIDResponse" message="tns:obtenerDocentePorIDResponse" />
+    </operation>
+    <operation name="listarTodosSuperusuarios">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosSuperusuariosRequest" message="tns:listarTodosSuperusuarios" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosSuperusuariosResponse" message="tns:listarTodosSuperusuariosResponse" />
+    </operation>
+    <operation name="insertarAtencionMedica">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarAtencionMedicaRequest" message="tns:insertarAtencionMedica" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarAtencionMedicaResponse" message="tns:insertarAtencionMedicaResponse" />
+    </operation>
+    <operation name="Obtener_sesionesxDocente">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/Obtener_sesionesxDocenteRequest" message="tns:Obtener_sesionesxDocente" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/Obtener_sesionesxDocenteResponse" message="tns:Obtener_sesionesxDocenteResponse" />
+    </operation>
+    <operation name="insertarPublicaciones">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarPublicacionesRequest" message="tns:insertarPublicaciones" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarPublicacionesResponse" message="tns:insertarPublicacionesResponse" />
+    </operation>
+    <operation name="listarTodasPublicaciones">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodasPublicacionesRequest" message="tns:listarTodasPublicaciones" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodasPublicacionesResponse" message="tns:listarTodasPublicacionesResponse" />
+    </operation>
+    <operation name="eliminarSuperusuario">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarSuperusuarioRequest" message="tns:eliminarSuperusuario" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarSuperusuarioResponse" message="tns:eliminarSuperusuarioResponse" />
+    </operation>
+    <operation name="listarTodosTrabajadores">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosTrabajadoresRequest" message="tns:listarTodosTrabajadores" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosTrabajadoresResponse" message="tns:listarTodosTrabajadoresResponse" />
+    </operation>
+    <operation name="eliminarPublicacion">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarPublicacionRequest" message="tns:eliminarPublicacion" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarPublicacionResponse" message="tns:eliminarPublicacionResponse" />
+    </operation>
+    <operation name="modificarEvaluacion">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarEvaluacionRequest" message="tns:modificarEvaluacion" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarEvaluacionResponse" message="tns:modificarEvaluacionResponse" />
+    </operation>
+    <operation name="eliminarAtencionMedica">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarAtencionMedicaRequest" message="tns:eliminarAtencionMedica" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarAtencionMedicaResponse" message="tns:eliminarAtencionMedicaResponse" />
+    </operation>
+    <operation name="modificarSuperusuario">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarSuperusuarioRequest" message="tns:modificarSuperusuario" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarSuperusuarioResponse" message="tns:modificarSuperusuarioResponse" />
+    </operation>
+    <operation name="listarAlumnosApoderado">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAlumnosApoderadoRequest" message="tns:listarAlumnosApoderado" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAlumnosApoderadoResponse" message="tns:listarAlumnosApoderadoResponse" />
+    </operation>
+    <operation name="obtenerAulaxIDAlumno">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerAulaxIDAlumnoRequest" message="tns:obtenerAulaxIDAlumno" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerAulaxIDAlumnoResponse" message="tns:obtenerAulaxIDAlumnoResponse" />
+    </operation>
+    <operation name="listarTodosApoderados">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosApoderadosRequest" message="tns:listarTodosApoderados" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosApoderadosResponse" message="tns:listarTodosApoderadosResponse" />
+    </operation>
+    <operation name="obtenerUsuarioPorCE">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerUsuarioPorCERequest" message="tns:obtenerUsuarioPorCE" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerUsuarioPorCEResponse" message="tns:obtenerUsuarioPorCEResponse" />
+    </operation>
+    <operation name="listarAtencionMedica">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAtencionMedicaRequest" message="tns:listarAtencionMedica" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAtencionMedicaResponse" message="tns:listarAtencionMedicaResponse" />
+    </operation>
+    <operation name="insertarSuperUsuario">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarSuperUsuarioRequest" message="tns:insertarSuperUsuario" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarSuperUsuarioResponse" message="tns:insertarSuperUsuarioResponse" />
+    </operation>
+    <operation name="obtenerUsuarioTrabajadorPorID">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerUsuarioTrabajadorPorIDRequest" message="tns:obtenerUsuarioTrabajadorPorID" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerUsuarioTrabajadorPorIDResponse" message="tns:obtenerUsuarioTrabajadorPorIDResponse" />
+    </operation>
+    <operation name="obtenerUsuarioSUperUsuarioPorID">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerUsuarioSUperUsuarioPorIDRequest" message="tns:obtenerUsuarioSUperUsuarioPorID" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerUsuarioSUperUsuarioPorIDResponse" message="tns:obtenerUsuarioSUperUsuarioPorIDResponse" />
+    </operation>
+    <operation name="obtenerCursoXId">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerCursoXIdRequest" message="tns:obtenerCursoXId" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerCursoXIdResponse" message="tns:obtenerCursoXIdResponse" />
+    </operation>
+    <operation name="listarAlumnosEnAula">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAlumnosEnAulaRequest" message="tns:listarAlumnosEnAula" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAlumnosEnAulaResponse" message="tns:listarAlumnosEnAulaResponse" />
+    </operation>
+    <operation name="listarAlumnosSinSalon">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAlumnosSinSalonRequest" message="tns:listarAlumnosSinSalon" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAlumnosSinSalonResponse" message="tns:listarAlumnosSinSalonResponse" />
+    </operation>
+    <operation name="listarTareasXAlumnoId">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTareasXAlumnoIdRequest" message="tns:listarTareasXAlumnoId" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTareasXAlumnoIdResponse" message="tns:listarTareasXAlumnoIdResponse" />
+    </operation>
+    <operation name="listarTareasXDocenteId">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTareasXDocenteIdRequest" message="tns:listarTareasXDocenteId" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTareasXDocenteIdResponse" message="tns:listarTareasXDocenteIdResponse" />
+    </operation>
+    <operation name="ObtenerAulaxAlumnoID">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/ObtenerAulaxAlumnoIDRequest" message="tns:ObtenerAulaxAlumnoID" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/ObtenerAulaxAlumnoIDResponse" message="tns:ObtenerAulaxAlumnoIDResponse" />
+    </operation>
+    <operation name="listarSesionesXAlumnoId">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarSesionesXAlumnoIdRequest" message="tns:listarSesionesXAlumnoId" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarSesionesXAlumnoIdResponse" message="tns:listarSesionesXAlumnoIdResponse" />
+    </operation>
+    <operation name="listarSesionesXDocenteId">
+      <input wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarSesionesXDocenteIdRequest" message="tns:listarSesionesXDocenteId" />
+      <output wsam:Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarSesionesXDocenteIdResponse" message="tns:listarSesionesXDocenteIdResponse" />
+    </operation>
+  </portType>
+  <binding name="EduprogWSPortBinding" type="tns:EduprogWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="obtenerUsuarioIncidencia">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarDocente">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarAula">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTodosAlumnos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarAlumno">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarMerito">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarDocente">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarAula">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarAlumno">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarDocente">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTodasAulas">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarAlumno">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerAlumnoPorID">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarDemerito">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarApoderado">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarApoderado">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarAula">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarApoderado">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarTrabajador">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarTrabajador">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarCurso">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarDemerito">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarTareas">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarnotasxalumno">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarSesion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarMerito">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTareas">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarReunion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarTarea">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarEvaluacion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarMerito">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarReunion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarDemerito">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarTareas">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarSesion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarReunion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarSesion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarCurso">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarEvaluacion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarReunion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarMerito">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarSesion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarCurso">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarDemerito">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarEvaluacion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarPublicaciones">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarPublicaciones">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarAlumnossAulasXId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerApoderadoPorID">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarTrabajador">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTodosDocentes">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarAtencionMedica">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerDocentePorID">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTodosSuperusuarios">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarAtencionMedica">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="Obtener_sesionesxDocente">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarPublicaciones">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTodasPublicaciones">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarSuperusuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTodosTrabajadores">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarPublicacion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarEvaluacion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarAtencionMedica">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarSuperusuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarAlumnosApoderado">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerAulaxIDAlumno">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTodosApoderados">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerUsuarioPorCE">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarAtencionMedica">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarSuperUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerUsuarioTrabajadorPorID">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerUsuarioSUperUsuarioPorID">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerCursoXId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarAlumnosEnAula">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarAlumnosSinSalon">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTareasXAlumnoId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTareasXDocenteId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ObtenerAulaxAlumnoID">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarSesionesXAlumnoId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarSesionesXDocenteId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="EduprogWS">
+    <port name="EduprogWSPort" binding="tns:EduprogWSPortBinding">
+      <soap:address location="http://localhost:8080/EduprogWS/EduprogWS" />
+    </port>
+  </service>
+</definitions>

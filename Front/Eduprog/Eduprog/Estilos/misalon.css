@@ -1,0 +1,25 @@
+﻿/* Estilos para Diseño Minimalista */
+.minimal-gridview {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .minimal-gridview th, .minimal-gridview td {
+        padding: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .minimal-gridview th {
+        background-color: #f8f9fa;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .minimal-gridview tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    .minimal-gridview tr:hover {
+        background-color: #e2e2e2;
+    }

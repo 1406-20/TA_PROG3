@@ -1,0 +1,49 @@
+C:\Users\dolso\OneDrive\Escritorio\Universidad\Repositorios\TAProg3-2024-1\Front\Eduprog\Eduprog\bin\Eduprog.dll.config
+C:\Users\dolso\OneDrive\Escritorio\Universidad\Repositorios\TAProg3-2024-1\Front\Eduprog\Eduprog\bin\Eduprog.dll
+C:\Users\dolso\OneDrive\Escritorio\Universidad\Repositorios\TAProg3-2024-1\Front\Eduprog\Eduprog\bin\Eduprog.pdb
+C:\Users\dolso\OneDrive\Escritorio\Universidad\Repositorios\TAProg3-2024-1\Front\Eduprog\Eduprog\obj\Debug\Eduprog.csproj.AssemblyReference.cache
+C:\Users\dolso\OneDrive\Escritorio\Universidad\Repositorios\TAProg3-2024-1\Front\Eduprog\Eduprog\obj\Debug\Eduprog.csproj.CoreCompileInputs.cache
+C:\Users\dolso\OneDrive\Escritorio\Universidad\Repositorios\TAProg3-2024-1\Front\Eduprog\Eduprog\obj\Debug\Eduprog.dll
+C:\Users\dolso\OneDrive\Escritorio\Universidad\Repositorios\TAProg3-2024-1\Front\Eduprog\Eduprog\obj\Debug\Eduprog.pdb
+D:\Universidad\Programación 3\Repositorios\TAProg3-2024-1\Front\Eduprog\Eduprog\bin\Eduprog.dll.config
+D:\Universidad\Programación 3\Repositorios\TAProg3-2024-1\Front\Eduprog\Eduprog\bin\Eduprog.dll
+D:\Universidad\Programación 3\Repositorios\TAProg3-2024-1\Front\Eduprog\Eduprog\bin\Eduprog.pdb
+D:\Universidad\Programación 3\Repositorios\TAProg3-2024-1\Front\Eduprog\Eduprog\obj\Debug\Eduprog.csproj.AssemblyReference.cache
+D:\Universidad\Programación 3\Repositorios\TAProg3-2024-1\Front\Eduprog\Eduprog\obj\Debug\Eduprog.csproj.CoreCompileInputs.cache
+D:\Universidad\Programación 3\Repositorios\TAProg3-2024-1\Front\Eduprog\Eduprog\obj\Debug\Eduprog.dll
+D:\Universidad\Programación 3\Repositorios\TAProg3-2024-1\Front\Eduprog\Eduprog\obj\Debug\Eduprog.pdb
+C:\Users\jhuam\Documents\PUCP\2024-1\Progra 3\Lab10\TAProg3-2024-1\Front\Eduprog\Eduprog\bin\Eduprog.dll.config
+C:\Users\jhuam\Documents\PUCP\2024-1\Progra 3\Lab10\TAProg3-2024-1\Front\Eduprog\Eduprog\bin\Eduprog.dll
+C:\Users\jhuam\Documents\PUCP\2024-1\Progra 3\Lab10\TAProg3-2024-1\Front\Eduprog\Eduprog\bin\Eduprog.pdb
+C:\Users\jhuam\Documents\PUCP\2024-1\Progra 3\Lab10\TAProg3-2024-1\Front\Eduprog\Eduprog\obj\Debug\Eduprog.csproj.AssemblyReference.cache
+C:\Users\jhuam\Documents\PUCP\2024-1\Progra 3\Lab10\TAProg3-2024-1\Front\Eduprog\Eduprog\obj\Debug\Eduprog.csproj.CoreCompileInputs.cache
+C:\Users\jhuam\Documents\PUCP\2024-1\Progra 3\Lab10\TAProg3-2024-1\Front\Eduprog\Eduprog\obj\Debug\Eduprog.dll
+C:\Users\jhuam\Documents\PUCP\2024-1\Progra 3\Lab10\TAProg3-2024-1\Front\Eduprog\Eduprog\obj\Debug\Eduprog.pdb
+C:\Users\aloal\Documents\Proyectos Java\Front_lab10_incompleto_vs1\Front_lab10_incompleto_vs1\Eduprog\Eduprog\bin\Eduprog.dll.config
+C:\Users\aloal\Documents\Proyectos Java\Front_lab10_incompleto_vs1\Front_lab10_incompleto_vs1\Eduprog\Eduprog\bin\Eduprog.dll
+C:\Users\aloal\Documents\Proyectos Java\Front_lab10_incompleto_vs1\Front_lab10_incompleto_vs1\Eduprog\Eduprog\bin\Eduprog.pdb
+C:\Users\aloal\Documents\Proyectos Java\Front_lab10_incompleto_vs1\Front_lab10_incompleto_vs1\Eduprog\Eduprog\obj\Debug\Eduprog.csproj.AssemblyReference.cache
+C:\Users\aloal\Documents\Proyectos Java\Front_lab10_incompleto_vs1\Front_lab10_incompleto_vs1\Eduprog\Eduprog\obj\Debug\Eduprog.csproj.CoreCompileInputs.cache
+C:\Users\aloal\Documents\Proyectos Java\Front_lab10_incompleto_vs1\Front_lab10_incompleto_vs1\Eduprog\Eduprog\obj\Debug\Eduprog.dll
+C:\Users\aloal\Documents\Proyectos Java\Front_lab10_incompleto_vs1\Front_lab10_incompleto_vs1\Eduprog\Eduprog\obj\Debug\Eduprog.pdb
+C:\Users\dolso\Downloads\EduprogLab10_BETA\Eduprog\Eduprog\obj\Debug\Eduprog.csproj.AssemblyReference.cache
+C:\Users\dolso\Downloads\EduprogLab10_BETA\Eduprog\Eduprog\obj\Debug\Eduprog.csproj.CoreCompileInputs.cache
+C:\Users\dolso\Downloads\EduprogLab10_BETA\Eduprog\Eduprog\obj\Debug\Eduprog.dll
+C:\Users\dolso\Downloads\EduprogLab10_BETA\Eduprog\Eduprog\obj\Debug\Eduprog.pdb
+C:\Users\dolso\Downloads\EduprogLab10_BETA\Eduprog\Eduprog\bin\Eduprog.dll.config
+C:\Users\dolso\Downloads\EduprogLab10_BETA\Eduprog\Eduprog\bin\Eduprog.dll
+C:\Users\dolso\Downloads\EduprogLab10_BETA\Eduprog\Eduprog\bin\Eduprog.pdb
+C:\Users\josep\OneDrive\Desktop\PUCP\2024-1\Programación 3\TA\Avance\TAProg3-2024-1\Front\Eduprog\Eduprog\bin\Eduprog.dll.config
+C:\Users\josep\OneDrive\Desktop\PUCP\2024-1\Programación 3\TA\Avance\TAProg3-2024-1\Front\Eduprog\Eduprog\bin\Eduprog.dll
+C:\Users\josep\OneDrive\Desktop\PUCP\2024-1\Programación 3\TA\Avance\TAProg3-2024-1\Front\Eduprog\Eduprog\bin\Eduprog.pdb
+C:\Users\josep\OneDrive\Desktop\PUCP\2024-1\Programación 3\TA\Avance\TAProg3-2024-1\Front\Eduprog\Eduprog\obj\Debug\Eduprog.csproj.AssemblyReference.cache
+C:\Users\josep\OneDrive\Desktop\PUCP\2024-1\Programación 3\TA\Avance\TAProg3-2024-1\Front\Eduprog\Eduprog\obj\Debug\Eduprog.csproj.CoreCompileInputs.cache
+C:\Users\josep\OneDrive\Desktop\PUCP\2024-1\Programación 3\TA\Avance\TAProg3-2024-1\Front\Eduprog\Eduprog\obj\Debug\Eduprog.dll
+C:\Users\josep\OneDrive\Desktop\PUCP\2024-1\Programación 3\TA\Avance\TAProg3-2024-1\Front\Eduprog\Eduprog\obj\Debug\Eduprog.pdb
+C:\Users\dolso\Desktop\Universidad\Programación 3\Repositorios\TAProg3-2024-1\Front\Eduprog\Eduprog\bin\Eduprog.dll.config
+C:\Users\dolso\Desktop\Universidad\Programación 3\Repositorios\TAProg3-2024-1\Front\Eduprog\Eduprog\bin\Eduprog.dll
+C:\Users\dolso\Desktop\Universidad\Programación 3\Repositorios\TAProg3-2024-1\Front\Eduprog\Eduprog\bin\Eduprog.pdb
+C:\Users\dolso\Desktop\Universidad\Programación 3\Repositorios\TAProg3-2024-1\Front\Eduprog\Eduprog\obj\Debug\Eduprog.csproj.AssemblyReference.cache
+C:\Users\dolso\Desktop\Universidad\Programación 3\Repositorios\TAProg3-2024-1\Front\Eduprog\Eduprog\obj\Debug\Eduprog.csproj.CoreCompileInputs.cache
+C:\Users\dolso\Desktop\Universidad\Programación 3\Repositorios\TAProg3-2024-1\Front\Eduprog\Eduprog\obj\Debug\Eduprog.dll
+C:\Users\dolso\Desktop\Universidad\Programación 3\Repositorios\TAProg3-2024-1\Front\Eduprog\Eduprog\obj\Debug\Eduprog.pdb

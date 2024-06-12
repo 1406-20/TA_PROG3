@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="EduprogUsuarioAdministrativo.master.cs" Inherits="Eduprog.EduprogUsuarioAdministrativo" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Estilos/style.css" rel="stylesheet" />
+    <link href="Content/site.css" rel="stylesheet" />
+    <link href="Content/Fonts/css/all.css" rel="stylesheet" />
+    <link href="Estilos/profesores.css" rel="stylesheet" />
+    <link href="Estilos/incidencias.css" rel="stylesheet" />
+
+    <script src="../Scripts/bootstrap.js"></script>
+    <script src="../Scripts/bootstrap.bundle.js"></script>
+    <script src="../Scripts/jquery-3.7.1.js"></script>
+
+    <title>
+        <asp:ContentPlaceHolder ID="cphTitulo" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+
+</head>
+<body>
+    <asp:ContentPlaceHolder ID="cphScripts" runat="server">
+    </asp:ContentPlaceHolder>
+    <div>
+        <div class="fondo-azul-obscuro barra-superior">
+            <div class="d-flex flex-row justify-content-center align-items-center">
+                <img src="../Imágenes/logo.png" height="60" width="60" />
+                <p style="color:white; font-size:28px; font-style:italic; margin-top:5px;" >Educando para la vida</p>
+            </div>
+            <div>
+                <form class="d-flex justify-content-end">
+                    <div class="dropdown ps-3">
+                        <button class="btn btn-outline-light dropdown-toggle"
+                            id="btnUsuario" data-bs-toggle="dropdown" type="button"
+                            aria-expanded="false">
+                            <i class="fas fa-user me-2"></i>Usuario
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="btnUsuario">
+                            <li><a class="dropdown-item" href="#">Perfil</a></li>
+                            <li><a class="dropdown-item" href="#">Cambiar Contraseña</a></li>
+                            <li><a class="dropdown-item" href="../Login.aspx">Cerrar Sesión</a></li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="container-fluid d-flex p-0 h-100">
+            <!--Menu Lateral-->
+            <div id="bdSidebar" class="barra-lateral">
+                <div class="barra-lateral-imagen fondo-azul">
+                    <a href="#" class="navbar-brand text-center fondo-azul">
+                        <img src="../Imágenes/nino.jpg" width="150" height="150" />
+                    </a>
+                </div>
+                <div class="barra-lateral-menu">
+                    <ul class="mynav nav nav-pills">
+                        <li class="sidebar-item">
+                            <a href="Publicaciones.aspx" class="sidebar-link">
+                                <i class="fa-solid pe-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M8.33329 3.33341V6.66675H11.6666V3.33341H8.33329ZM13.3333 3.33341V6.66675H16.6666V3.33341H13.3333ZM13.3333 8.33341V11.6667H16.6666V8.33341H13.3333ZM13.3333 13.3334V16.6667H16.6666V13.3334H13.3333ZM11.6666 16.6667V13.3334H8.33329V16.6667H11.6666ZM6.66663 16.6667V13.3334H3.33329V16.6667H6.66663ZM6.66663 11.6667V8.33341H3.33329V11.6667H6.66663ZM6.66663 6.66675V3.33341H3.33329V6.66675H6.66663ZM8.33329 11.6667H11.6666V8.33341H8.33329V11.6667ZM3.33329 1.66675H16.6666C17.1087 1.66675 17.5326 1.84234 17.8451 2.1549C18.1577 2.46746 18.3333 2.89139 18.3333 3.33341V16.6667C18.3333 17.1088 18.1577 17.5327 17.8451 17.8453C17.5326 18.1578 17.1087 18.3334 16.6666 18.3334H3.33329C2.43329 18.3334 1.66663 17.5834 1.66663 16.6667V3.33341C1.66663 2.89139 1.84222 2.46746 2.15478 2.1549C2.46734 1.84234 2.89127 1.66675 3.33329 1.66675Z" fill="#042354" />
+                                    </svg>
+                                </i>
+                                <span class="topic">Publicaciones</span>
+                            </a>
+                        </li>    
+                        <li class="sidebar-item">
+                            <a href="Profesores.aspx" class="sidebar-link">
+                                <i class="fa-solid pe-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M16.2906 14.1666C16.7219 14.1666 17.1355 13.991 17.4404 13.6785C17.7454 13.3659 17.9167 12.942 17.9167 12.5V3.33329C17.9167 2.89127 17.7454 2.46734 17.4404 2.15478C17.1355 1.84222 16.7219 1.66663 16.2906 1.66663H7.72154C8.0061 2.17496 8.16057 2.74996 8.16057 3.33329H16.2906V12.5H8.97358V14.1666M12.2256 5.83329V7.49996H7.34756V18.3333H5.72154V13.3333H4.09553V18.3333H2.46951V11.6666H1.25V7.49996C1.25 7.05793 1.42131 6.63401 1.72625 6.32145C2.03119 6.00889 2.44477 5.83329 2.87602 5.83329H12.2256ZM6.53455 3.33329C6.53455 3.77532 6.36324 4.19924 6.0583 4.5118C5.75337 4.82436 5.33978 4.99996 4.90854 4.99996C4.47729 4.99996 4.06371 4.82436 3.75877 4.5118C3.45383 4.19924 3.28252 3.77532 3.28252 3.33329C3.28252 2.89127 3.45383 2.46734 3.75877 2.15478C4.06371 1.84222 4.47729 1.66663 4.90854 1.66663C5.33978 1.66663 5.75337 1.84222 6.0583 2.15478C6.36324 2.46734 6.53455 2.89127 6.53455 3.33329Z" fill="#042354" />
+                                    </svg>
+                                </i>
+                                <span class="topic">Profesores</span>
+                            </a>
+                        </li>                  
+                    </ul>
+                </div>
+            </div>
+            <!-- Contenido Derecha -->
+            <div class="contenido flex-fill p-4">
+                <!-- Contenido de la Página Web -->
+                <form runat="server" class="flex-fill">
+                    <asp:ContentPlaceHolder ID="cphContenido" runat="server">
+                    </asp:ContentPlaceHolder>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

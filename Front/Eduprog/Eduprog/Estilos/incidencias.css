@@ -1,0 +1,24 @@
+﻿.cabecera-incidencias{
+    display:flex;
+    margin-bottom:1rem;
+    margin-top:1rem;
+    justify-content:space-between;
+}
+.cabecera-gestionar-incidencias{
+    display: flex;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    justify-content: end;
+}
+
+.filtro-fecha {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:space-between;
+    width:235px;
+}
+
+.ver-desde{
+    width:160px;
+}

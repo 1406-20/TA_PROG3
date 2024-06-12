@@ -1,0 +1,20 @@
+﻿
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar-table th, .calendar-table td {
+        border: 1px solid #000000;
+        padding: 10px;
+        text-align: center;
+    }
+
+.calendar-table th{
+        background-color: #1563ae;
+}
+
+.day-column{
+    font-weight:bold;
+    background-color:#4b9cff
+}

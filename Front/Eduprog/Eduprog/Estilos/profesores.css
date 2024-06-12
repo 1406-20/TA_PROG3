@@ -1,0 +1,57 @@
+﻿.encabezado {
+    text-align: center;
+    position: center;
+}
+
+.pantalla {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.fila-profesor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    height:270px;
+    width:450px;
+    margin-top: 2rem;
+    margin-bottom:1rem;
+    background-color: #dddddd;
+    border: black solid 1px;
+    margin-right:3rem;
+    margin-left:3rem;
+}
+
+.nombre-profesor {
+    font-weight: bold;
+    padding-left:1rem;
+    padding-top:1rem;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left:1rem;
+    margin-right:1rem;
+    margin-bottom:1rem;
+}
+
+.foto-profesor {
+}
+    .foto-profesor img {
+        height: 200px;
+        width: 200px;
+    }
+
+.datos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+}
