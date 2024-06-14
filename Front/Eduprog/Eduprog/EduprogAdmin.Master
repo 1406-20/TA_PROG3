@@ -40,7 +40,7 @@
                         <button class="btn btn-outline-light dropdown-toggle"
                             id="btnUsuario" data-bs-toggle="dropdown" type="button"
                             aria-expanded="false">
-                            <i class="fas fa-user me-2"></i>Usuario
+                            <i class="fas fa-user me-2"></i>Admin
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="btnUsuario">
                             <li><a class="dropdown-item" href="Perfil.aspx">Perfil</a></li>
@@ -56,7 +56,8 @@
             <div id="bdSidebar" class="barra-lateral">
                 <div class="barra-lateral-imagen fondo-azul">
                     <a href="#" class="navbar-brand text-center fondo-azul">
-                        <img src="../Imágenes/nino.jpg" width="150" height="150" />
+                        <img src="../Imágenes/logo.png" width="150" height="150" /><br />
+                        <asp:Label ID="lblNombreAdmin" runat="server" Text=""></asp:Label> 
                     </a>
                 </div>
                 <div class="barra-lateral-menu">

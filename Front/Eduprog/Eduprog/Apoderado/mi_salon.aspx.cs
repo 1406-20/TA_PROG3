@@ -20,14 +20,8 @@ namespace Eduprog.Apoderado
         private aula aula = new aula();
         protected void Page_Load(object sender, EventArgs e)
         {
-            //if (Session["cambiocombo"] != null)
-            //{
-            //    bool cambioCombo = (bool)(Session["cambiocombo"]);
-            //}
-
             if (!IsPostBack)
             {
-                //Session["cambiocombo"] = false;
                 daoServicio = new EduprogWSClient();
                 int idUsuario = Int32.Parse(Session["idUsuarioActivo"].ToString());
                 int idAula = 0;
@@ -82,6 +76,12 @@ namespace Eduprog.Apoderado
                 lblNombreTutor.Text = profesorAula.nombre + " " + profesorAula.apellidoPaterno + " " + profesorAula.apellidoMaterno;
                 lblCorreoTutor.Text = profesorAula.correoElectronico;
 
+                if (aula.nivel == 1) lblNivel.Text = "Inicial";
+                else
+                   if (aula.nivel == 2) lblNivel.Text = "Primaria";
+                else
+                    lblNivel.Text = "-";
+
                 lblAula.Text = aula.grado.ToString();
                 lblSeccion.Text = ((char)aula.seccion).ToString();
                 lstMiSalon.DataSource = alumnosXAula;
@@ -133,6 +133,12 @@ namespace Eduprog.Apoderado
 
                 lblNombreTutor.Text = profesorAula.nombre + " " + profesorAula.apellidoPaterno + " " + profesorAula.apellidoMaterno;
                 lblCorreoTutor.Text = profesorAula.correoElectronico;
+
+                if (aula.nivel == 1) lblNivel.Text = "Inicial";
+                else
+                   if (aula.nivel == 2) lblNivel.Text = "Primaria";
+                else
+                    lblNivel.Text = "-";
 
                 lblAula.Text = aula.grado.ToString();
                 lblSeccion.Text = ((char)aula.seccion).ToString();

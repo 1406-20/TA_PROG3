@@ -57,7 +57,7 @@ namespace Eduprog.Alumno
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TableHeaderCell tdLunesFecha;
+        protected global::System.Web.UI.WebControls.TableCell tdLunesFecha;
 
         /// <summary>
         /// Control tdMartesFecha.
@@ -66,7 +66,7 @@ namespace Eduprog.Alumno
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TableHeaderCell tdMartesFecha;
+        protected global::System.Web.UI.WebControls.TableCell tdMartesFecha;
 
         /// <summary>
         /// Control tdMiercolesFecha.
@@ -75,7 +75,7 @@ namespace Eduprog.Alumno
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TableHeaderCell tdMiercolesFecha;
+        protected global::System.Web.UI.WebControls.TableCell tdMiercolesFecha;
 
         /// <summary>
         /// Control tdJuevesFecha.
@@ -84,7 +84,7 @@ namespace Eduprog.Alumno
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TableHeaderCell tdJuevesFecha;
+        protected global::System.Web.UI.WebControls.TableCell tdJuevesFecha;
 
         /// <summary>
         /// Control tdViernesFecha.
@@ -93,7 +93,7 @@ namespace Eduprog.Alumno
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TableHeaderCell tdViernesFecha;
+        protected global::System.Web.UI.WebControls.TableCell tdViernesFecha;
 
         /// <summary>
         /// Control tdLunes.

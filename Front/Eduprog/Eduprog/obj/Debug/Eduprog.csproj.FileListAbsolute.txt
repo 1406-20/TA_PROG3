@@ -47,10 +47,10 @@ C:\Users\dolso\Desktop\Universidad\Programación 3\Repositorios\TAProg3-2024-1\F
 C:\Users\dolso\Desktop\Universidad\Programación 3\Repositorios\TAProg3-2024-1\Front\Eduprog\Eduprog\obj\Debug\Eduprog.csproj.CoreCompileInputs.cache
 C:\Users\dolso\Desktop\Universidad\Programación 3\Repositorios\TAProg3-2024-1\Front\Eduprog\Eduprog\obj\Debug\Eduprog.dll
 C:\Users\dolso\Desktop\Universidad\Programación 3\Repositorios\TAProg3-2024-1\Front\Eduprog\Eduprog\obj\Debug\Eduprog.pdb
-C:\Users\d_fra\Documents\PUCP\Programación3\TA\Front\Eduprog\Eduprog\bin\Eduprog.dll.config
-C:\Users\d_fra\Documents\PUCP\Programación3\TA\Front\Eduprog\Eduprog\bin\Eduprog.dll
-C:\Users\d_fra\Documents\PUCP\Programación3\TA\Front\Eduprog\Eduprog\bin\Eduprog.pdb
-C:\Users\d_fra\Documents\PUCP\Programación3\TA\Front\Eduprog\Eduprog\obj\Debug\Eduprog.csproj.AssemblyReference.cache
-C:\Users\d_fra\Documents\PUCP\Programación3\TA\Front\Eduprog\Eduprog\obj\Debug\Eduprog.csproj.CoreCompileInputs.cache
-C:\Users\d_fra\Documents\PUCP\Programación3\TA\Front\Eduprog\Eduprog\obj\Debug\Eduprog.dll
-C:\Users\d_fra\Documents\PUCP\Programación3\TA\Front\Eduprog\Eduprog\obj\Debug\Eduprog.pdb
+C:\Users\jhuam\Documents\PUCP\2024-1\Progra 3\EntregaFinal\Front\Eduprog\Eduprog\bin\Eduprog.dll.config
+C:\Users\jhuam\Documents\PUCP\2024-1\Progra 3\EntregaFinal\Front\Eduprog\Eduprog\bin\Eduprog.dll
+C:\Users\jhuam\Documents\PUCP\2024-1\Progra 3\EntregaFinal\Front\Eduprog\Eduprog\bin\Eduprog.pdb
+C:\Users\jhuam\Documents\PUCP\2024-1\Progra 3\EntregaFinal\Front\Eduprog\Eduprog\obj\Debug\Eduprog.csproj.AssemblyReference.cache
+C:\Users\jhuam\Documents\PUCP\2024-1\Progra 3\EntregaFinal\Front\Eduprog\Eduprog\obj\Debug\Eduprog.csproj.CoreCompileInputs.cache
+C:\Users\jhuam\Documents\PUCP\2024-1\Progra 3\EntregaFinal\Front\Eduprog\Eduprog\obj\Debug\Eduprog.dll
+C:\Users\jhuam\Documents\PUCP\2024-1\Progra 3\EntregaFinal\Front\Eduprog\Eduprog\obj\Debug\Eduprog.pdb

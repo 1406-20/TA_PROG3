@@ -22,7 +22,8 @@ namespace Eduprog.Alumno
                 string base64String = "data:image/jpeg;base64," + Convert.ToBase64String(aula.horario);
                 fotoHorario.Src = base64String;
             }
-
+            fotoHorario.Width = 800;
+            fotoHorario.Height = 600;
         }
     }
 }

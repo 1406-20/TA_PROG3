@@ -63,14 +63,6 @@
                     resultados</h5>
             </div>
         </div>
-
-        <div class="dropdown ps-3" style="margin-bottom: 1rem; text-align: initial">
-            <asp:Label ID="fltGrado" runat="server" Text="Alumnos a cargo: "></asp:Label>
-            <asp:DropDownList ID="ddlAlumnos" runat="server" CssClass="btn btn-primary dropdown-toggle" AutoPostBack="true"
-                OnSelectedIndexChanged="ddlAlumnos_SelectedIndexChanged">
-            </asp:DropDownList>
-        </div>
-
         <div class="col-sm-4">
             <div class="container row">
                 <div class="card col-sm-6 d-flex" style="height: 160px; justify-content: center">
@@ -78,12 +70,13 @@
                         <h3 style="text-align: center">
                             <asp:Label ID="lblAula" runat="server" Text=""></asp:Label>
                             <br />
-                            Añitos</h3>
+                            <asp:Label ID="lblNivel" runat="server" Text=""></asp:Label>
+                        </h3>
                     </div>
                 </div>
                 <div class="card col-sm-6 d-flex" style="justify-content: center; flex-direction: column">
                     <div class="d-flex" style="justify-content: center">
-                        <img src="../Imágenes/conejo.png" width="60" />
+                        <img src="../Imágenes/logo.png" width="60" />
                     </div>
                     <div>
                         <h5 style="text-align: center">
@@ -92,24 +85,33 @@
                     </div>
                 </div>
             </div>
-            <div class="card-body" style="margin-top: 50px">
-                <div class="row d-flex">
-                    <div class="col-sm-3 mb-4">
-                        <asp:Label ID="lblNombre" runat="server" Text="Alumno: " CssClass="col-sm-2 col-form-label" />
-                    </div>
-                    <div class="col-sm-6">
-                        <asp:TextBox ID="txtNombre" runat="server" CssClass="form-control" />
-                    </div>
-                    <div class="col-sm-3">
-                        <a class="btn btn-primary align-content-end" role="button" onclick="buscarAlumno()">Buscar</a>
-                    </div>
+        </div>
+    </div>
+
+    <div class="contaier row">
+        <div class="dropdown ps-3 col-md-6" style="margin-top: 1rem; margin-bottom: 1rem">
+            <asp:Label ID="fltGrado" runat="server" Text="Alumnos a cargo: "></asp:Label>
+            <asp:DropDownList ID="ddlAlumnos" runat="server" CssClass="btn btn-primary dropdown-toggle" AutoPostBack="true"
+                OnSelectedIndexChanged="ddlAlumnos_SelectedIndexChanged">
+            </asp:DropDownList>
+        </div>
+        <div class="card-body col-md-6" style="margin-top: 1rem; margin-bottom: 1rem">
+            <div class="row d-flex">
+                <div class="col-sm-3 mb-4">
+                    <asp:Label ID="lblNombre" runat="server" Text="Alumno: " CssClass="col-sm-2 col-form-label" />
+                </div>
+                <div class="col-sm-6">
+                    <asp:TextBox ID="txtNombre" runat="server" CssClass="form-control" />
+                </div>
+                <div class="col-sm-3">
+                    <a class="btn btn-primary align-content-end" role="button" onclick="buscarAlumno()">Buscar</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container" style="margin-top: 20px">
-        <asp:GridView ID="lstMiSalon" runat="server" AutoGenerateColumns="False" CssClass="minimal-gridview" Width="900px" OnDataBound="lstMiSalon_DataBound">
+    <div class="container" style="margin-top: 20px; text-align: center; align-content: center; align-items: center">
+        <asp:GridView ID="lstMiSalon" runat="server" AutoGenerateColumns="False" CssClass="table table-responsive" Width="900px" OnDataBound="lstMiSalon_DataBound">
             <Columns>
                 <asp:BoundField DataField="apellidoPaterno" HeaderText="Apellido Paterno" />
                 <asp:BoundField DataField="apellidoMaterno" HeaderText="Apellido Materno" />

@@ -31,23 +31,22 @@ namespace Eduprog.Alumno
                 if (Session["idUsuarioActivo"] == null) Response.Redirect("~/login.aspx");
                 idUsuarioS = (string)Session["idUsuarioActivo"];
                 idUsuario = int.Parse(idUsuarioS);
-                mostrarDatos(idUsuario);
+                lblNombre.Text = ObtenerNombre(idUsuario);
+                lblAula.Text = ObtenerAula(idUsuario);
                 // Inicializar lista de actividades
                 daoServicio = new EduprogWSClient(); // Inicializa el cliente del servicio web aquí
                 InicializarActividades();
                 // Inicializar la tabla con actividades para la semana actual
                 DateTime today = DateTime.Now;
                 MostrarActividades(today);
-                
             }
         }
 
-        private void mostrarDatos(int id)
+        private string ObtenerNombre(int id)
         {
             daoServicio = new EduprogWSClient();
-            alumno alu = daoServicio.obtenerAlumnoPorID(id);
-            lblNombre.Text=alu.nombre + " " + alu.apellidoPaterno + " " + alu.apellidoMaterno;
-            lblAula.Text=alu.gradoActual.ToString();
+            usuario usuario = daoServicio.obtenerDocentePorID(id); ;
+            return usuario.nombre + " " + usuario.apellidoPaterno + " " + usuario.apellidoMaterno;
         }
 
         private string ObtenerAula(int id)
@@ -69,14 +68,13 @@ namespace Eduprog.Alumno
 
         protected void CalActividades_SelectionChanged(object sender, EventArgs e)
         {
-            LimpiarCeldas();
             DateTime selectedDate = CalActividades.SelectedDate;
             MostrarActividades(selectedDate);
         }
 
         private void MostrarActividades(DateTime fecha)
         {
-            //Arreglar funcion
+            LimpiarCeldas();
 
             // Obtener las actividades de la semana seleccionada
             Dictionary<DayOfWeek, BindingList<tarea>> tareasPorSemana = ObtenerTareasPorSemana(fecha);
@@ -114,7 +112,7 @@ namespace Eduprog.Alumno
                     //cardBody.Controls.Add(titulo);
 
                     // Agregar la descripción de la tarjeta
-                    LiteralControl asistencia = new LiteralControl($"<p class='card-text'>{Convert.ToChar(sesion.asistencia)}</p>");
+                    LiteralControl asistencia = new LiteralControl($"<p class='card-text'>{sesion.asistencia}</p>");
                     cardBody.Controls.Add(asistencia);
 
                     // Agregar el cuerpo de la tarjeta al panel principal
@@ -144,12 +142,12 @@ namespace Eduprog.Alumno
                     LiteralControl descripcion = new LiteralControl($"<p class='card-text'>{tarea.descripcion}</p>");
                     cardBody.Controls.Add(descripcion);
 
-                    // Agregar el tipo de actividad
-                    LiteralControl tipoActividad = new LiteralControl($"<p class='card-text'><b>Tipo:</b>Tarea</p>");
-                    cardBody.Controls.Add(tipoActividad);
+                    // Agregar el estado de la tarjeta
+                    //LiteralControl estado = new LiteralControl($"<p class='card-text'><b>Estado:</b> {tarea.estado}</p>");
+                    //cardBody.Controls.Add(estado);
 
                     // Agregar el tipo de tarea de la tarjeta
-                    LiteralControl tipo = new LiteralControl($"<p class='card-text'>{tarea.tipoTarea}</p>");
+                    LiteralControl tipo = new LiteralControl($"<p class='card-text'><b>Tipo:</b> {tarea.tipoTarea}</p>");
                     cardBody.Controls.Add(tipo);
 
                     // Agregar el cuerpo de la tarjeta al panel principal
@@ -201,19 +199,14 @@ namespace Eduprog.Alumno
             }
         }
 
-        /*private TableCell ObtenerCeldaFechaPorDia(DayOfWeek dia, DateTime fecha)
+        private TableCell ObtenerCeldaFechaPorDia(DayOfWeek dia, DateTime fecha)
         {
             DateTime inicioSemana = fecha.AddDays(-(int)fecha.DayOfWeek + (int)DayOfWeek.Monday);
             DateTime fechaDia = inicioSemana.AddDays((int)dia - (int)DayOfWeek.Monday);
-            TableCell celdaFecha = ObtenerCeldaPorDiaFecha(dia);
+            TableCell celdaFecha = ObtenerCeldaPorDia(dia);
             celdaFecha.Controls.Add(new LiteralControl(fechaDia.ToString("dd/MM/yyyy")));
             return celdaFecha;
         }
-        ObtenerCeldaPorDiaFecha(dia)
-        {
-
-
-        }*/
 
         private Dictionary<DayOfWeek, BindingList<sesion>> ObtenerSesionesPorSemana(DateTime fecha)
         {

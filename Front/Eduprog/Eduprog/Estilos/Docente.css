@@ -1,0 +1,28 @@
+﻿.carousel-control-ant,
+.carousel-control-sig {
+    width: 5%; /* Ajusta el ancho de los controles si es necesario */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.carousel-control-ant {
+    left: -2%; /* Ajusta la posición izquierda del botón prev */
+}
+
+.carousel-control-sig {
+    right: -2%; /* Ajusta la posición derecha del botón next */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background: no-repeat 50% / 100% 100%; /* Fondo semitransparente para los íconos */
+    border-radius: 50%; /* Haz que los íconos sean circulares */
+    width: 20px;
+    height: 20px;
+}
+
+    .carousel-control-prev-icon::after,
+    .carousel-control-next-icon::after {
+        display: none; /* Oculta el ícono por defecto para personalizar con tu propio ícono si lo deseas */
+    }

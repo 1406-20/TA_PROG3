@@ -11,7 +11,7 @@
         <div class="col-lg-10">
             <div style="width:140vh; height: 75vh;" class="border d-flex justify-content-center align-items-center">
                 <!-- Contenido a centrar -->
-                <img src="../Imágenes/OIP.jpeg" class="w-100 h-100" />
+                <img id="fotoHorario" src="../Imágenes/logo.png" class="w-100 h-100" runat="server"/>
             </div>
         </div>
     </div>

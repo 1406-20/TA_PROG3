@@ -58,6 +58,11 @@ namespace Eduprog
 
                 lblAula.Text = aula.grado.ToString();
                 lblSeccion.Text = ((char)aula.seccion).ToString();
+                if (aula.nivel == 1) lblNivel.Text = "Inicial";
+                else
+                   if (aula.nivel == 2) lblNivel.Text = "Primaria";
+                else
+                    lblNivel.Text = "-";
                 lstMiSalon.DataSource = alumnosXAula;
                 lstMiSalon.DataBind();
             }

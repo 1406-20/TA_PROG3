@@ -65,12 +65,13 @@
                     <div class="card-body d-flex" style="justify-content:center; flex-direction:column">
                         <h3 style="text-align:center">
                             <asp:Label ID="lblAula" runat="server" Text=""></asp:Label>
-                            <br />Añitos</h3>
+                            <br><asp:Label ID="lblNivel" runat="server" Text=""></asp:Label>
+                        </h3>
                     </div>
                 </div>
                 <div class="card col-sm-6 d-flex" style="justify-content:center; flex-direction:column">
                     <div class="d-flex" style="justify-content:center">
-                        <img src="../Imágenes/conejo.png" width="60"/>                        
+                        <img id=fotoSeccion src="../Imágenes/logo.png" width="60"/>                        
                     </div>
                     <div>
                         <h5 style="text-align:center">

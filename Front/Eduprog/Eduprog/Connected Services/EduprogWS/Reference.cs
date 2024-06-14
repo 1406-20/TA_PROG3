@@ -16,456 +16,6 @@ namespace Eduprog.EduprogWS {
     public interface EduprogWS {
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarDemeritoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarDemeritoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.insertarDemeritoResponse insertarDemerito(Eduprog.EduprogWS.insertarDemeritoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarDemeritoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarDemeritoResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarDemeritoResponse> insertarDemeritoAsync(Eduprog.EduprogWS.insertarDemeritoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarMeritoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarMeritoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.listarMeritoResponse listarMerito(Eduprog.EduprogWS.listarMeritoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarMeritoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarMeritoResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarMeritoResponse> listarMeritoAsync(Eduprog.EduprogWS.listarMeritoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarDemeritoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarDemeritoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.listarDemeritoResponse listarDemerito(Eduprog.EduprogWS.listarDemeritoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarDemeritoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarDemeritoResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarDemeritoResponse> listarDemeritoAsync(Eduprog.EduprogWS.listarDemeritoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarDocenteRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarDocenteResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.modificarDocenteResponse modificarDocente(Eduprog.EduprogWS.modificarDocenteRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarDocenteRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarDocenteResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarDocenteResponse> modificarDocenteAsync(Eduprog.EduprogWS.modificarDocenteRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarDocenteRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarDocenteResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.eliminarDocenteResponse eliminarDocente(Eduprog.EduprogWS.eliminarDocenteRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarDocenteRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarDocenteResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarDocenteResponse> eliminarDocenteAsync(Eduprog.EduprogWS.eliminarDocenteRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarDocenteRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarDocenteResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.insertarDocenteResponse insertarDocente(Eduprog.EduprogWS.insertarDocenteRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarDocenteRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarDocenteResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarDocenteResponse> insertarDocenteAsync(Eduprog.EduprogWS.insertarDocenteRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarMeritoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarMeritoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.insertarMeritoResponse insertarMerito(Eduprog.EduprogWS.insertarMeritoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarMeritoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarMeritoResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarMeritoResponse> insertarMeritoAsync(Eduprog.EduprogWS.insertarMeritoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerCursoXIdRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerCursoXIdResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.obtenerCursoXIdResponse obtenerCursoXId(Eduprog.EduprogWS.obtenerCursoXIdRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerCursoXIdRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerCursoXIdResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerCursoXIdResponse> obtenerCursoXIdAsync(Eduprog.EduprogWS.obtenerCursoXIdRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarAulaRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarAulaResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.insertarAulaResponse insertarAula(Eduprog.EduprogWS.insertarAulaRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarAulaRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarAulaResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarAulaResponse> insertarAulaAsync(Eduprog.EduprogWS.insertarAulaRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarAulaRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarAulaResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.modificarAulaResponse modificarAula(Eduprog.EduprogWS.modificarAulaRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarAulaRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarAulaResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarAulaResponse> modificarAulaAsync(Eduprog.EduprogWS.modificarAulaRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarCursoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarCursoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.listarCursoResponse listarCurso(Eduprog.EduprogWS.listarCursoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarCursoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarCursoResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarCursoResponse> listarCursoAsync(Eduprog.EduprogWS.listarCursoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarApoderadoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarApoderadoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.insertarApoderadoResponse insertarApoderado(Eduprog.EduprogWS.insertarApoderadoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarApoderadoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarApoderadoResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarApoderadoResponse> insertarApoderadoAsync(Eduprog.EduprogWS.insertarApoderadoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarTareasRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarTareasResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.insertarTareasResponse insertarTareas(Eduprog.EduprogWS.insertarTareasRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarTareasRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarTareasResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarTareasResponse> insertarTareasAsync(Eduprog.EduprogWS.insertarTareasRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarReunionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarReunionResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.listarReunionResponse listarReunion(Eduprog.EduprogWS.listarReunionRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarReunionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarReunionResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarReunionResponse> listarReunionAsync(Eduprog.EduprogWS.listarReunionRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarApoderadoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarApoderadoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.eliminarApoderadoResponse eliminarApoderado(Eduprog.EduprogWS.eliminarApoderadoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarApoderadoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarApoderadoResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarApoderadoResponse> eliminarApoderadoAsync(Eduprog.EduprogWS.eliminarApoderadoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarAulaRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarAulaResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.eliminarAulaResponse eliminarAula(Eduprog.EduprogWS.eliminarAulaRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarAulaRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarAulaResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarAulaResponse> eliminarAulaAsync(Eduprog.EduprogWS.eliminarAulaRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarTrabajadorRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarTrabajadorResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.insertarTrabajadorResponse insertarTrabajador(Eduprog.EduprogWS.insertarTrabajadorRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarTrabajadorRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarTrabajadorResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarTrabajadorResponse> insertarTrabajadorAsync(Eduprog.EduprogWS.insertarTrabajadorRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarSesionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarSesionResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.modificarSesionResponse modificarSesion(Eduprog.EduprogWS.modificarSesionRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarSesionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarSesionResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarSesionResponse> modificarSesionAsync(Eduprog.EduprogWS.modificarSesionRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarReunionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarReunionResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.modificarReunionResponse modificarReunion(Eduprog.EduprogWS.modificarReunionRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarReunionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarReunionResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarReunionResponse> modificarReunionAsync(Eduprog.EduprogWS.modificarReunionRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarEvaluacionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarEvaluacionResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.listarEvaluacionResponse listarEvaluacion(Eduprog.EduprogWS.listarEvaluacionRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarEvaluacionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarEvaluacionResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarEvaluacionResponse> listarEvaluacionAsync(Eduprog.EduprogWS.listarEvaluacionRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarCursoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarCursoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.modificarCursoResponse modificarCurso(Eduprog.EduprogWS.modificarCursoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarCursoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarCursoResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarCursoResponse> modificarCursoAsync(Eduprog.EduprogWS.modificarCursoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerAlumnoPorIDRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerAlumnoPorIDResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.obtenerAlumnoPorIDResponse obtenerAlumnoPorID(Eduprog.EduprogWS.obtenerAlumnoPorIDRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerAlumnoPorIDRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerAlumnoPorIDResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerAlumnoPorIDResponse> obtenerAlumnoPorIDAsync(Eduprog.EduprogWS.obtenerAlumnoPorIDRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarTareaRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarTareaResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.eliminarTareaResponse eliminarTarea(Eduprog.EduprogWS.eliminarTareaRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarTareaRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarTareaResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarTareaResponse> eliminarTareaAsync(Eduprog.EduprogWS.eliminarTareaRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarAlumnoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarAlumnoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.insertarAlumnoResponse insertarAlumno(Eduprog.EduprogWS.insertarAlumnoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarAlumnoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarAlumnoResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarAlumnoResponse> insertarAlumnoAsync(Eduprog.EduprogWS.insertarAlumnoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarTareasRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarTareasResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.modificarTareasResponse modificarTareas(Eduprog.EduprogWS.modificarTareasRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarTareasRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarTareasResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarTareasResponse> modificarTareasAsync(Eduprog.EduprogWS.modificarTareasRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarSesionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarSesionResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.eliminarSesionResponse eliminarSesion(Eduprog.EduprogWS.eliminarSesionRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarSesionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarSesionResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarSesionResponse> eliminarSesionAsync(Eduprog.EduprogWS.eliminarSesionRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarMeritoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarMeritoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.eliminarMeritoResponse eliminarMerito(Eduprog.EduprogWS.eliminarMeritoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarMeritoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarMeritoResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarMeritoResponse> eliminarMeritoAsync(Eduprog.EduprogWS.eliminarMeritoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarMeritoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarMeritoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.modificarMeritoResponse modificarMerito(Eduprog.EduprogWS.modificarMeritoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarMeritoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarMeritoResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarMeritoResponse> modificarMeritoAsync(Eduprog.EduprogWS.modificarMeritoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarDemeritoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarDemeritoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.modificarDemeritoResponse modificarDemerito(Eduprog.EduprogWS.modificarDemeritoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarDemeritoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarDemeritoResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarDemeritoResponse> modificarDemeritoAsync(Eduprog.EduprogWS.modificarDemeritoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarAlumnoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarAlumnoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.modificarAlumnoResponse modificarAlumno(Eduprog.EduprogWS.modificarAlumnoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarAlumnoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarAlumnoResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarAlumnoResponse> modificarAlumnoAsync(Eduprog.EduprogWS.modificarAlumnoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodasAulasRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodasAulasResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.listarTodasAulasResponse listarTodasAulas(Eduprog.EduprogWS.listarTodasAulasRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodasAulasRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodasAulasResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodasAulasResponse> listarTodasAulasAsync(Eduprog.EduprogWS.listarTodasAulasRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarCursoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarCursoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.insertarCursoResponse insertarCurso(Eduprog.EduprogWS.insertarCursoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarCursoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarCursoResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarCursoResponse> insertarCursoAsync(Eduprog.EduprogWS.insertarCursoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarTrabajadorRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarTrabajadorResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.eliminarTrabajadorResponse eliminarTrabajador(Eduprog.EduprogWS.eliminarTrabajadorRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarTrabajadorRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarTrabajadorResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarTrabajadorResponse> eliminarTrabajadorAsync(Eduprog.EduprogWS.eliminarTrabajadorRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarApoderadoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarApoderadoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.modificarApoderadoResponse modificarApoderado(Eduprog.EduprogWS.modificarApoderadoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarApoderadoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarApoderadoResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarApoderadoResponse> modificarApoderadoAsync(Eduprog.EduprogWS.modificarApoderadoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarEvaluacionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarEvaluacionResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.insertarEvaluacionResponse insertarEvaluacion(Eduprog.EduprogWS.insertarEvaluacionRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarEvaluacionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarEvaluacionResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarEvaluacionResponse> insertarEvaluacionAsync(Eduprog.EduprogWS.insertarEvaluacionRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarEvaluacionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarEvaluacionResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.eliminarEvaluacionResponse eliminarEvaluacion(Eduprog.EduprogWS.eliminarEvaluacionRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarEvaluacionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarEvaluacionResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarEvaluacionResponse> eliminarEvaluacionAsync(Eduprog.EduprogWS.eliminarEvaluacionRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarDemeritoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarDemeritoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.eliminarDemeritoResponse eliminarDemerito(Eduprog.EduprogWS.eliminarDemeritoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarDemeritoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarDemeritoResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarDemeritoResponse> eliminarDemeritoAsync(Eduprog.EduprogWS.eliminarDemeritoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarReunionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarReunionResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.eliminarReunionResponse eliminarReunion(Eduprog.EduprogWS.eliminarReunionRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarReunionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarReunionResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarReunionResponse> eliminarReunionAsync(Eduprog.EduprogWS.eliminarReunionRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarSesionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarSesionResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.listarSesionResponse listarSesion(Eduprog.EduprogWS.listarSesionRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarSesionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarSesionResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarSesionResponse> listarSesionAsync(Eduprog.EduprogWS.listarSesionRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarAlumnoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarAlumnoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.eliminarAlumnoResponse eliminarAlumno(Eduprog.EduprogWS.eliminarAlumnoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarAlumnoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarAlumnoResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarAlumnoResponse> eliminarAlumnoAsync(Eduprog.EduprogWS.eliminarAlumnoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarSesionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarSesionResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.insertarSesionResponse insertarSesion(Eduprog.EduprogWS.insertarSesionRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarSesionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarSesionResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarSesionResponse> insertarSesionAsync(Eduprog.EduprogWS.insertarSesionRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosAlumnosRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosAlumnosResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.listarTodosAlumnosResponse listarTodosAlumnos(Eduprog.EduprogWS.listarTodosAlumnosRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosAlumnosRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosAlumnosResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodosAlumnosResponse> listarTodosAlumnosAsync(Eduprog.EduprogWS.listarTodosAlumnosRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarnotasxalumnoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarnotasxalumnoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.listarnotasxalumnoResponse listarnotasxalumno(Eduprog.EduprogWS.listarnotasxalumnoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarnotasxalumnoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarnotasxalumnoResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarnotasxalumnoResponse> listarnotasxalumnoAsync(Eduprog.EduprogWS.listarnotasxalumnoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTareasRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTareasResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.listarTareasResponse listarTareas(Eduprog.EduprogWS.listarTareasRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTareasRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTareasResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTareasResponse> listarTareasAsync(Eduprog.EduprogWS.listarTareasRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarReunionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarReunionResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.insertarReunionResponse insertarReunion(Eduprog.EduprogWS.insertarReunionRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarReunionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarReunionResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarReunionResponse> insertarReunionAsync(Eduprog.EduprogWS.insertarReunionRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerUsuarioSUperUsuarioPorIDRequ" +
             "est", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerUsuarioSUperUsuarioPorIDResp" +
             "onse")]
@@ -494,84 +44,454 @@ namespace Eduprog.EduprogWS {
         System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerUsuarioTrabajadorPorIDResponse> obtenerUsuarioTrabajadorPorIDAsync(Eduprog.EduprogWS.obtenerUsuarioTrabajadorPorIDRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarSuperusuarioRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarSuperusuarioResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarTrabajadorRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarTrabajadorResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.eliminarSuperusuarioResponse eliminarSuperusuario(Eduprog.EduprogWS.eliminarSuperusuarioRequest request);
+        Eduprog.EduprogWS.eliminarTrabajadorResponse eliminarTrabajador(Eduprog.EduprogWS.eliminarTrabajadorRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarSuperusuarioRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarSuperusuarioResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarSuperusuarioResponse> eliminarSuperusuarioAsync(Eduprog.EduprogWS.eliminarSuperusuarioRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarTrabajadorRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarTrabajadorResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarTrabajadorResponse> eliminarTrabajadorAsync(Eduprog.EduprogWS.eliminarTrabajadorRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/ObtenerAulaxAlumnoIDRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/ObtenerAulaxAlumnoIDResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarDemeritoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarDemeritoResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.ObtenerAulaxAlumnoIDResponse ObtenerAulaxAlumnoID(Eduprog.EduprogWS.ObtenerAulaxAlumnoIDRequest request);
+        Eduprog.EduprogWS.insertarDemeritoResponse insertarDemerito(Eduprog.EduprogWS.insertarDemeritoRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/ObtenerAulaxAlumnoIDRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/ObtenerAulaxAlumnoIDResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.ObtenerAulaxAlumnoIDResponse> ObtenerAulaxAlumnoIDAsync(Eduprog.EduprogWS.ObtenerAulaxAlumnoIDRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarDemeritoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarDemeritoResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarDemeritoResponse> insertarDemeritoAsync(Eduprog.EduprogWS.insertarDemeritoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerUsuarioIncidenciaRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerUsuarioIncidenciaResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodasAulasRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodasAulasResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.obtenerUsuarioIncidenciaResponse obtenerUsuarioIncidencia(Eduprog.EduprogWS.obtenerUsuarioIncidenciaRequest request);
+        Eduprog.EduprogWS.listarTodasAulasResponse listarTodasAulas(Eduprog.EduprogWS.listarTodasAulasRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerUsuarioIncidenciaRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerUsuarioIncidenciaResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerUsuarioIncidenciaResponse> obtenerUsuarioIncidenciaAsync(Eduprog.EduprogWS.obtenerUsuarioIncidenciaRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodasAulasRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodasAulasResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodasAulasResponse> listarTodasAulasAsync(Eduprog.EduprogWS.listarTodasAulasRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTareasXDocenteIdRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTareasXDocenteIdResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarTareasRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarTareasResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.listarTareasXDocenteIdResponse listarTareasXDocenteId(Eduprog.EduprogWS.listarTareasXDocenteIdRequest request);
+        Eduprog.EduprogWS.modificarTareasResponse modificarTareas(Eduprog.EduprogWS.modificarTareasRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTareasXDocenteIdRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTareasXDocenteIdResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTareasXDocenteIdResponse> listarTareasXDocenteIdAsync(Eduprog.EduprogWS.listarTareasXDocenteIdRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarTareasRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarTareasResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarTareasResponse> modificarTareasAsync(Eduprog.EduprogWS.modificarTareasRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerDocentePorIDRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerDocentePorIDResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarDocenteRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarDocenteResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.obtenerDocentePorIDResponse obtenerDocentePorID(Eduprog.EduprogWS.obtenerDocentePorIDRequest request);
+        Eduprog.EduprogWS.insertarDocenteResponse insertarDocente(Eduprog.EduprogWS.insertarDocenteRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerDocentePorIDRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerDocentePorIDResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerDocentePorIDResponse> obtenerDocentePorIDAsync(Eduprog.EduprogWS.obtenerDocentePorIDRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarDocenteRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarDocenteResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarDocenteResponse> insertarDocenteAsync(Eduprog.EduprogWS.insertarDocenteRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAlumnossAulasXIdRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAlumnossAulasXIdResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarDocenteRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarDocenteResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.listarAlumnossAulasXIdResponse listarAlumnossAulasXId(Eduprog.EduprogWS.listarAlumnossAulasXIdRequest request);
+        Eduprog.EduprogWS.eliminarDocenteResponse eliminarDocente(Eduprog.EduprogWS.eliminarDocenteRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAlumnossAulasXIdRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAlumnossAulasXIdResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarAlumnossAulasXIdResponse> listarAlumnossAulasXIdAsync(Eduprog.EduprogWS.listarAlumnossAulasXIdRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarDocenteRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarDocenteResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarDocenteResponse> eliminarDocenteAsync(Eduprog.EduprogWS.eliminarDocenteRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAlumnosSinSalonRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAlumnosSinSalonResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarDemeritoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarDemeritoResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.listarAlumnosSinSalonResponse listarAlumnosSinSalon(Eduprog.EduprogWS.listarAlumnosSinSalonRequest request);
+        Eduprog.EduprogWS.listarDemeritoResponse listarDemerito(Eduprog.EduprogWS.listarDemeritoRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAlumnosSinSalonRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAlumnosSinSalonResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarAlumnosSinSalonResponse> listarAlumnosSinSalonAsync(Eduprog.EduprogWS.listarAlumnosSinSalonRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarDemeritoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarDemeritoResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarDemeritoResponse> listarDemeritoAsync(Eduprog.EduprogWS.listarDemeritoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosDocentesRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosDocentesResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarTareaRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarTareaResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.listarTodosDocentesResponse listarTodosDocentes(Eduprog.EduprogWS.listarTodosDocentesRequest request);
+        Eduprog.EduprogWS.eliminarTareaResponse eliminarTarea(Eduprog.EduprogWS.eliminarTareaRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosDocentesRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosDocentesResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodosDocentesResponse> listarTodosDocentesAsync(Eduprog.EduprogWS.listarTodosDocentesRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarTareaRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarTareaResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarTareaResponse> eliminarTareaAsync(Eduprog.EduprogWS.eliminarTareaRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarApoderadoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarApoderadoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.insertarApoderadoResponse insertarApoderado(Eduprog.EduprogWS.insertarApoderadoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarApoderadoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarApoderadoResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarApoderadoResponse> insertarApoderadoAsync(Eduprog.EduprogWS.insertarApoderadoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarAulaRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarAulaResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.eliminarAulaResponse eliminarAula(Eduprog.EduprogWS.eliminarAulaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarAulaRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarAulaResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarAulaResponse> eliminarAulaAsync(Eduprog.EduprogWS.eliminarAulaRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarApoderadoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarApoderadoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.eliminarApoderadoResponse eliminarApoderado(Eduprog.EduprogWS.eliminarApoderadoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarApoderadoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarApoderadoResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarApoderadoResponse> eliminarApoderadoAsync(Eduprog.EduprogWS.eliminarApoderadoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarDocenteRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarDocenteResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.modificarDocenteResponse modificarDocente(Eduprog.EduprogWS.modificarDocenteRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarDocenteRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarDocenteResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarDocenteResponse> modificarDocenteAsync(Eduprog.EduprogWS.modificarDocenteRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarSesionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarSesionResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.modificarSesionResponse modificarSesion(Eduprog.EduprogWS.modificarSesionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarSesionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarSesionResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarSesionResponse> modificarSesionAsync(Eduprog.EduprogWS.modificarSesionRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerAlumnoPorIDRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerAlumnoPorIDResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.obtenerAlumnoPorIDResponse obtenerAlumnoPorID(Eduprog.EduprogWS.obtenerAlumnoPorIDRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerAlumnoPorIDRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerAlumnoPorIDResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerAlumnoPorIDResponse> obtenerAlumnoPorIDAsync(Eduprog.EduprogWS.obtenerAlumnoPorIDRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarSesionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarSesionResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.insertarSesionResponse insertarSesion(Eduprog.EduprogWS.insertarSesionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarSesionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarSesionResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarSesionResponse> insertarSesionAsync(Eduprog.EduprogWS.insertarSesionRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarMeritoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarMeritoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.insertarMeritoResponse insertarMerito(Eduprog.EduprogWS.insertarMeritoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarMeritoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarMeritoResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarMeritoResponse> insertarMeritoAsync(Eduprog.EduprogWS.insertarMeritoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosAlumnosRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosAlumnosResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.listarTodosAlumnosResponse listarTodosAlumnos(Eduprog.EduprogWS.listarTodosAlumnosRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosAlumnosRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosAlumnosResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodosAlumnosResponse> listarTodosAlumnosAsync(Eduprog.EduprogWS.listarTodosAlumnosRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarAlumnoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarAlumnoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.eliminarAlumnoResponse eliminarAlumno(Eduprog.EduprogWS.eliminarAlumnoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarAlumnoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarAlumnoResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarAlumnoResponse> eliminarAlumnoAsync(Eduprog.EduprogWS.eliminarAlumnoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarSesionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarSesionResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.listarSesionResponse listarSesion(Eduprog.EduprogWS.listarSesionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarSesionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarSesionResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarSesionResponse> listarSesionAsync(Eduprog.EduprogWS.listarSesionRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTareasRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTareasResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.listarTareasResponse listarTareas(Eduprog.EduprogWS.listarTareasRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTareasRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTareasResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTareasResponse> listarTareasAsync(Eduprog.EduprogWS.listarTareasRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarTareasRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarTareasResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.insertarTareasResponse insertarTareas(Eduprog.EduprogWS.insertarTareasRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarTareasRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarTareasResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarTareasResponse> insertarTareasAsync(Eduprog.EduprogWS.insertarTareasRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarTrabajadorRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarTrabajadorResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.insertarTrabajadorResponse insertarTrabajador(Eduprog.EduprogWS.insertarTrabajadorRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarTrabajadorRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarTrabajadorResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarTrabajadorResponse> insertarTrabajadorAsync(Eduprog.EduprogWS.insertarTrabajadorRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerCursoXIdRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerCursoXIdResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.obtenerCursoXIdResponse obtenerCursoXId(Eduprog.EduprogWS.obtenerCursoXIdRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerCursoXIdRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerCursoXIdResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerCursoXIdResponse> obtenerCursoXIdAsync(Eduprog.EduprogWS.obtenerCursoXIdRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarAulaRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarAulaResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.modificarAulaResponse modificarAula(Eduprog.EduprogWS.modificarAulaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarAulaRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarAulaResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarAulaResponse> modificarAulaAsync(Eduprog.EduprogWS.modificarAulaRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarAlumnoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarAlumnoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.insertarAlumnoResponse insertarAlumno(Eduprog.EduprogWS.insertarAlumnoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarAlumnoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarAlumnoResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarAlumnoResponse> insertarAlumnoAsync(Eduprog.EduprogWS.insertarAlumnoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarMeritoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarMeritoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.listarMeritoResponse listarMerito(Eduprog.EduprogWS.listarMeritoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarMeritoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarMeritoResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarMeritoResponse> listarMeritoAsync(Eduprog.EduprogWS.listarMeritoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarAlumnoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarAlumnoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.modificarAlumnoResponse modificarAlumno(Eduprog.EduprogWS.modificarAlumnoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarAlumnoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarAlumnoResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarAlumnoResponse> modificarAlumnoAsync(Eduprog.EduprogWS.modificarAlumnoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarSesionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarSesionResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.eliminarSesionResponse eliminarSesion(Eduprog.EduprogWS.eliminarSesionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarSesionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarSesionResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarSesionResponse> eliminarSesionAsync(Eduprog.EduprogWS.eliminarSesionRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarReunionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarReunionResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.listarReunionResponse listarReunion(Eduprog.EduprogWS.listarReunionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarReunionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarReunionResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarReunionResponse> listarReunionAsync(Eduprog.EduprogWS.listarReunionRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarAulaRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarAulaResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.insertarAulaResponse insertarAula(Eduprog.EduprogWS.insertarAulaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarAulaRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarAulaResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarAulaResponse> insertarAulaAsync(Eduprog.EduprogWS.insertarAulaRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarReunionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarReunionResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.modificarReunionResponse modificarReunion(Eduprog.EduprogWS.modificarReunionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarReunionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarReunionResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarReunionResponse> modificarReunionAsync(Eduprog.EduprogWS.modificarReunionRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarApoderadoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarApoderadoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.modificarApoderadoResponse modificarApoderado(Eduprog.EduprogWS.modificarApoderadoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarApoderadoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarApoderadoResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarApoderadoResponse> modificarApoderadoAsync(Eduprog.EduprogWS.modificarApoderadoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarReunionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarReunionResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.insertarReunionResponse insertarReunion(Eduprog.EduprogWS.insertarReunionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarReunionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarReunionResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarReunionResponse> insertarReunionAsync(Eduprog.EduprogWS.insertarReunionRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarReunionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarReunionResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.eliminarReunionResponse eliminarReunion(Eduprog.EduprogWS.eliminarReunionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarReunionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarReunionResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarReunionResponse> eliminarReunionAsync(Eduprog.EduprogWS.eliminarReunionRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarCursoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarCursoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.insertarCursoResponse insertarCurso(Eduprog.EduprogWS.insertarCursoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarCursoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarCursoResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarCursoResponse> insertarCursoAsync(Eduprog.EduprogWS.insertarCursoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarCursoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarCursoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.modificarCursoResponse modificarCurso(Eduprog.EduprogWS.modificarCursoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarCursoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarCursoResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarCursoResponse> modificarCursoAsync(Eduprog.EduprogWS.modificarCursoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarDemeritoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarDemeritoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.eliminarDemeritoResponse eliminarDemerito(Eduprog.EduprogWS.eliminarDemeritoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarDemeritoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarDemeritoResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarDemeritoResponse> eliminarDemeritoAsync(Eduprog.EduprogWS.eliminarDemeritoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarEvaluacionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarEvaluacionResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.insertarEvaluacionResponse insertarEvaluacion(Eduprog.EduprogWS.insertarEvaluacionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarEvaluacionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarEvaluacionResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarEvaluacionResponse> insertarEvaluacionAsync(Eduprog.EduprogWS.insertarEvaluacionRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarMeritoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarMeritoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.modificarMeritoResponse modificarMerito(Eduprog.EduprogWS.modificarMeritoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarMeritoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarMeritoResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarMeritoResponse> modificarMeritoAsync(Eduprog.EduprogWS.modificarMeritoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarDemeritoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarDemeritoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.modificarDemeritoResponse modificarDemerito(Eduprog.EduprogWS.modificarDemeritoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarDemeritoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarDemeritoResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarDemeritoResponse> modificarDemeritoAsync(Eduprog.EduprogWS.modificarDemeritoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarEvaluacionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarEvaluacionResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.eliminarEvaluacionResponse eliminarEvaluacion(Eduprog.EduprogWS.eliminarEvaluacionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarEvaluacionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarEvaluacionResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarEvaluacionResponse> eliminarEvaluacionAsync(Eduprog.EduprogWS.eliminarEvaluacionRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarCursoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarCursoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.listarCursoResponse listarCurso(Eduprog.EduprogWS.listarCursoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarCursoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarCursoResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarCursoResponse> listarCursoAsync(Eduprog.EduprogWS.listarCursoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarEvaluacionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarEvaluacionResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.listarEvaluacionResponse listarEvaluacion(Eduprog.EduprogWS.listarEvaluacionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarEvaluacionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarEvaluacionResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarEvaluacionResponse> listarEvaluacionAsync(Eduprog.EduprogWS.listarEvaluacionRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarnotasxalumnoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarnotasxalumnoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.listarnotasxalumnoResponse listarnotasxalumno(Eduprog.EduprogWS.listarnotasxalumnoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarnotasxalumnoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarnotasxalumnoResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarnotasxalumnoResponse> listarnotasxalumnoAsync(Eduprog.EduprogWS.listarnotasxalumnoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarMeritoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarMeritoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.eliminarMeritoResponse eliminarMerito(Eduprog.EduprogWS.eliminarMeritoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarMeritoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarMeritoResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarMeritoResponse> eliminarMeritoAsync(Eduprog.EduprogWS.eliminarMeritoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAlumnosEnAulaRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAlumnosEnAulaResponse")]
@@ -584,44 +504,14 @@ namespace Eduprog.EduprogWS {
         System.Threading.Tasks.Task<Eduprog.EduprogWS.listarAlumnosEnAulaResponse> listarAlumnosEnAulaAsync(Eduprog.EduprogWS.listarAlumnosEnAulaRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosSuperusuariosRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosSuperusuariosResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosApoderadosRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosApoderadosResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.listarTodosSuperusuariosResponse listarTodosSuperusuarios(Eduprog.EduprogWS.listarTodosSuperusuariosRequest request);
+        Eduprog.EduprogWS.listarTodosApoderadosResponse listarTodosApoderados(Eduprog.EduprogWS.listarTodosApoderadosRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosSuperusuariosRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosSuperusuariosResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodosSuperusuariosResponse> listarTodosSuperusuariosAsync(Eduprog.EduprogWS.listarTodosSuperusuariosRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarSesionesXAlumnoIdRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarSesionesXAlumnoIdResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.listarSesionesXAlumnoIdResponse listarSesionesXAlumnoId(Eduprog.EduprogWS.listarSesionesXAlumnoIdRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarSesionesXAlumnoIdRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarSesionesXAlumnoIdResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarSesionesXAlumnoIdResponse> listarSesionesXAlumnoIdAsync(Eduprog.EduprogWS.listarSesionesXAlumnoIdRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarPublicacionesRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarPublicacionesResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.insertarPublicacionesResponse insertarPublicaciones(Eduprog.EduprogWS.insertarPublicacionesRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarPublicacionesRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarPublicacionesResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarPublicacionesResponse> insertarPublicacionesAsync(Eduprog.EduprogWS.insertarPublicacionesRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarPublicacionesRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarPublicacionesResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.eliminarPublicacionesResponse eliminarPublicaciones(Eduprog.EduprogWS.eliminarPublicacionesRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarPublicacionesRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarPublicacionesResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarPublicacionesResponse> eliminarPublicacionesAsync(Eduprog.EduprogWS.eliminarPublicacionesRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosApoderadosRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosApoderadosResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodosApoderadosResponse> listarTodosApoderadosAsync(Eduprog.EduprogWS.listarTodosApoderadosRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarSuperUsuarioRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarSuperUsuarioResponse")]
@@ -634,14 +524,44 @@ namespace Eduprog.EduprogWS {
         System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarSuperUsuarioResponse> insertarSuperUsuarioAsync(Eduprog.EduprogWS.insertarSuperUsuarioRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarSuperusuarioRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarSuperusuarioResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarPublicacionesRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarPublicacionesResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.modificarSuperusuarioResponse modificarSuperusuario(Eduprog.EduprogWS.modificarSuperusuarioRequest request);
+        Eduprog.EduprogWS.insertarPublicacionesResponse insertarPublicaciones(Eduprog.EduprogWS.insertarPublicacionesRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarSuperusuarioRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarSuperusuarioResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarSuperusuarioResponse> modificarSuperusuarioAsync(Eduprog.EduprogWS.modificarSuperusuarioRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarPublicacionesRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarPublicacionesResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarPublicacionesResponse> insertarPublicacionesAsync(Eduprog.EduprogWS.insertarPublicacionesRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarPublicacionesRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarPublicacionesResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.modificarPublicacionesResponse modificarPublicaciones(Eduprog.EduprogWS.modificarPublicacionesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarPublicacionesRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarPublicacionesResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarPublicacionesResponse> modificarPublicacionesAsync(Eduprog.EduprogWS.modificarPublicacionesRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/ObtenerAulaxAlumnoIDRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/ObtenerAulaxAlumnoIDResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.ObtenerAulaxAlumnoIDResponse ObtenerAulaxAlumnoID(Eduprog.EduprogWS.ObtenerAulaxAlumnoIDRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/ObtenerAulaxAlumnoIDRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/ObtenerAulaxAlumnoIDResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.ObtenerAulaxAlumnoIDResponse> ObtenerAulaxAlumnoIDAsync(Eduprog.EduprogWS.ObtenerAulaxAlumnoIDRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosDocentesRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosDocentesResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.listarTodosDocentesResponse listarTodosDocentes(Eduprog.EduprogWS.listarTodosDocentesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosDocentesRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosDocentesResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodosDocentesResponse> listarTodosDocentesAsync(Eduprog.EduprogWS.listarTodosDocentesRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodasPublicacionesRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodasPublicacionesResponse")]
@@ -654,6 +574,26 @@ namespace Eduprog.EduprogWS {
         System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodasPublicacionesResponse> listarTodasPublicacionesAsync(Eduprog.EduprogWS.listarTodasPublicacionesRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarAtencionMedicaRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarAtencionMedicaResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.eliminarAtencionMedicaResponse eliminarAtencionMedica(Eduprog.EduprogWS.eliminarAtencionMedicaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarAtencionMedicaRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarAtencionMedicaResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarAtencionMedicaResponse> eliminarAtencionMedicaAsync(Eduprog.EduprogWS.eliminarAtencionMedicaRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosSuperusuariosRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosSuperusuariosResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.listarTodosSuperusuariosResponse listarTodosSuperusuarios(Eduprog.EduprogWS.listarTodosSuperusuariosRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosSuperusuariosRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosSuperusuariosResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodosSuperusuariosResponse> listarTodosSuperusuariosAsync(Eduprog.EduprogWS.listarTodosSuperusuariosRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarPublicacionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarPublicacionResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
@@ -664,44 +604,24 @@ namespace Eduprog.EduprogWS {
         System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarPublicacionResponse> eliminarPublicacionAsync(Eduprog.EduprogWS.eliminarPublicacionRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarEvaluacionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarEvaluacionResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarSesionesXAlumnoIdRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarSesionesXAlumnoIdResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.modificarEvaluacionResponse modificarEvaluacion(Eduprog.EduprogWS.modificarEvaluacionRequest request);
+        Eduprog.EduprogWS.listarSesionesXAlumnoIdResponse listarSesionesXAlumnoId(Eduprog.EduprogWS.listarSesionesXAlumnoIdRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarEvaluacionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarEvaluacionResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarEvaluacionResponse> modificarEvaluacionAsync(Eduprog.EduprogWS.modificarEvaluacionRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarSesionesXAlumnoIdRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarSesionesXAlumnoIdResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarSesionesXAlumnoIdResponse> listarSesionesXAlumnoIdAsync(Eduprog.EduprogWS.listarSesionesXAlumnoIdRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerAulaxIDAlumnoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerAulaxIDAlumnoResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarSesionesXDocenteIdRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarSesionesXDocenteIdResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.obtenerAulaxIDAlumnoResponse obtenerAulaxIDAlumno(Eduprog.EduprogWS.obtenerAulaxIDAlumnoRequest request);
+        Eduprog.EduprogWS.listarSesionesXDocenteIdResponse listarSesionesXDocenteId(Eduprog.EduprogWS.listarSesionesXDocenteIdRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerAulaxIDAlumnoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerAulaxIDAlumnoResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerAulaxIDAlumnoResponse> obtenerAulaxIDAlumnoAsync(Eduprog.EduprogWS.obtenerAulaxIDAlumnoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAtencionMedicaRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAtencionMedicaResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.listarAtencionMedicaResponse listarAtencionMedica(Eduprog.EduprogWS.listarAtencionMedicaRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAtencionMedicaRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAtencionMedicaResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarAtencionMedicaResponse> listarAtencionMedicaAsync(Eduprog.EduprogWS.listarAtencionMedicaRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosTrabajadoresRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosTrabajadoresResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.listarTodosTrabajadoresResponse listarTodosTrabajadores(Eduprog.EduprogWS.listarTodosTrabajadoresRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosTrabajadoresRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosTrabajadoresResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodosTrabajadoresResponse> listarTodosTrabajadoresAsync(Eduprog.EduprogWS.listarTodosTrabajadoresRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarSesionesXDocenteIdRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarSesionesXDocenteIdResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarSesionesXDocenteIdResponse> listarSesionesXDocenteIdAsync(Eduprog.EduprogWS.listarSesionesXDocenteIdRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerUsuarioPorCERequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerUsuarioPorCEResponse")]
@@ -714,24 +634,64 @@ namespace Eduprog.EduprogWS {
         System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerUsuarioPorCEResponse> obtenerUsuarioPorCEAsync(Eduprog.EduprogWS.obtenerUsuarioPorCERequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTareasXAlumnoIdRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTareasXAlumnoIdResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerUsuarioIncidenciaRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerUsuarioIncidenciaResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.listarTareasXAlumnoIdResponse listarTareasXAlumnoId(Eduprog.EduprogWS.listarTareasXAlumnoIdRequest request);
+        Eduprog.EduprogWS.obtenerUsuarioIncidenciaResponse obtenerUsuarioIncidencia(Eduprog.EduprogWS.obtenerUsuarioIncidenciaRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTareasXAlumnoIdRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTareasXAlumnoIdResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTareasXAlumnoIdResponse> listarTareasXAlumnoIdAsync(Eduprog.EduprogWS.listarTareasXAlumnoIdRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerUsuarioIncidenciaRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerUsuarioIncidenciaResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerUsuarioIncidenciaResponse> obtenerUsuarioIncidenciaAsync(Eduprog.EduprogWS.obtenerUsuarioIncidenciaRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosApoderadosRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosApoderadosResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerDocentePorIDRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerDocentePorIDResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.listarTodosApoderadosResponse listarTodosApoderados(Eduprog.EduprogWS.listarTodosApoderadosRequest request);
+        Eduprog.EduprogWS.obtenerDocentePorIDResponse obtenerDocentePorID(Eduprog.EduprogWS.obtenerDocentePorIDRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosApoderadosRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosApoderadosResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodosApoderadosResponse> listarTodosApoderadosAsync(Eduprog.EduprogWS.listarTodosApoderadosRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerDocentePorIDRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerDocentePorIDResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerDocentePorIDResponse> obtenerDocentePorIDAsync(Eduprog.EduprogWS.obtenerDocentePorIDRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAlumnosSinSalonRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAlumnosSinSalonResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.listarAlumnosSinSalonResponse listarAlumnosSinSalon(Eduprog.EduprogWS.listarAlumnosSinSalonRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAlumnosSinSalonRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAlumnosSinSalonResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarAlumnosSinSalonResponse> listarAlumnosSinSalonAsync(Eduprog.EduprogWS.listarAlumnosSinSalonRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerApoderadoPorIDRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerApoderadoPorIDResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.obtenerApoderadoPorIDResponse obtenerApoderadoPorID(Eduprog.EduprogWS.obtenerApoderadoPorIDRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerApoderadoPorIDRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerApoderadoPorIDResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerApoderadoPorIDResponse> obtenerApoderadoPorIDAsync(Eduprog.EduprogWS.obtenerApoderadoPorIDRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAlumnossAulasXIdRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAlumnossAulasXIdResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.listarAlumnossAulasXIdResponse listarAlumnossAulasXId(Eduprog.EduprogWS.listarAlumnossAulasXIdRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAlumnossAulasXIdRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAlumnossAulasXIdResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarAlumnossAulasXIdResponse> listarAlumnossAulasXIdAsync(Eduprog.EduprogWS.listarAlumnossAulasXIdRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarSuperusuarioRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarSuperusuarioResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.modificarSuperusuarioResponse modificarSuperusuario(Eduprog.EduprogWS.modificarSuperusuarioRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarSuperusuarioRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarSuperusuarioResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarSuperusuarioResponse> modificarSuperusuarioAsync(Eduprog.EduprogWS.modificarSuperusuarioRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAlumnosApoderadoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAlumnosApoderadoResponse")]
@@ -754,6 +714,26 @@ namespace Eduprog.EduprogWS {
         System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarTrabajadorResponse> modificarTrabajadorAsync(Eduprog.EduprogWS.modificarTrabajadorRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosTrabajadoresRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosTrabajadoresResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.listarTodosTrabajadoresResponse listarTodosTrabajadores(Eduprog.EduprogWS.listarTodosTrabajadoresRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosTrabajadoresRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTodosTrabajadoresResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodosTrabajadoresResponse> listarTodosTrabajadoresAsync(Eduprog.EduprogWS.listarTodosTrabajadoresRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarPublicacionesRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarPublicacionesResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.eliminarPublicacionesResponse eliminarPublicaciones(Eduprog.EduprogWS.eliminarPublicacionesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarPublicacionesRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarPublicacionesResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarPublicacionesResponse> eliminarPublicacionesAsync(Eduprog.EduprogWS.eliminarPublicacionesRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/Obtener_sesionesxDocenteRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/Obtener_sesionesxDocenteResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
@@ -764,14 +744,14 @@ namespace Eduprog.EduprogWS {
         System.Threading.Tasks.Task<Eduprog.EduprogWS.Obtener_sesionesxDocenteResponse> Obtener_sesionesxDocenteAsync(Eduprog.EduprogWS.Obtener_sesionesxDocenteRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarSesionesXDocenteIdRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarSesionesXDocenteIdResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarEvaluacionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarEvaluacionResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.listarSesionesXDocenteIdResponse listarSesionesXDocenteId(Eduprog.EduprogWS.listarSesionesXDocenteIdRequest request);
+        Eduprog.EduprogWS.modificarEvaluacionResponse modificarEvaluacion(Eduprog.EduprogWS.modificarEvaluacionRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarSesionesXDocenteIdRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarSesionesXDocenteIdResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarSesionesXDocenteIdResponse> listarSesionesXDocenteIdAsync(Eduprog.EduprogWS.listarSesionesXDocenteIdRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarEvaluacionRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarEvaluacionResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarEvaluacionResponse> modificarEvaluacionAsync(Eduprog.EduprogWS.modificarEvaluacionRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarAtencionMedicaRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/insertarAtencionMedicaResponse")]
@@ -784,34 +764,14 @@ namespace Eduprog.EduprogWS {
         System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarAtencionMedicaResponse> insertarAtencionMedicaAsync(Eduprog.EduprogWS.insertarAtencionMedicaRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerApoderadoPorIDRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerApoderadoPorIDResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAtencionMedicaRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAtencionMedicaResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.obtenerApoderadoPorIDResponse obtenerApoderadoPorID(Eduprog.EduprogWS.obtenerApoderadoPorIDRequest request);
+        Eduprog.EduprogWS.listarAtencionMedicaResponse listarAtencionMedica(Eduprog.EduprogWS.listarAtencionMedicaRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerApoderadoPorIDRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerApoderadoPorIDResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerApoderadoPorIDResponse> obtenerApoderadoPorIDAsync(Eduprog.EduprogWS.obtenerApoderadoPorIDRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarPublicacionesRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarPublicacionesResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.modificarPublicacionesResponse modificarPublicaciones(Eduprog.EduprogWS.modificarPublicacionesRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarPublicacionesRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarPublicacionesResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarPublicacionesResponse> modificarPublicacionesAsync(Eduprog.EduprogWS.modificarPublicacionesRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarAtencionMedicaRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarAtencionMedicaResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        Eduprog.EduprogWS.eliminarAtencionMedicaResponse eliminarAtencionMedica(Eduprog.EduprogWS.eliminarAtencionMedicaRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarAtencionMedicaRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarAtencionMedicaResponse")]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarAtencionMedicaResponse> eliminarAtencionMedicaAsync(Eduprog.EduprogWS.eliminarAtencionMedicaRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAtencionMedicaRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarAtencionMedicaResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarAtencionMedicaResponse> listarAtencionMedicaAsync(Eduprog.EduprogWS.listarAtencionMedicaRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarAtencionMedicaRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarAtencionMedicaResponse")]
@@ -822,1310 +782,175 @@ namespace Eduprog.EduprogWS {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarAtencionMedicaRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/modificarAtencionMedicaResponse")]
         System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarAtencionMedicaResponse> modificarAtencionMedicaAsync(Eduprog.EduprogWS.modificarAtencionMedicaRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerAulaxIDAlumnoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerAulaxIDAlumnoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.obtenerAulaxIDAlumnoResponse obtenerAulaxIDAlumno(Eduprog.EduprogWS.obtenerAulaxIDAlumnoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerAulaxIDAlumnoRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/obtenerAulaxIDAlumnoResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerAulaxIDAlumnoResponse> obtenerAulaxIDAlumnoAsync(Eduprog.EduprogWS.obtenerAulaxIDAlumnoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTareasXAlumnoIdRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTareasXAlumnoIdResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.listarTareasXAlumnoIdResponse listarTareasXAlumnoId(Eduprog.EduprogWS.listarTareasXAlumnoIdRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTareasXAlumnoIdRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTareasXAlumnoIdResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTareasXAlumnoIdResponse> listarTareasXAlumnoIdAsync(Eduprog.EduprogWS.listarTareasXAlumnoIdRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarSuperusuarioRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarSuperusuarioResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.eliminarSuperusuarioResponse eliminarSuperusuario(Eduprog.EduprogWS.eliminarSuperusuarioRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarSuperusuarioRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/eliminarSuperusuarioResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarSuperusuarioResponse> eliminarSuperusuarioAsync(Eduprog.EduprogWS.eliminarSuperusuarioRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTareasXDocenteIdRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTareasXDocenteIdResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.listarTareasXDocenteIdResponse listarTareasXDocenteId(Eduprog.EduprogWS.listarTareasXDocenteIdRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTareasXDocenteIdRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/listarTareasXDocenteIdResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTareasXDocenteIdResponse> listarTareasXDocenteIdAsync(Eduprog.EduprogWS.listarTareasXDocenteIdRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtener_horario_idDocenteRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/obtener_horario_idDocenteResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Eduprog.EduprogWS.obtener_horario_idDocenteResponse obtener_horario_idDocente(Eduprog.EduprogWS.obtener_horario_idDocenteRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.eduprog.pucp.edu.pe/EduprogWS/obtener_horario_idDocenteRequest", ReplyAction="http://services.eduprog.pucp.edu.pe/EduprogWS/obtener_horario_idDocenteResponse")]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.obtener_horario_idDocenteResponse> obtener_horario_idDocenteAsync(Eduprog.EduprogWS.obtener_horario_idDocenteRequest request);
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
-    public partial class demerito : incidencia {
+    public partial class superUsuario : personal {
         
-        private int codigoDemeritoField;
+        private string areaAdministrativaField;
         
-        private string comentarioField;
+        private string cargoField;
+        
+        private int idSuperUsuarioField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public int codigoDemerito {
+        public string areaAdministrativa {
             get {
-                return this.codigoDemeritoField;
+                return this.areaAdministrativaField;
             }
             set {
-                this.codigoDemeritoField = value;
-                this.RaisePropertyChanged("codigoDemerito");
+                this.areaAdministrativaField = value;
+                this.RaisePropertyChanged("areaAdministrativa");
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string comentario {
+        public string cargo {
             get {
-                return this.comentarioField;
+                return this.cargoField;
             }
             set {
-                this.comentarioField = value;
-                this.RaisePropertyChanged("comentario");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(demerito))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(merito))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(atencionMedica))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
-    public abstract partial class incidencia : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string descripcionField;
-        
-        private int docenteRegistroField;
-        
-        private int estadoField;
-        
-        private System.DateTime fechaRegistroField;
-        
-        private bool fechaRegistroFieldSpecified;
-        
-        private int idAlumnoField;
-        
-        private int idIncidenciaField;
-        
-        private string nombreAlumnoField;
-        
-        private ushort tipoField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string descripcion {
-            get {
-                return this.descripcionField;
-            }
-            set {
-                this.descripcionField = value;
-                this.RaisePropertyChanged("descripcion");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public int docenteRegistro {
-            get {
-                return this.docenteRegistroField;
-            }
-            set {
-                this.docenteRegistroField = value;
-                this.RaisePropertyChanged("docenteRegistro");
+                this.cargoField = value;
+                this.RaisePropertyChanged("cargo");
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public int estado {
+        public int idSuperUsuario {
             get {
-                return this.estadoField;
+                return this.idSuperUsuarioField;
             }
             set {
-                this.estadoField = value;
-                this.RaisePropertyChanged("estado");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public System.DateTime fechaRegistro {
-            get {
-                return this.fechaRegistroField;
-            }
-            set {
-                this.fechaRegistroField = value;
-                this.RaisePropertyChanged("fechaRegistro");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool fechaRegistroSpecified {
-            get {
-                return this.fechaRegistroFieldSpecified;
-            }
-            set {
-                this.fechaRegistroFieldSpecified = value;
-                this.RaisePropertyChanged("fechaRegistroSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
-        public int idAlumno {
-            get {
-                return this.idAlumnoField;
-            }
-            set {
-                this.idAlumnoField = value;
-                this.RaisePropertyChanged("idAlumno");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
-        public int idIncidencia {
-            get {
-                return this.idIncidenciaField;
-            }
-            set {
-                this.idIncidenciaField = value;
-                this.RaisePropertyChanged("idIncidencia");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
-        public string nombreAlumno {
-            get {
-                return this.nombreAlumnoField;
-            }
-            set {
-                this.nombreAlumnoField = value;
-                this.RaisePropertyChanged("nombreAlumno");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
-        public ushort tipo {
-            get {
-                return this.tipoField;
-            }
-            set {
-                this.tipoField = value;
-                this.RaisePropertyChanged("tipo");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+                this.idSuperUsuarioField = value;
+                this.RaisePropertyChanged("idSuperUsuario");
             }
         }
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(superUsuario))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(docente))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(trabajador))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
-    public partial class publicaciones : object, System.ComponentModel.INotifyPropertyChanged {
+    public abstract partial class personal : usuario {
         
-        private bool activoField;
+        private System.DateTime fechaContratoField;
         
-        private string descripcionField;
+        private bool fechaContratoFieldSpecified;
         
-        private System.DateTime fechaPublicacionField;
+        private int idPersonalField;
         
-        private bool fechaPublicacionFieldSpecified;
-        
-        private byte[] fotoDescripcionField;
-        
-        private byte[] fotoPrincipalField;
-        
-        private int idPublicacionField;
-        
-        private int idUsuarioField;
-        
-        private string tituloField;
+        private double sueldoField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public bool activo {
+        public System.DateTime fechaContrato {
             get {
-                return this.activoField;
+                return this.fechaContratoField;
             }
             set {
-                this.activoField = value;
-                this.RaisePropertyChanged("activo");
+                this.fechaContratoField = value;
+                this.RaisePropertyChanged("fechaContrato");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaContratoSpecified {
+            get {
+                return this.fechaContratoFieldSpecified;
+            }
+            set {
+                this.fechaContratoFieldSpecified = value;
+                this.RaisePropertyChanged("fechaContratoSpecified");
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string descripcion {
+        public int idPersonal {
             get {
-                return this.descripcionField;
+                return this.idPersonalField;
             }
             set {
-                this.descripcionField = value;
-                this.RaisePropertyChanged("descripcion");
+                this.idPersonalField = value;
+                this.RaisePropertyChanged("idPersonal");
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public System.DateTime fechaPublicacion {
+        public double sueldo {
             get {
-                return this.fechaPublicacionField;
+                return this.sueldoField;
             }
             set {
-                this.fechaPublicacionField = value;
-                this.RaisePropertyChanged("fechaPublicacion");
+                this.sueldoField = value;
+                this.RaisePropertyChanged("sueldo");
             }
         }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool fechaPublicacionSpecified {
-            get {
-                return this.fechaPublicacionFieldSpecified;
-            }
-            set {
-                this.fechaPublicacionFieldSpecified = value;
-                this.RaisePropertyChanged("fechaPublicacionSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", Order=3)]
-        public byte[] fotoDescripcion {
-            get {
-                return this.fotoDescripcionField;
-            }
-            set {
-                this.fotoDescripcionField = value;
-                this.RaisePropertyChanged("fotoDescripcion");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", Order=4)]
-        public byte[] fotoPrincipal {
-            get {
-                return this.fotoPrincipalField;
-            }
-            set {
-                this.fotoPrincipalField = value;
-                this.RaisePropertyChanged("fotoPrincipal");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
-        public int idPublicacion {
-            get {
-                return this.idPublicacionField;
-            }
-            set {
-                this.idPublicacionField = value;
-                this.RaisePropertyChanged("idPublicacion");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
-        public int idUsuario {
-            get {
-                return this.idUsuarioField;
-            }
-            set {
-                this.idUsuarioField = value;
-                this.RaisePropertyChanged("idUsuario");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
-        public string titulo {
-            get {
-                return this.tituloField;
-            }
-            set {
-                this.tituloField = value;
-                this.RaisePropertyChanged("titulo");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
-    public partial class anhoEscolar : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private int activoField;
-        
-        private int anhoField;
-        
-        private System.DateTime fechaFinField;
-        
-        private bool fechaFinFieldSpecified;
-        
-        private System.DateTime fechaInicioField;
-        
-        private bool fechaInicioFieldSpecified;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public int activo {
-            get {
-                return this.activoField;
-            }
-            set {
-                this.activoField = value;
-                this.RaisePropertyChanged("activo");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public int anho {
-            get {
-                return this.anhoField;
-            }
-            set {
-                this.anhoField = value;
-                this.RaisePropertyChanged("anho");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public System.DateTime fechaFin {
-            get {
-                return this.fechaFinField;
-            }
-            set {
-                this.fechaFinField = value;
-                this.RaisePropertyChanged("fechaFin");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool fechaFinSpecified {
-            get {
-                return this.fechaFinFieldSpecified;
-            }
-            set {
-                this.fechaFinFieldSpecified = value;
-                this.RaisePropertyChanged("fechaFinSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public System.DateTime fechaInicio {
-            get {
-                return this.fechaInicioField;
-            }
-            set {
-                this.fechaInicioField = value;
-                this.RaisePropertyChanged("fechaInicio");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool fechaInicioSpecified {
-            get {
-                return this.fechaInicioFieldSpecified;
-            }
-            set {
-                this.fechaInicioFieldSpecified = value;
-                this.RaisePropertyChanged("fechaInicioSpecified");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
-    public partial class aula : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private alumno[] alumnosField;
-        
-        private anhoEscolar anhoEscolarField;
-        
-        private byte[] fotoField;
-        
-        private int gradoField;
-        
-        private byte[] horarioField;
-        
-        private int idAulaField;
-        
-        private int nivelField;
-        
-        private ushort seccionField;
-        
-        private docente tutorField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("alumnos", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=0)]
-        public alumno[] alumnos {
-            get {
-                return this.alumnosField;
-            }
-            set {
-                this.alumnosField = value;
-                this.RaisePropertyChanged("alumnos");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public anhoEscolar anhoEscolar {
-            get {
-                return this.anhoEscolarField;
-            }
-            set {
-                this.anhoEscolarField = value;
-                this.RaisePropertyChanged("anhoEscolar");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", Order=2)]
-        public byte[] foto {
-            get {
-                return this.fotoField;
-            }
-            set {
-                this.fotoField = value;
-                this.RaisePropertyChanged("foto");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public int grado {
-            get {
-                return this.gradoField;
-            }
-            set {
-                this.gradoField = value;
-                this.RaisePropertyChanged("grado");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", Order=4)]
-        public byte[] horario {
-            get {
-                return this.horarioField;
-            }
-            set {
-                this.horarioField = value;
-                this.RaisePropertyChanged("horario");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
-        public int idAula {
-            get {
-                return this.idAulaField;
-            }
-            set {
-                this.idAulaField = value;
-                this.RaisePropertyChanged("idAula");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
-        public int nivel {
-            get {
-                return this.nivelField;
-            }
-            set {
-                this.nivelField = value;
-                this.RaisePropertyChanged("nivel");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
-        public ushort seccion {
-            get {
-                return this.seccionField;
-            }
-            set {
-                this.seccionField = value;
-                this.RaisePropertyChanged("seccion");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
-        public docente tutor {
-            get {
-                return this.tutorField;
-            }
-            set {
-                this.tutorField = value;
-                this.RaisePropertyChanged("tutor");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
-    public partial class alumno : usuario {
-        
-        private actividad[] actividadesField;
-        
-        private string direccionField;
-        
-        private System.DateTime fechaNacimientoField;
-        
-        private bool fechaNacimientoFieldSpecified;
-        
-        private ushort generoField;
-        
-        private int gradoActualField;
-        
-        private int idAlumnoField;
-        
-        private incidencia[] incidenciasField;
-        
-        private int nivelActualField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("actividades", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=0)]
-        public actividad[] actividades {
-            get {
-                return this.actividadesField;
-            }
-            set {
-                this.actividadesField = value;
-                this.RaisePropertyChanged("actividades");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string direccion {
-            get {
-                return this.direccionField;
-            }
-            set {
-                this.direccionField = value;
-                this.RaisePropertyChanged("direccion");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public System.DateTime fechaNacimiento {
-            get {
-                return this.fechaNacimientoField;
-            }
-            set {
-                this.fechaNacimientoField = value;
-                this.RaisePropertyChanged("fechaNacimiento");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool fechaNacimientoSpecified {
-            get {
-                return this.fechaNacimientoFieldSpecified;
-            }
-            set {
-                this.fechaNacimientoFieldSpecified = value;
-                this.RaisePropertyChanged("fechaNacimientoSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public ushort genero {
-            get {
-                return this.generoField;
-            }
-            set {
-                this.generoField = value;
-                this.RaisePropertyChanged("genero");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
-        public int gradoActual {
-            get {
-                return this.gradoActualField;
-            }
-            set {
-                this.gradoActualField = value;
-                this.RaisePropertyChanged("gradoActual");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
-        public int idAlumno {
-            get {
-                return this.idAlumnoField;
-            }
-            set {
-                this.idAlumnoField = value;
-                this.RaisePropertyChanged("idAlumno");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("incidencias", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=6)]
-        public incidencia[] incidencias {
-            get {
-                return this.incidenciasField;
-            }
-            set {
-                this.incidenciasField = value;
-                this.RaisePropertyChanged("incidencias");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
-        public int nivelActual {
-            get {
-                return this.nivelActualField;
-            }
-            set {
-                this.nivelActualField = value;
-                this.RaisePropertyChanged("nivelActual");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(reunion))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(tarea))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(sesion))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(evaluacion))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
-    public partial class actividad : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private curso cursoField;
-        
-        private int idActividadField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public curso curso {
-            get {
-                return this.cursoField;
-            }
-            set {
-                this.cursoField = value;
-                this.RaisePropertyChanged("curso");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public int idActividad {
-            get {
-                return this.idActividadField;
-            }
-            set {
-                this.idActividadField = value;
-                this.RaisePropertyChanged("idActividad");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
-    public partial class curso : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string descripcionField;
-        
-        private string estadoField;
-        
-        private System.DateTime fechaCreacionField;
-        
-        private bool fechaCreacionFieldSpecified;
-        
-        private int idCursoField;
-        
-        private string nombreCursoField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string descripcion {
-            get {
-                return this.descripcionField;
-            }
-            set {
-                this.descripcionField = value;
-                this.RaisePropertyChanged("descripcion");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string estado {
-            get {
-                return this.estadoField;
-            }
-            set {
-                this.estadoField = value;
-                this.RaisePropertyChanged("estado");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public System.DateTime fechaCreacion {
-            get {
-                return this.fechaCreacionField;
-            }
-            set {
-                this.fechaCreacionField = value;
-                this.RaisePropertyChanged("fechaCreacion");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool fechaCreacionSpecified {
-            get {
-                return this.fechaCreacionFieldSpecified;
-            }
-            set {
-                this.fechaCreacionFieldSpecified = value;
-                this.RaisePropertyChanged("fechaCreacionSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public int idCurso {
-            get {
-                return this.idCursoField;
-            }
-            set {
-                this.idCursoField = value;
-                this.RaisePropertyChanged("idCurso");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
-        public string nombreCurso {
-            get {
-                return this.nombreCursoField;
-            }
-            set {
-                this.nombreCursoField = value;
-                this.RaisePropertyChanged("nombreCurso");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
-    public partial class reunion : actividad {
-        
-        private string asuntoField;
-        
-        private string descripcionField;
-        
-        private int duracionMinutosField;
-        
-        private string estadoField;
-        
-        private System.DateTime fechaHoraField;
-        
-        private bool fechaHoraFieldSpecified;
-        
-        private int idReunionField;
-        
-        private string lugarField;
-        
-        private string organizadorField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string asunto {
-            get {
-                return this.asuntoField;
-            }
-            set {
-                this.asuntoField = value;
-                this.RaisePropertyChanged("asunto");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string descripcion {
-            get {
-                return this.descripcionField;
-            }
-            set {
-                this.descripcionField = value;
-                this.RaisePropertyChanged("descripcion");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public int duracionMinutos {
-            get {
-                return this.duracionMinutosField;
-            }
-            set {
-                this.duracionMinutosField = value;
-                this.RaisePropertyChanged("duracionMinutos");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public string estado {
-            get {
-                return this.estadoField;
-            }
-            set {
-                this.estadoField = value;
-                this.RaisePropertyChanged("estado");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
-        public System.DateTime fechaHora {
-            get {
-                return this.fechaHoraField;
-            }
-            set {
-                this.fechaHoraField = value;
-                this.RaisePropertyChanged("fechaHora");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool fechaHoraSpecified {
-            get {
-                return this.fechaHoraFieldSpecified;
-            }
-            set {
-                this.fechaHoraFieldSpecified = value;
-                this.RaisePropertyChanged("fechaHoraSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
-        public int idReunion {
-            get {
-                return this.idReunionField;
-            }
-            set {
-                this.idReunionField = value;
-                this.RaisePropertyChanged("idReunion");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
-        public string lugar {
-            get {
-                return this.lugarField;
-            }
-            set {
-                this.lugarField = value;
-                this.RaisePropertyChanged("lugar");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
-        public string organizador {
-            get {
-                return this.organizadorField;
-            }
-            set {
-                this.organizadorField = value;
-                this.RaisePropertyChanged("organizador");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
-    public partial class tarea : actividad {
-        
-        private string descripcionField;
-        
-        private string estadoField;
-        
-        private System.DateTime fechaRegistroField;
-        
-        private bool fechaRegistroFieldSpecified;
-        
-        private int idTareaField;
-        
-        private tipoTarea tipoTareaField;
-        
-        private bool tipoTareaFieldSpecified;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string descripcion {
-            get {
-                return this.descripcionField;
-            }
-            set {
-                this.descripcionField = value;
-                this.RaisePropertyChanged("descripcion");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string estado {
-            get {
-                return this.estadoField;
-            }
-            set {
-                this.estadoField = value;
-                this.RaisePropertyChanged("estado");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public System.DateTime fechaRegistro {
-            get {
-                return this.fechaRegistroField;
-            }
-            set {
-                this.fechaRegistroField = value;
-                this.RaisePropertyChanged("fechaRegistro");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool fechaRegistroSpecified {
-            get {
-                return this.fechaRegistroFieldSpecified;
-            }
-            set {
-                this.fechaRegistroFieldSpecified = value;
-                this.RaisePropertyChanged("fechaRegistroSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public int idTarea {
-            get {
-                return this.idTareaField;
-            }
-            set {
-                this.idTareaField = value;
-                this.RaisePropertyChanged("idTarea");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
-        public tipoTarea tipoTarea {
-            get {
-                return this.tipoTareaField;
-            }
-            set {
-                this.tipoTareaField = value;
-                this.RaisePropertyChanged("tipoTarea");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool tipoTareaSpecified {
-            get {
-                return this.tipoTareaFieldSpecified;
-            }
-            set {
-                this.tipoTareaFieldSpecified = value;
-                this.RaisePropertyChanged("tipoTareaSpecified");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
-    public enum tipoTarea {
-        
-        /// <remarks/>
-        MARCAR_COMPLETADA,
-        
-        /// <remarks/>
-        DESARROLLAR,
-        
-        /// <remarks/>
-        ENVIAR_SOLUCIONARIO,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
-    public partial class sesion : actividad {
-        
-        private ushort asistenciaField;
-        
-        private System.DateTime fechaFinField;
-        
-        private bool fechaFinFieldSpecified;
-        
-        private System.DateTime fechaInicioField;
-        
-        private bool fechaInicioFieldSpecified;
-        
-        private int idSesionField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public ushort asistencia {
-            get {
-                return this.asistenciaField;
-            }
-            set {
-                this.asistenciaField = value;
-                this.RaisePropertyChanged("asistencia");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public System.DateTime fechaFin {
-            get {
-                return this.fechaFinField;
-            }
-            set {
-                this.fechaFinField = value;
-                this.RaisePropertyChanged("fechaFin");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool fechaFinSpecified {
-            get {
-                return this.fechaFinFieldSpecified;
-            }
-            set {
-                this.fechaFinFieldSpecified = value;
-                this.RaisePropertyChanged("fechaFinSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public System.DateTime fechaInicio {
-            get {
-                return this.fechaInicioField;
-            }
-            set {
-                this.fechaInicioField = value;
-                this.RaisePropertyChanged("fechaInicio");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool fechaInicioSpecified {
-            get {
-                return this.fechaInicioFieldSpecified;
-            }
-            set {
-                this.fechaInicioFieldSpecified = value;
-                this.RaisePropertyChanged("fechaInicioSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public int idSesion {
-            get {
-                return this.idSesionField;
-            }
-            set {
-                this.idSesionField = value;
-                this.RaisePropertyChanged("idSesion");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
-    public partial class evaluacion : actividad {
-        
-        private int idEvaluacionField;
-        
-        private double puntajeObtenidoField;
-        
-        private double puntajeTotalField;
-        
-        private tipoEvaluacion tipoEvaluacionField;
-        
-        private bool tipoEvaluacionFieldSpecified;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public int idEvaluacion {
-            get {
-                return this.idEvaluacionField;
-            }
-            set {
-                this.idEvaluacionField = value;
-                this.RaisePropertyChanged("idEvaluacion");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public double puntajeObtenido {
-            get {
-                return this.puntajeObtenidoField;
-            }
-            set {
-                this.puntajeObtenidoField = value;
-                this.RaisePropertyChanged("puntajeObtenido");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public double puntajeTotal {
-            get {
-                return this.puntajeTotalField;
-            }
-            set {
-                this.puntajeTotalField = value;
-                this.RaisePropertyChanged("puntajeTotal");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public tipoEvaluacion tipoEvaluacion {
-            get {
-                return this.tipoEvaluacionField;
-            }
-            set {
-                this.tipoEvaluacionField = value;
-                this.RaisePropertyChanged("tipoEvaluacion");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool tipoEvaluacionSpecified {
-            get {
-                return this.tipoEvaluacionFieldSpecified;
-            }
-            set {
-                this.tipoEvaluacionFieldSpecified = value;
-                this.RaisePropertyChanged("tipoEvaluacionSpecified");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
-    public enum tipoEvaluacion {
-        
-        /// <remarks/>
-        Practica,
-        
-        /// <remarks/>
-        Examen,
     }
     
     /// <remarks/>
@@ -2135,7 +960,7 @@ namespace Eduprog.EduprogWS {
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(superUsuario))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(docente))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(trabajador))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2293,7 +1118,1528 @@ namespace Eduprog.EduprogWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
+    public partial class publicaciones : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private bool activoField;
+        
+        private string descripcionField;
+        
+        private System.DateTime fechaPublicacionField;
+        
+        private bool fechaPublicacionFieldSpecified;
+        
+        private byte[] fotoDescripcionField;
+        
+        private byte[] fotoPrincipalField;
+        
+        private int idPublicacionField;
+        
+        private int idUsuarioField;
+        
+        private string tituloField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public bool activo {
+            get {
+                return this.activoField;
+            }
+            set {
+                this.activoField = value;
+                this.RaisePropertyChanged("activo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string descripcion {
+            get {
+                return this.descripcionField;
+            }
+            set {
+                this.descripcionField = value;
+                this.RaisePropertyChanged("descripcion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public System.DateTime fechaPublicacion {
+            get {
+                return this.fechaPublicacionField;
+            }
+            set {
+                this.fechaPublicacionField = value;
+                this.RaisePropertyChanged("fechaPublicacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaPublicacionSpecified {
+            get {
+                return this.fechaPublicacionFieldSpecified;
+            }
+            set {
+                this.fechaPublicacionFieldSpecified = value;
+                this.RaisePropertyChanged("fechaPublicacionSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", Order=3)]
+        public byte[] fotoDescripcion {
+            get {
+                return this.fotoDescripcionField;
+            }
+            set {
+                this.fotoDescripcionField = value;
+                this.RaisePropertyChanged("fotoDescripcion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", Order=4)]
+        public byte[] fotoPrincipal {
+            get {
+                return this.fotoPrincipalField;
+            }
+            set {
+                this.fotoPrincipalField = value;
+                this.RaisePropertyChanged("fotoPrincipal");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public int idPublicacion {
+            get {
+                return this.idPublicacionField;
+            }
+            set {
+                this.idPublicacionField = value;
+                this.RaisePropertyChanged("idPublicacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public int idUsuario {
+            get {
+                return this.idUsuarioField;
+            }
+            set {
+                this.idUsuarioField = value;
+                this.RaisePropertyChanged("idUsuario");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        public string titulo {
+            get {
+                return this.tituloField;
+            }
+            set {
+                this.tituloField = value;
+                this.RaisePropertyChanged("titulo");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
+    public partial class anhoEscolar : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private int activoField;
+        
+        private int anhoField;
+        
+        private System.DateTime fechaFinField;
+        
+        private bool fechaFinFieldSpecified;
+        
+        private System.DateTime fechaInicioField;
+        
+        private bool fechaInicioFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public int activo {
+            get {
+                return this.activoField;
+            }
+            set {
+                this.activoField = value;
+                this.RaisePropertyChanged("activo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public int anho {
+            get {
+                return this.anhoField;
+            }
+            set {
+                this.anhoField = value;
+                this.RaisePropertyChanged("anho");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public System.DateTime fechaFin {
+            get {
+                return this.fechaFinField;
+            }
+            set {
+                this.fechaFinField = value;
+                this.RaisePropertyChanged("fechaFin");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaFinSpecified {
+            get {
+                return this.fechaFinFieldSpecified;
+            }
+            set {
+                this.fechaFinFieldSpecified = value;
+                this.RaisePropertyChanged("fechaFinSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public System.DateTime fechaInicio {
+            get {
+                return this.fechaInicioField;
+            }
+            set {
+                this.fechaInicioField = value;
+                this.RaisePropertyChanged("fechaInicio");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaInicioSpecified {
+            get {
+                return this.fechaInicioFieldSpecified;
+            }
+            set {
+                this.fechaInicioFieldSpecified = value;
+                this.RaisePropertyChanged("fechaInicioSpecified");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
+    public partial class aula : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private alumno[] alumnosField;
+        
+        private anhoEscolar anhoEscolarField;
+        
+        private byte[] fotoField;
+        
+        private int gradoField;
+        
+        private byte[] horarioField;
+        
+        private int idAulaField;
+        
+        private int nivelField;
+        
+        private ushort seccionField;
+        
+        private docente tutorField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("alumnos", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=0)]
+        public alumno[] alumnos {
+            get {
+                return this.alumnosField;
+            }
+            set {
+                this.alumnosField = value;
+                this.RaisePropertyChanged("alumnos");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public anhoEscolar anhoEscolar {
+            get {
+                return this.anhoEscolarField;
+            }
+            set {
+                this.anhoEscolarField = value;
+                this.RaisePropertyChanged("anhoEscolar");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", Order=2)]
+        public byte[] foto {
+            get {
+                return this.fotoField;
+            }
+            set {
+                this.fotoField = value;
+                this.RaisePropertyChanged("foto");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public int grado {
+            get {
+                return this.gradoField;
+            }
+            set {
+                this.gradoField = value;
+                this.RaisePropertyChanged("grado");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", Order=4)]
+        public byte[] horario {
+            get {
+                return this.horarioField;
+            }
+            set {
+                this.horarioField = value;
+                this.RaisePropertyChanged("horario");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public int idAula {
+            get {
+                return this.idAulaField;
+            }
+            set {
+                this.idAulaField = value;
+                this.RaisePropertyChanged("idAula");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public int nivel {
+            get {
+                return this.nivelField;
+            }
+            set {
+                this.nivelField = value;
+                this.RaisePropertyChanged("nivel");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        public ushort seccion {
+            get {
+                return this.seccionField;
+            }
+            set {
+                this.seccionField = value;
+                this.RaisePropertyChanged("seccion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
+        public docente tutor {
+            get {
+                return this.tutorField;
+            }
+            set {
+                this.tutorField = value;
+                this.RaisePropertyChanged("tutor");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
+    public partial class alumno : usuario {
+        
+        private actividad[] actividadesField;
+        
+        private string direccionField;
+        
+        private System.DateTime fechaNacimientoField;
+        
+        private bool fechaNacimientoFieldSpecified;
+        
+        private ushort generoField;
+        
+        private int gradoActualField;
+        
+        private int idAlumnoField;
+        
+        private incidencia[] incidenciasField;
+        
+        private int nivelActualField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("actividades", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=0)]
+        public actividad[] actividades {
+            get {
+                return this.actividadesField;
+            }
+            set {
+                this.actividadesField = value;
+                this.RaisePropertyChanged("actividades");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string direccion {
+            get {
+                return this.direccionField;
+            }
+            set {
+                this.direccionField = value;
+                this.RaisePropertyChanged("direccion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public System.DateTime fechaNacimiento {
+            get {
+                return this.fechaNacimientoField;
+            }
+            set {
+                this.fechaNacimientoField = value;
+                this.RaisePropertyChanged("fechaNacimiento");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaNacimientoSpecified {
+            get {
+                return this.fechaNacimientoFieldSpecified;
+            }
+            set {
+                this.fechaNacimientoFieldSpecified = value;
+                this.RaisePropertyChanged("fechaNacimientoSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public ushort genero {
+            get {
+                return this.generoField;
+            }
+            set {
+                this.generoField = value;
+                this.RaisePropertyChanged("genero");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public int gradoActual {
+            get {
+                return this.gradoActualField;
+            }
+            set {
+                this.gradoActualField = value;
+                this.RaisePropertyChanged("gradoActual");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public int idAlumno {
+            get {
+                return this.idAlumnoField;
+            }
+            set {
+                this.idAlumnoField = value;
+                this.RaisePropertyChanged("idAlumno");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("incidencias", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=6)]
+        public incidencia[] incidencias {
+            get {
+                return this.incidenciasField;
+            }
+            set {
+                this.incidenciasField = value;
+                this.RaisePropertyChanged("incidencias");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        public int nivelActual {
+            get {
+                return this.nivelActualField;
+            }
+            set {
+                this.nivelActualField = value;
+                this.RaisePropertyChanged("nivelActual");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(reunion))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(tarea))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(sesion))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(evaluacion))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
+    public partial class actividad : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private curso cursoField;
+        
+        private int idActividadField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public curso curso {
+            get {
+                return this.cursoField;
+            }
+            set {
+                this.cursoField = value;
+                this.RaisePropertyChanged("curso");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public int idActividad {
+            get {
+                return this.idActividadField;
+            }
+            set {
+                this.idActividadField = value;
+                this.RaisePropertyChanged("idActividad");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
+    public partial class curso : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string descripcionField;
+        
+        private string estadoField;
+        
+        private System.DateTime fechaCreacionField;
+        
+        private bool fechaCreacionFieldSpecified;
+        
+        private int idCursoField;
+        
+        private string nombreCursoField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string descripcion {
+            get {
+                return this.descripcionField;
+            }
+            set {
+                this.descripcionField = value;
+                this.RaisePropertyChanged("descripcion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string estado {
+            get {
+                return this.estadoField;
+            }
+            set {
+                this.estadoField = value;
+                this.RaisePropertyChanged("estado");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public System.DateTime fechaCreacion {
+            get {
+                return this.fechaCreacionField;
+            }
+            set {
+                this.fechaCreacionField = value;
+                this.RaisePropertyChanged("fechaCreacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaCreacionSpecified {
+            get {
+                return this.fechaCreacionFieldSpecified;
+            }
+            set {
+                this.fechaCreacionFieldSpecified = value;
+                this.RaisePropertyChanged("fechaCreacionSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public int idCurso {
+            get {
+                return this.idCursoField;
+            }
+            set {
+                this.idCursoField = value;
+                this.RaisePropertyChanged("idCurso");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public string nombreCurso {
+            get {
+                return this.nombreCursoField;
+            }
+            set {
+                this.nombreCursoField = value;
+                this.RaisePropertyChanged("nombreCurso");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
+    public partial class reunion : actividad {
+        
+        private string asuntoField;
+        
+        private string descripcionField;
+        
+        private int duracionMinutosField;
+        
+        private string estadoField;
+        
+        private System.DateTime fechaHoraField;
+        
+        private bool fechaHoraFieldSpecified;
+        
+        private int idReunionField;
+        
+        private string lugarField;
+        
+        private string organizadorField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string asunto {
+            get {
+                return this.asuntoField;
+            }
+            set {
+                this.asuntoField = value;
+                this.RaisePropertyChanged("asunto");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string descripcion {
+            get {
+                return this.descripcionField;
+            }
+            set {
+                this.descripcionField = value;
+                this.RaisePropertyChanged("descripcion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public int duracionMinutos {
+            get {
+                return this.duracionMinutosField;
+            }
+            set {
+                this.duracionMinutosField = value;
+                this.RaisePropertyChanged("duracionMinutos");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public string estado {
+            get {
+                return this.estadoField;
+            }
+            set {
+                this.estadoField = value;
+                this.RaisePropertyChanged("estado");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public System.DateTime fechaHora {
+            get {
+                return this.fechaHoraField;
+            }
+            set {
+                this.fechaHoraField = value;
+                this.RaisePropertyChanged("fechaHora");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaHoraSpecified {
+            get {
+                return this.fechaHoraFieldSpecified;
+            }
+            set {
+                this.fechaHoraFieldSpecified = value;
+                this.RaisePropertyChanged("fechaHoraSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public int idReunion {
+            get {
+                return this.idReunionField;
+            }
+            set {
+                this.idReunionField = value;
+                this.RaisePropertyChanged("idReunion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public string lugar {
+            get {
+                return this.lugarField;
+            }
+            set {
+                this.lugarField = value;
+                this.RaisePropertyChanged("lugar");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        public string organizador {
+            get {
+                return this.organizadorField;
+            }
+            set {
+                this.organizadorField = value;
+                this.RaisePropertyChanged("organizador");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
+    public partial class tarea : actividad {
+        
+        private string descripcionField;
+        
+        private string estadoField;
+        
+        private System.DateTime fechaRegistroField;
+        
+        private bool fechaRegistroFieldSpecified;
+        
+        private int idTareaField;
+        
+        private tipoTarea tipoTareaField;
+        
+        private bool tipoTareaFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string descripcion {
+            get {
+                return this.descripcionField;
+            }
+            set {
+                this.descripcionField = value;
+                this.RaisePropertyChanged("descripcion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string estado {
+            get {
+                return this.estadoField;
+            }
+            set {
+                this.estadoField = value;
+                this.RaisePropertyChanged("estado");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public System.DateTime fechaRegistro {
+            get {
+                return this.fechaRegistroField;
+            }
+            set {
+                this.fechaRegistroField = value;
+                this.RaisePropertyChanged("fechaRegistro");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaRegistroSpecified {
+            get {
+                return this.fechaRegistroFieldSpecified;
+            }
+            set {
+                this.fechaRegistroFieldSpecified = value;
+                this.RaisePropertyChanged("fechaRegistroSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public int idTarea {
+            get {
+                return this.idTareaField;
+            }
+            set {
+                this.idTareaField = value;
+                this.RaisePropertyChanged("idTarea");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public tipoTarea tipoTarea {
+            get {
+                return this.tipoTareaField;
+            }
+            set {
+                this.tipoTareaField = value;
+                this.RaisePropertyChanged("tipoTarea");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool tipoTareaSpecified {
+            get {
+                return this.tipoTareaFieldSpecified;
+            }
+            set {
+                this.tipoTareaFieldSpecified = value;
+                this.RaisePropertyChanged("tipoTareaSpecified");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
+    public enum tipoTarea {
+        
+        /// <remarks/>
+        MARCAR_COMPLETADA,
+        
+        /// <remarks/>
+        DESARROLLAR,
+        
+        /// <remarks/>
+        ENVIAR_SOLUCIONARIO,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
+    public partial class sesion : actividad {
+        
+        private ushort asistenciaField;
+        
+        private System.DateTime fechaFinField;
+        
+        private bool fechaFinFieldSpecified;
+        
+        private System.DateTime fechaInicioField;
+        
+        private bool fechaInicioFieldSpecified;
+        
+        private int idSesionField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public ushort asistencia {
+            get {
+                return this.asistenciaField;
+            }
+            set {
+                this.asistenciaField = value;
+                this.RaisePropertyChanged("asistencia");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public System.DateTime fechaFin {
+            get {
+                return this.fechaFinField;
+            }
+            set {
+                this.fechaFinField = value;
+                this.RaisePropertyChanged("fechaFin");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaFinSpecified {
+            get {
+                return this.fechaFinFieldSpecified;
+            }
+            set {
+                this.fechaFinFieldSpecified = value;
+                this.RaisePropertyChanged("fechaFinSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public System.DateTime fechaInicio {
+            get {
+                return this.fechaInicioField;
+            }
+            set {
+                this.fechaInicioField = value;
+                this.RaisePropertyChanged("fechaInicio");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaInicioSpecified {
+            get {
+                return this.fechaInicioFieldSpecified;
+            }
+            set {
+                this.fechaInicioFieldSpecified = value;
+                this.RaisePropertyChanged("fechaInicioSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public int idSesion {
+            get {
+                return this.idSesionField;
+            }
+            set {
+                this.idSesionField = value;
+                this.RaisePropertyChanged("idSesion");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
+    public partial class evaluacion : actividad {
+        
+        private int idEvaluacionField;
+        
+        private double puntajeObtenidoField;
+        
+        private double puntajeTotalField;
+        
+        private tipoEvaluacion tipoEvaluacionField;
+        
+        private bool tipoEvaluacionFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public int idEvaluacion {
+            get {
+                return this.idEvaluacionField;
+            }
+            set {
+                this.idEvaluacionField = value;
+                this.RaisePropertyChanged("idEvaluacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public double puntajeObtenido {
+            get {
+                return this.puntajeObtenidoField;
+            }
+            set {
+                this.puntajeObtenidoField = value;
+                this.RaisePropertyChanged("puntajeObtenido");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public double puntajeTotal {
+            get {
+                return this.puntajeTotalField;
+            }
+            set {
+                this.puntajeTotalField = value;
+                this.RaisePropertyChanged("puntajeTotal");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public tipoEvaluacion tipoEvaluacion {
+            get {
+                return this.tipoEvaluacionField;
+            }
+            set {
+                this.tipoEvaluacionField = value;
+                this.RaisePropertyChanged("tipoEvaluacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool tipoEvaluacionSpecified {
+            get {
+                return this.tipoEvaluacionFieldSpecified;
+            }
+            set {
+                this.tipoEvaluacionFieldSpecified = value;
+                this.RaisePropertyChanged("tipoEvaluacionSpecified");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
+    public enum tipoEvaluacion {
+        
+        /// <remarks/>
+        Practica,
+        
+        /// <remarks/>
+        Examen,
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(demerito))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(merito))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(atencionMedica))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
+    public abstract partial class incidencia : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string descripcionField;
+        
+        private int docenteRegistroField;
+        
+        private int estadoField;
+        
+        private System.DateTime fechaRegistroField;
+        
+        private bool fechaRegistroFieldSpecified;
+        
+        private int idAlumnoField;
+        
+        private int idIncidenciaField;
+        
+        private string nombreAlumnoField;
+        
+        private ushort tipoField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string descripcion {
+            get {
+                return this.descripcionField;
+            }
+            set {
+                this.descripcionField = value;
+                this.RaisePropertyChanged("descripcion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public int docenteRegistro {
+            get {
+                return this.docenteRegistroField;
+            }
+            set {
+                this.docenteRegistroField = value;
+                this.RaisePropertyChanged("docenteRegistro");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public int estado {
+            get {
+                return this.estadoField;
+            }
+            set {
+                this.estadoField = value;
+                this.RaisePropertyChanged("estado");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public System.DateTime fechaRegistro {
+            get {
+                return this.fechaRegistroField;
+            }
+            set {
+                this.fechaRegistroField = value;
+                this.RaisePropertyChanged("fechaRegistro");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaRegistroSpecified {
+            get {
+                return this.fechaRegistroFieldSpecified;
+            }
+            set {
+                this.fechaRegistroFieldSpecified = value;
+                this.RaisePropertyChanged("fechaRegistroSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public int idAlumno {
+            get {
+                return this.idAlumnoField;
+            }
+            set {
+                this.idAlumnoField = value;
+                this.RaisePropertyChanged("idAlumno");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public int idIncidencia {
+            get {
+                return this.idIncidenciaField;
+            }
+            set {
+                this.idIncidenciaField = value;
+                this.RaisePropertyChanged("idIncidencia");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public string nombreAlumno {
+            get {
+                return this.nombreAlumnoField;
+            }
+            set {
+                this.nombreAlumnoField = value;
+                this.RaisePropertyChanged("nombreAlumno");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        public ushort tipo {
+            get {
+                return this.tipoField;
+            }
+            set {
+                this.tipoField = value;
+                this.RaisePropertyChanged("tipo");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
+    public partial class demerito : incidencia {
+        
+        private int codigoDemeritoField;
+        
+        private string comentarioField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public int codigoDemerito {
+            get {
+                return this.codigoDemeritoField;
+            }
+            set {
+                this.codigoDemeritoField = value;
+                this.RaisePropertyChanged("codigoDemerito");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string comentario {
+            get {
+                return this.comentarioField;
+            }
+            set {
+                this.comentarioField = value;
+                this.RaisePropertyChanged("comentario");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
+    public partial class merito : incidencia {
+        
+        private int codigoMeritoField;
+        
+        private string comentarioField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public int codigoMerito {
+            get {
+                return this.codigoMeritoField;
+            }
+            set {
+                this.codigoMeritoField = value;
+                this.RaisePropertyChanged("codigoMerito");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string comentario {
+            get {
+                return this.comentarioField;
+            }
+            set {
+                this.comentarioField = value;
+                this.RaisePropertyChanged("comentario");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
+    public partial class atencionMedica : incidencia {
+        
+        private string diagnosticoField;
+        
+        private System.DateTime horaField;
+        
+        private bool horaFieldSpecified;
+        
+        private string tipoAtencionField;
+        
+        private string tratamientoField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string diagnostico {
+            get {
+                return this.diagnosticoField;
+            }
+            set {
+                this.diagnosticoField = value;
+                this.RaisePropertyChanged("diagnostico");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public System.DateTime hora {
+            get {
+                return this.horaField;
+            }
+            set {
+                this.horaField = value;
+                this.RaisePropertyChanged("hora");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool horaSpecified {
+            get {
+                return this.horaFieldSpecified;
+            }
+            set {
+                this.horaFieldSpecified = value;
+                this.RaisePropertyChanged("horaSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string tipoAtencion {
+            get {
+                return this.tipoAtencionField;
+            }
+            set {
+                this.tipoAtencionField = value;
+                this.RaisePropertyChanged("tipoAtencion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public string tratamiento {
+            get {
+                return this.tratamientoField;
+            }
+            set {
+                this.tratamientoField = value;
+                this.RaisePropertyChanged("tratamiento");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
+    public partial class docente : personal {
+        
+        private string especialidadField;
+        
+        private int idDocenteField;
+        
+        private actividad[] listaActividadesField;
+        
+        private tipoDocente tipoDocenteField;
+        
+        private bool tipoDocenteFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string especialidad {
+            get {
+                return this.especialidadField;
+            }
+            set {
+                this.especialidadField = value;
+                this.RaisePropertyChanged("especialidad");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public int idDocente {
+            get {
+                return this.idDocenteField;
+            }
+            set {
+                this.idDocenteField = value;
+                this.RaisePropertyChanged("idDocente");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("listaActividades", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=2)]
+        public actividad[] listaActividades {
+            get {
+                return this.listaActividadesField;
+            }
+            set {
+                this.listaActividadesField = value;
+                this.RaisePropertyChanged("listaActividades");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public tipoDocente tipoDocente {
+            get {
+                return this.tipoDocenteField;
+            }
+            set {
+                this.tipoDocenteField = value;
+                this.RaisePropertyChanged("tipoDocente");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool tipoDocenteSpecified {
+            get {
+                return this.tipoDocenteFieldSpecified;
+            }
+            set {
+                this.tipoDocenteFieldSpecified = value;
+                this.RaisePropertyChanged("tipoDocenteSpecified");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
+    public enum tipoDocente {
+        
+        /// <remarks/>
+        Profesor,
+        
+        /// <remarks/>
+        Suplente,
+        
+        /// <remarks/>
+        Auxiliar,
+        
+        /// <remarks/>
+        TiempoCompleto,
+        
+        /// <remarks/>
+        MedioTiempo,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2400,7 +2746,7 @@ namespace Eduprog.EduprogWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
     public enum relacionAlumno {
@@ -2419,227 +2765,7 @@ namespace Eduprog.EduprogWS {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(superUsuario))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(docente))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(trabajador))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
-    public abstract partial class personal : usuario {
-        
-        private System.DateTime fechaContratoField;
-        
-        private bool fechaContratoFieldSpecified;
-        
-        private int idPersonalField;
-        
-        private double sueldoField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public System.DateTime fechaContrato {
-            get {
-                return this.fechaContratoField;
-            }
-            set {
-                this.fechaContratoField = value;
-                this.RaisePropertyChanged("fechaContrato");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool fechaContratoSpecified {
-            get {
-                return this.fechaContratoFieldSpecified;
-            }
-            set {
-                this.fechaContratoFieldSpecified = value;
-                this.RaisePropertyChanged("fechaContratoSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public int idPersonal {
-            get {
-                return this.idPersonalField;
-            }
-            set {
-                this.idPersonalField = value;
-                this.RaisePropertyChanged("idPersonal");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public double sueldo {
-            get {
-                return this.sueldoField;
-            }
-            set {
-                this.sueldoField = value;
-                this.RaisePropertyChanged("sueldo");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
-    public partial class superUsuario : personal {
-        
-        private string areaAdministrativaField;
-        
-        private string cargoField;
-        
-        private int idSuperUsuarioField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string areaAdministrativa {
-            get {
-                return this.areaAdministrativaField;
-            }
-            set {
-                this.areaAdministrativaField = value;
-                this.RaisePropertyChanged("areaAdministrativa");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string cargo {
-            get {
-                return this.cargoField;
-            }
-            set {
-                this.cargoField = value;
-                this.RaisePropertyChanged("cargo");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public int idSuperUsuario {
-            get {
-                return this.idSuperUsuarioField;
-            }
-            set {
-                this.idSuperUsuarioField = value;
-                this.RaisePropertyChanged("idSuperUsuario");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
-    public partial class docente : personal {
-        
-        private string especialidadField;
-        
-        private int idDocenteField;
-        
-        private actividad[] listaActividadesField;
-        
-        private tipoDocente tipoDocenteField;
-        
-        private bool tipoDocenteFieldSpecified;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string especialidad {
-            get {
-                return this.especialidadField;
-            }
-            set {
-                this.especialidadField = value;
-                this.RaisePropertyChanged("especialidad");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public int idDocente {
-            get {
-                return this.idDocenteField;
-            }
-            set {
-                this.idDocenteField = value;
-                this.RaisePropertyChanged("idDocente");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("listaActividades", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=2)]
-        public actividad[] listaActividades {
-            get {
-                return this.listaActividadesField;
-            }
-            set {
-                this.listaActividadesField = value;
-                this.RaisePropertyChanged("listaActividades");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public tipoDocente tipoDocente {
-            get {
-                return this.tipoDocenteField;
-            }
-            set {
-                this.tipoDocenteField = value;
-                this.RaisePropertyChanged("tipoDocente");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool tipoDocenteSpecified {
-            get {
-                return this.tipoDocenteFieldSpecified;
-            }
-            set {
-                this.tipoDocenteFieldSpecified = value;
-                this.RaisePropertyChanged("tipoDocenteSpecified");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
-    public enum tipoDocente {
-        
-        /// <remarks/>
-        Profesor,
-        
-        /// <remarks/>
-        Suplente,
-        
-        /// <remarks/>
-        Auxiliar,
-        
-        /// <remarks/>
-        TiempoCompleto,
-        
-        /// <remarks/>
-        MedioTiempo,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2704,7 +2830,7 @@ namespace Eduprog.EduprogWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
     public enum tipoTrabajador {
@@ -2719,119 +2845,111 @@ namespace Eduprog.EduprogWS {
         Legal,
     }
     
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
-    [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
-    public partial class merito : incidencia {
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerUsuarioSUperUsuarioPorID", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtenerUsuarioSUperUsuarioPorIDRequest {
         
-        private int codigoMeritoField;
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idSUario;
         
-        private string comentarioField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public int codigoMerito {
-            get {
-                return this.codigoMeritoField;
-            }
-            set {
-                this.codigoMeritoField = value;
-                this.RaisePropertyChanged("codigoMerito");
-            }
+        public obtenerUsuarioSUperUsuarioPorIDRequest() {
         }
         
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string comentario {
-            get {
-                return this.comentarioField;
-            }
-            set {
-                this.comentarioField = value;
-                this.RaisePropertyChanged("comentario");
-            }
+        public obtenerUsuarioSUperUsuarioPorIDRequest(int idSUario) {
+            this.idSUario = idSUario;
         }
     }
     
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
-    [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.eduprog.pucp.edu.pe/")]
-    public partial class atencionMedica : incidencia {
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerUsuarioSUperUsuarioPorIDResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtenerUsuarioSUperUsuarioPorIDResponse {
         
-        private string diagnosticoField;
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.superUsuario @return;
         
-        private System.DateTime horaField;
-        
-        private bool horaFieldSpecified;
-        
-        private string tipoAtencionField;
-        
-        private string tratamientoField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string diagnostico {
-            get {
-                return this.diagnosticoField;
-            }
-            set {
-                this.diagnosticoField = value;
-                this.RaisePropertyChanged("diagnostico");
-            }
+        public obtenerUsuarioSUperUsuarioPorIDResponse() {
         }
         
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public System.DateTime hora {
-            get {
-                return this.horaField;
-            }
-            set {
-                this.horaField = value;
-                this.RaisePropertyChanged("hora");
-            }
+        public obtenerUsuarioSUperUsuarioPorIDResponse(Eduprog.EduprogWS.superUsuario @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerUsuarioTrabajadorPorID", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtenerUsuarioTrabajadorPorIDRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idSUario;
+        
+        public obtenerUsuarioTrabajadorPorIDRequest() {
         }
         
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool horaSpecified {
-            get {
-                return this.horaFieldSpecified;
-            }
-            set {
-                this.horaFieldSpecified = value;
-                this.RaisePropertyChanged("horaSpecified");
-            }
+        public obtenerUsuarioTrabajadorPorIDRequest(int idSUario) {
+            this.idSUario = idSUario;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerUsuarioTrabajadorPorIDResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtenerUsuarioTrabajadorPorIDResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.trabajador @return;
+        
+        public obtenerUsuarioTrabajadorPorIDResponse() {
         }
         
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public string tipoAtencion {
-            get {
-                return this.tipoAtencionField;
-            }
-            set {
-                this.tipoAtencionField = value;
-                this.RaisePropertyChanged("tipoAtencion");
-            }
+        public obtenerUsuarioTrabajadorPorIDResponse(Eduprog.EduprogWS.trabajador @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarTrabajador", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarTrabajadorRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int trabajador;
+        
+        public eliminarTrabajadorRequest() {
         }
         
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public string tratamiento {
-            get {
-                return this.tratamientoField;
-            }
-            set {
-                this.tratamientoField = value;
-                this.RaisePropertyChanged("tratamiento");
-            }
+        public eliminarTrabajadorRequest(int trabajador) {
+            this.trabajador = trabajador;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarTrabajadorResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarTrabajadorResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public eliminarTrabajadorResponse() {
+        }
+        
+        public eliminarTrabajadorResponse(int @return) {
+            this.@return = @return;
         }
     }
     
@@ -2879,857 +2997,27 @@ namespace Eduprog.EduprogWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarMerito", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarMeritoRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodasAulas", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTodasAulasRequest {
         
-        public listarMeritoRequest() {
+        public listarTodasAulasRequest() {
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarMeritoResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarMeritoResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodasAulasResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTodasAulasResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.merito[] @return;
+        public Eduprog.EduprogWS.aula[] @return;
         
-        public listarMeritoResponse() {
+        public listarTodasAulasResponse() {
         }
         
-        public listarMeritoResponse(Eduprog.EduprogWS.merito[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarDemerito", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarDemeritoRequest {
-        
-        public listarDemeritoRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarDemeritoResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarDemeritoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.demerito[] @return;
-        
-        public listarDemeritoResponse() {
-        }
-        
-        public listarDemeritoResponse(Eduprog.EduprogWS.demerito[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarDocente", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarDocenteRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.docente docente;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", IsNullable=true)]
-        public byte[] nuevaFoto;
-        
-        public modificarDocenteRequest() {
-        }
-        
-        public modificarDocenteRequest(Eduprog.EduprogWS.docente docente, byte[] nuevaFoto) {
-            this.docente = docente;
-            this.nuevaFoto = nuevaFoto;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarDocenteResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarDocenteResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public modificarDocenteResponse() {
-        }
-        
-        public modificarDocenteResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarDocente", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarDocenteRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int docente;
-        
-        public eliminarDocenteRequest() {
-        }
-        
-        public eliminarDocenteRequest(int docente) {
-            this.docente = docente;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarDocenteResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarDocenteResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public eliminarDocenteResponse() {
-        }
-        
-        public eliminarDocenteResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarDocente", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarDocenteRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.docente docente;
-        
-        public insertarDocenteRequest() {
-        }
-        
-        public insertarDocenteRequest(Eduprog.EduprogWS.docente docente) {
-            this.docente = docente;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarDocenteResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarDocenteResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public insertarDocenteResponse() {
-        }
-        
-        public insertarDocenteResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarMerito", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarMeritoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.merito merito;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idAlumno;
-        
-        public insertarMeritoRequest() {
-        }
-        
-        public insertarMeritoRequest(Eduprog.EduprogWS.merito merito, int idAlumno) {
-            this.merito = merito;
-            this.idAlumno = idAlumno;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarMeritoResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarMeritoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public insertarMeritoResponse() {
-        }
-        
-        public insertarMeritoResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerCursoXId", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class obtenerCursoXIdRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idCurso;
-        
-        public obtenerCursoXIdRequest() {
-        }
-        
-        public obtenerCursoXIdRequest(int idCurso) {
-            this.idCurso = idCurso;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerCursoXIdResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class obtenerCursoXIdResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.curso @return;
-        
-        public obtenerCursoXIdResponse() {
-        }
-        
-        public obtenerCursoXIdResponse(Eduprog.EduprogWS.curso @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarAula", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarAulaRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.aula aula;
-        
-        public insertarAulaRequest() {
-        }
-        
-        public insertarAulaRequest(Eduprog.EduprogWS.aula aula) {
-            this.aula = aula;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarAulaResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarAulaResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public insertarAulaResponse() {
-        }
-        
-        public insertarAulaResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarAula", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarAulaRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.aula aula;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", IsNullable=true)]
-        public byte[] nuevaFoto;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", IsNullable=true)]
-        public byte[] nuevoHorario;
-        
-        public modificarAulaRequest() {
-        }
-        
-        public modificarAulaRequest(Eduprog.EduprogWS.aula aula, byte[] nuevaFoto, byte[] nuevoHorario) {
-            this.aula = aula;
-            this.nuevaFoto = nuevaFoto;
-            this.nuevoHorario = nuevoHorario;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarAulaResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarAulaResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public modificarAulaResponse() {
-        }
-        
-        public modificarAulaResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarCurso", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarCursoRequest {
-        
-        public listarCursoRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarCursoResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarCursoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.curso[] @return;
-        
-        public listarCursoResponse() {
-        }
-        
-        public listarCursoResponse(Eduprog.EduprogWS.curso[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarApoderado", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarApoderadoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.apoderado apoderado;
-        
-        public insertarApoderadoRequest() {
-        }
-        
-        public insertarApoderadoRequest(Eduprog.EduprogWS.apoderado apoderado) {
-            this.apoderado = apoderado;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarApoderadoResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarApoderadoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public insertarApoderadoResponse() {
-        }
-        
-        public insertarApoderadoResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarTareas", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarTareasRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.tarea tarea;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute("idAlumno", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int[] idAlumno;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idDocente;
-        
-        public insertarTareasRequest() {
-        }
-        
-        public insertarTareasRequest(Eduprog.EduprogWS.tarea tarea, int[] idAlumno, int idDocente) {
-            this.tarea = tarea;
-            this.idAlumno = idAlumno;
-            this.idDocente = idDocente;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarTareasResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarTareasResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public insertarTareasResponse() {
-        }
-        
-        public insertarTareasResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarReunion", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarReunionRequest {
-        
-        public listarReunionRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarReunionResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarReunionResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.reunion[] @return;
-        
-        public listarReunionResponse() {
-        }
-        
-        public listarReunionResponse(Eduprog.EduprogWS.reunion[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarApoderado", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarApoderadoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int apoderado;
-        
-        public eliminarApoderadoRequest() {
-        }
-        
-        public eliminarApoderadoRequest(int apoderado) {
-            this.apoderado = apoderado;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarApoderadoResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarApoderadoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public eliminarApoderadoResponse() {
-        }
-        
-        public eliminarApoderadoResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarAula", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarAulaRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int aula;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public ushort seccion;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int nivel;
-        
-        public eliminarAulaRequest() {
-        }
-        
-        public eliminarAulaRequest(int aula, ushort seccion, int nivel) {
-            this.aula = aula;
-            this.seccion = seccion;
-            this.nivel = nivel;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarAulaResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarAulaResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public eliminarAulaResponse() {
-        }
-        
-        public eliminarAulaResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarTrabajador", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarTrabajadorRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.trabajador trabajador;
-        
-        public insertarTrabajadorRequest() {
-        }
-        
-        public insertarTrabajadorRequest(Eduprog.EduprogWS.trabajador trabajador) {
-            this.trabajador = trabajador;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarTrabajadorResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarTrabajadorResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public insertarTrabajadorResponse() {
-        }
-        
-        public insertarTrabajadorResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarSesion", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarSesionRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.sesion sesion;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute("idAlumnos", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int[] idAlumnos;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idDocente;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=3)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool estado;
-        
-        public modificarSesionRequest() {
-        }
-        
-        public modificarSesionRequest(Eduprog.EduprogWS.sesion sesion, int[] idAlumnos, int idDocente, bool estado) {
-            this.sesion = sesion;
-            this.idAlumnos = idAlumnos;
-            this.idDocente = idDocente;
-            this.estado = estado;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarSesionResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarSesionResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public modificarSesionResponse() {
-        }
-        
-        public modificarSesionResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarReunion", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarReunionRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.reunion reunion;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute("idAlumnos", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int[] idAlumnos;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idDocente;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=3)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool estado;
-        
-        public modificarReunionRequest() {
-        }
-        
-        public modificarReunionRequest(Eduprog.EduprogWS.reunion reunion, int[] idAlumnos, int idDocente, bool estado) {
-            this.reunion = reunion;
-            this.idAlumnos = idAlumnos;
-            this.idDocente = idDocente;
-            this.estado = estado;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarReunionResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarReunionResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public modificarReunionResponse() {
-        }
-        
-        public modificarReunionResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEvaluacion", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarEvaluacionRequest {
-        
-        public listarEvaluacionRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEvaluacionResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarEvaluacionResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.evaluacion[] @return;
-        
-        public listarEvaluacionResponse() {
-        }
-        
-        public listarEvaluacionResponse(Eduprog.EduprogWS.evaluacion[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarCurso", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarCursoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.curso curso;
-        
-        public modificarCursoRequest() {
-        }
-        
-        public modificarCursoRequest(Eduprog.EduprogWS.curso curso) {
-            this.curso = curso;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarCursoResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarCursoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public modificarCursoResponse() {
-        }
-        
-        public modificarCursoResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerAlumnoPorID", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class obtenerAlumnoPorIDRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idAlumno;
-        
-        public obtenerAlumnoPorIDRequest() {
-        }
-        
-        public obtenerAlumnoPorIDRequest(int idAlumno) {
-            this.idAlumno = idAlumno;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerAlumnoPorIDResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class obtenerAlumnoPorIDResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.alumno @return;
-        
-        public obtenerAlumnoPorIDResponse() {
-        }
-        
-        public obtenerAlumnoPorIDResponse(Eduprog.EduprogWS.alumno @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarTarea", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarTareaRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int tarea;
-        
-        public eliminarTareaRequest() {
-        }
-        
-        public eliminarTareaRequest(int tarea) {
-            this.tarea = tarea;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarTareaResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarTareaResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public eliminarTareaResponse() {
-        }
-        
-        public eliminarTareaResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarAlumno", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarAlumnoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.alumno alumno;
-        
-        public insertarAlumnoRequest() {
-        }
-        
-        public insertarAlumnoRequest(Eduprog.EduprogWS.alumno alumno) {
-            this.alumno = alumno;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarAlumnoResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarAlumnoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public insertarAlumnoResponse() {
-        }
-        
-        public insertarAlumnoResponse(int @return) {
+        public listarTodasAulasResponse(Eduprog.EduprogWS.aula[] @return) {
             this.@return = @return;
         }
     }
@@ -3788,6 +3076,864 @@ namespace Eduprog.EduprogWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarDocente", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarDocenteRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.docente docente;
+        
+        public insertarDocenteRequest() {
+        }
+        
+        public insertarDocenteRequest(Eduprog.EduprogWS.docente docente) {
+            this.docente = docente;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarDocenteResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarDocenteResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public insertarDocenteResponse() {
+        }
+        
+        public insertarDocenteResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarDocente", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarDocenteRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int docente;
+        
+        public eliminarDocenteRequest() {
+        }
+        
+        public eliminarDocenteRequest(int docente) {
+            this.docente = docente;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarDocenteResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarDocenteResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public eliminarDocenteResponse() {
+        }
+        
+        public eliminarDocenteResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarDemerito", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarDemeritoRequest {
+        
+        public listarDemeritoRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarDemeritoResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarDemeritoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.demerito[] @return;
+        
+        public listarDemeritoResponse() {
+        }
+        
+        public listarDemeritoResponse(Eduprog.EduprogWS.demerito[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarTarea", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarTareaRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int tarea;
+        
+        public eliminarTareaRequest() {
+        }
+        
+        public eliminarTareaRequest(int tarea) {
+            this.tarea = tarea;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarTareaResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarTareaResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public eliminarTareaResponse() {
+        }
+        
+        public eliminarTareaResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarApoderado", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarApoderadoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.apoderado apoderado;
+        
+        public insertarApoderadoRequest() {
+        }
+        
+        public insertarApoderadoRequest(Eduprog.EduprogWS.apoderado apoderado) {
+            this.apoderado = apoderado;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarApoderadoResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarApoderadoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public insertarApoderadoResponse() {
+        }
+        
+        public insertarApoderadoResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarAula", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarAulaRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int aula;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public ushort seccion;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int nivel;
+        
+        public eliminarAulaRequest() {
+        }
+        
+        public eliminarAulaRequest(int aula, ushort seccion, int nivel) {
+            this.aula = aula;
+            this.seccion = seccion;
+            this.nivel = nivel;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarAulaResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarAulaResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public eliminarAulaResponse() {
+        }
+        
+        public eliminarAulaResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarApoderado", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarApoderadoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int apoderado;
+        
+        public eliminarApoderadoRequest() {
+        }
+        
+        public eliminarApoderadoRequest(int apoderado) {
+            this.apoderado = apoderado;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarApoderadoResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarApoderadoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public eliminarApoderadoResponse() {
+        }
+        
+        public eliminarApoderadoResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarDocente", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarDocenteRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.docente docente;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", IsNullable=true)]
+        public byte[] nuevaFoto;
+        
+        public modificarDocenteRequest() {
+        }
+        
+        public modificarDocenteRequest(Eduprog.EduprogWS.docente docente, byte[] nuevaFoto) {
+            this.docente = docente;
+            this.nuevaFoto = nuevaFoto;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarDocenteResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarDocenteResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public modificarDocenteResponse() {
+        }
+        
+        public modificarDocenteResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarSesion", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarSesionRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.sesion sesion;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("idAlumnos", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int[] idAlumnos;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idDocente;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool estado;
+        
+        public modificarSesionRequest() {
+        }
+        
+        public modificarSesionRequest(Eduprog.EduprogWS.sesion sesion, int[] idAlumnos, int idDocente, bool estado) {
+            this.sesion = sesion;
+            this.idAlumnos = idAlumnos;
+            this.idDocente = idDocente;
+            this.estado = estado;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarSesionResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarSesionResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public modificarSesionResponse() {
+        }
+        
+        public modificarSesionResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerAlumnoPorID", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtenerAlumnoPorIDRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idAlumno;
+        
+        public obtenerAlumnoPorIDRequest() {
+        }
+        
+        public obtenerAlumnoPorIDRequest(int idAlumno) {
+            this.idAlumno = idAlumno;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerAlumnoPorIDResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtenerAlumnoPorIDResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.alumno @return;
+        
+        public obtenerAlumnoPorIDResponse() {
+        }
+        
+        public obtenerAlumnoPorIDResponse(Eduprog.EduprogWS.alumno @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarSesion", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarSesionRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.sesion sesion;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("idAlumnos", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int[] idAlumnos;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idDocente;
+        
+        public insertarSesionRequest() {
+        }
+        
+        public insertarSesionRequest(Eduprog.EduprogWS.sesion sesion, int[] idAlumnos, int idDocente) {
+            this.sesion = sesion;
+            this.idAlumnos = idAlumnos;
+            this.idDocente = idDocente;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarSesionResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarSesionResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public insertarSesionResponse() {
+        }
+        
+        public insertarSesionResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarMerito", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarMeritoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.merito merito;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idAlumno;
+        
+        public insertarMeritoRequest() {
+        }
+        
+        public insertarMeritoRequest(Eduprog.EduprogWS.merito merito, int idAlumno) {
+            this.merito = merito;
+            this.idAlumno = idAlumno;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarMeritoResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarMeritoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public insertarMeritoResponse() {
+        }
+        
+        public insertarMeritoResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosAlumnos", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTodosAlumnosRequest {
+        
+        public listarTodosAlumnosRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosAlumnosResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTodosAlumnosResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.alumno[] @return;
+        
+        public listarTodosAlumnosResponse() {
+        }
+        
+        public listarTodosAlumnosResponse(Eduprog.EduprogWS.alumno[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarAlumno", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarAlumnoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int alumno;
+        
+        public eliminarAlumnoRequest() {
+        }
+        
+        public eliminarAlumnoRequest(int alumno) {
+            this.alumno = alumno;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarAlumnoResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarAlumnoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public eliminarAlumnoResponse() {
+        }
+        
+        public eliminarAlumnoResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarSesion", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarSesionRequest {
+        
+        public listarSesionRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarSesionResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarSesionResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.sesion[] @return;
+        
+        public listarSesionResponse() {
+        }
+        
+        public listarSesionResponse(Eduprog.EduprogWS.sesion[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTareas", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTareasRequest {
+        
+        public listarTareasRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTareasResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTareasResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.tarea[] @return;
+        
+        public listarTareasResponse() {
+        }
+        
+        public listarTareasResponse(Eduprog.EduprogWS.tarea[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarTareas", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarTareasRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.tarea tarea;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("idAlumno", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int[] idAlumno;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idDocente;
+        
+        public insertarTareasRequest() {
+        }
+        
+        public insertarTareasRequest(Eduprog.EduprogWS.tarea tarea, int[] idAlumno, int idDocente) {
+            this.tarea = tarea;
+            this.idAlumno = idAlumno;
+            this.idDocente = idDocente;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarTareasResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarTareasResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public insertarTareasResponse() {
+        }
+        
+        public insertarTareasResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarTrabajador", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarTrabajadorRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.trabajador trabajador;
+        
+        public insertarTrabajadorRequest() {
+        }
+        
+        public insertarTrabajadorRequest(Eduprog.EduprogWS.trabajador trabajador) {
+            this.trabajador = trabajador;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarTrabajadorResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarTrabajadorResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public insertarTrabajadorResponse() {
+        }
+        
+        public insertarTrabajadorResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerCursoXId", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtenerCursoXIdRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idCurso;
+        
+        public obtenerCursoXIdRequest() {
+        }
+        
+        public obtenerCursoXIdRequest(int idCurso) {
+            this.idCurso = idCurso;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerCursoXIdResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtenerCursoXIdResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.curso @return;
+        
+        public obtenerCursoXIdResponse() {
+        }
+        
+        public obtenerCursoXIdResponse(Eduprog.EduprogWS.curso @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarAula", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarAulaRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.aula aula;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", IsNullable=true)]
+        public byte[] nuevaFoto;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", IsNullable=true)]
+        public byte[] nuevoHorario;
+        
+        public modificarAulaRequest() {
+        }
+        
+        public modificarAulaRequest(Eduprog.EduprogWS.aula aula, byte[] nuevaFoto, byte[] nuevoHorario) {
+            this.aula = aula;
+            this.nuevaFoto = nuevaFoto;
+            this.nuevoHorario = nuevoHorario;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarAulaResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarAulaResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public modificarAulaResponse() {
+        }
+        
+        public modificarAulaResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarAlumno", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarAlumnoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.alumno alumno;
+        
+        public insertarAlumnoRequest() {
+        }
+        
+        public insertarAlumnoRequest(Eduprog.EduprogWS.alumno alumno) {
+            this.alumno = alumno;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarAlumnoResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarAlumnoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public insertarAlumnoResponse() {
+        }
+        
+        public insertarAlumnoResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarMerito", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarMeritoRequest {
+        
+        public listarMeritoRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarMeritoResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarMeritoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.merito[] @return;
+        
+        public listarMeritoResponse() {
+        }
+        
+        public listarMeritoResponse(Eduprog.EduprogWS.merito[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarAlumno", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarAlumnoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.alumno alumno;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", IsNullable=true)]
+        public byte[] nuevaFoto;
+        
+        public modificarAlumnoRequest() {
+        }
+        
+        public modificarAlumnoRequest(Eduprog.EduprogWS.alumno alumno, byte[] nuevaFoto) {
+            this.alumno = alumno;
+            this.nuevaFoto = nuevaFoto;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarAlumnoResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarAlumnoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public modificarAlumnoResponse() {
+        }
+        
+        public modificarAlumnoResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarSesion", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
     public partial class eliminarSesionRequest {
         
@@ -3824,17 +3970,332 @@ namespace Eduprog.EduprogWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarMerito", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarMeritoRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarReunion", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarReunionRequest {
+        
+        public listarReunionRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarReunionResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarReunionResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.reunion[] @return;
+        
+        public listarReunionResponse() {
+        }
+        
+        public listarReunionResponse(Eduprog.EduprogWS.reunion[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarAula", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarAulaRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.aula aula;
+        
+        public insertarAulaRequest() {
+        }
+        
+        public insertarAulaRequest(Eduprog.EduprogWS.aula aula) {
+            this.aula = aula;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarAulaResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarAulaResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public insertarAulaResponse() {
+        }
+        
+        public insertarAulaResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarReunion", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarReunionRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.reunion reunion;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("idAlumnos", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int[] idAlumnos;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idDocente;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool estado;
+        
+        public modificarReunionRequest() {
+        }
+        
+        public modificarReunionRequest(Eduprog.EduprogWS.reunion reunion, int[] idAlumnos, int idDocente, bool estado) {
+            this.reunion = reunion;
+            this.idAlumnos = idAlumnos;
+            this.idDocente = idDocente;
+            this.estado = estado;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarReunionResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarReunionResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public modificarReunionResponse() {
+        }
+        
+        public modificarReunionResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarApoderado", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarApoderadoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.apoderado apoderado;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", IsNullable=true)]
+        public byte[] nuevaFoto;
+        
+        public modificarApoderadoRequest() {
+        }
+        
+        public modificarApoderadoRequest(Eduprog.EduprogWS.apoderado apoderado, byte[] nuevaFoto) {
+            this.apoderado = apoderado;
+            this.nuevaFoto = nuevaFoto;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarApoderadoResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarApoderadoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public modificarApoderadoResponse() {
+        }
+        
+        public modificarApoderadoResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarReunion", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarReunionRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.reunion reunion;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("idAlumnos", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int[] idAlumnos;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idDocente;
+        
+        public insertarReunionRequest() {
+        }
+        
+        public insertarReunionRequest(Eduprog.EduprogWS.reunion reunion, int[] idAlumnos, int idDocente) {
+            this.reunion = reunion;
+            this.idAlumnos = idAlumnos;
+            this.idDocente = idDocente;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarReunionResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarReunionResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public insertarReunionResponse() {
+        }
+        
+        public insertarReunionResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarReunion", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarReunionRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int reunion;
+        
+        public eliminarReunionRequest() {
+        }
+        
+        public eliminarReunionRequest(int reunion) {
+            this.reunion = reunion;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarReunionResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarReunionResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public eliminarReunionResponse() {
+        }
+        
+        public eliminarReunionResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarCurso", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarCursoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.curso curso;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idDocente;
+        
+        public insertarCursoRequest() {
+        }
+        
+        public insertarCursoRequest(Eduprog.EduprogWS.curso curso, int idDocente) {
+            this.curso = curso;
+            this.idDocente = idDocente;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarCursoResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarCursoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public insertarCursoResponse() {
+        }
+        
+        public insertarCursoResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarCurso", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarCursoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.curso curso;
+        
+        public modificarCursoRequest() {
+        }
+        
+        public modificarCursoRequest(Eduprog.EduprogWS.curso curso) {
+            this.curso = curso;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarCursoResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarCursoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public modificarCursoResponse() {
+        }
+        
+        public modificarCursoResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarDemerito", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarDemeritoRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public int idMerito;
         
-        public eliminarMeritoRequest() {
+        public eliminarDemeritoRequest() {
         }
         
-        public eliminarMeritoRequest(int idMerito) {
+        public eliminarDemeritoRequest(int idMerito) {
             this.idMerito = idMerito;
         }
     }
@@ -3842,17 +4303,63 @@ namespace Eduprog.EduprogWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarMeritoResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarMeritoResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarDemeritoResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarDemeritoResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public int @return;
         
-        public eliminarMeritoResponse() {
+        public eliminarDemeritoResponse() {
         }
         
-        public eliminarMeritoResponse(int @return) {
+        public eliminarDemeritoResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarEvaluacion", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarEvaluacionRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.evaluacion evaluacion;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("idAlumnos", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int[] idAlumnos;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idDocente;
+        
+        public insertarEvaluacionRequest() {
+        }
+        
+        public insertarEvaluacionRequest(Eduprog.EduprogWS.evaluacion evaluacion, int[] idAlumnos, int idDocente) {
+            this.evaluacion = evaluacion;
+            this.idAlumnos = idAlumnos;
+            this.idDocente = idDocente;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarEvaluacionResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarEvaluacionResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public insertarEvaluacionResponse() {
+        }
+        
+        public insertarEvaluacionResponse(int @return) {
             this.@return = @return;
         }
     }
@@ -3942,239 +4449,6 @@ namespace Eduprog.EduprogWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarAlumno", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarAlumnoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.alumno alumno;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", IsNullable=true)]
-        public byte[] nuevaFoto;
-        
-        public modificarAlumnoRequest() {
-        }
-        
-        public modificarAlumnoRequest(Eduprog.EduprogWS.alumno alumno, byte[] nuevaFoto) {
-            this.alumno = alumno;
-            this.nuevaFoto = nuevaFoto;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarAlumnoResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarAlumnoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public modificarAlumnoResponse() {
-        }
-        
-        public modificarAlumnoResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodasAulas", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTodasAulasRequest {
-        
-        public listarTodasAulasRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodasAulasResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTodasAulasResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.aula[] @return;
-        
-        public listarTodasAulasResponse() {
-        }
-        
-        public listarTodasAulasResponse(Eduprog.EduprogWS.aula[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarCurso", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarCursoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.curso curso;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idDocente;
-        
-        public insertarCursoRequest() {
-        }
-        
-        public insertarCursoRequest(Eduprog.EduprogWS.curso curso, int idDocente) {
-            this.curso = curso;
-            this.idDocente = idDocente;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarCursoResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarCursoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public insertarCursoResponse() {
-        }
-        
-        public insertarCursoResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarTrabajador", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarTrabajadorRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int trabajador;
-        
-        public eliminarTrabajadorRequest() {
-        }
-        
-        public eliminarTrabajadorRequest(int trabajador) {
-            this.trabajador = trabajador;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarTrabajadorResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarTrabajadorResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public eliminarTrabajadorResponse() {
-        }
-        
-        public eliminarTrabajadorResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarApoderado", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarApoderadoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.apoderado apoderado;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", IsNullable=true)]
-        public byte[] nuevaFoto;
-        
-        public modificarApoderadoRequest() {
-        }
-        
-        public modificarApoderadoRequest(Eduprog.EduprogWS.apoderado apoderado, byte[] nuevaFoto) {
-            this.apoderado = apoderado;
-            this.nuevaFoto = nuevaFoto;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarApoderadoResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarApoderadoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public modificarApoderadoResponse() {
-        }
-        
-        public modificarApoderadoResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarEvaluacion", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarEvaluacionRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.evaluacion evaluacion;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute("idAlumnos", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int[] idAlumnos;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idDocente;
-        
-        public insertarEvaluacionRequest() {
-        }
-        
-        public insertarEvaluacionRequest(Eduprog.EduprogWS.evaluacion evaluacion, int[] idAlumnos, int idDocente) {
-            this.evaluacion = evaluacion;
-            this.idAlumnos = idAlumnos;
-            this.idDocente = idDocente;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarEvaluacionResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarEvaluacionResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public insertarEvaluacionResponse() {
-        }
-        
-        public insertarEvaluacionResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarEvaluacion", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
     public partial class eliminarEvaluacionRequest {
         
@@ -4211,99 +4485,27 @@ namespace Eduprog.EduprogWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarDemerito", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarDemeritoRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarCurso", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarCursoRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idMerito;
-        
-        public eliminarDemeritoRequest() {
-        }
-        
-        public eliminarDemeritoRequest(int idMerito) {
-            this.idMerito = idMerito;
+        public listarCursoRequest() {
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarDemeritoResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarDemeritoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public eliminarDemeritoResponse() {
-        }
-        
-        public eliminarDemeritoResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarReunion", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarReunionRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int reunion;
-        
-        public eliminarReunionRequest() {
-        }
-        
-        public eliminarReunionRequest(int reunion) {
-            this.reunion = reunion;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarReunionResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarReunionResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public eliminarReunionResponse() {
-        }
-        
-        public eliminarReunionResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarSesion", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarSesionRequest {
-        
-        public listarSesionRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarSesionResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarSesionResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarCursoResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarCursoResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.sesion[] @return;
+        public Eduprog.EduprogWS.curso[] @return;
         
-        public listarSesionResponse() {
+        public listarCursoResponse() {
         }
         
-        public listarSesionResponse(Eduprog.EduprogWS.sesion[] @return) {
+        public listarCursoResponse(Eduprog.EduprogWS.curso[] @return) {
             this.@return = @return;
         }
     }
@@ -4311,109 +4513,27 @@ namespace Eduprog.EduprogWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarAlumno", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarAlumnoRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEvaluacion", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarEvaluacionRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int alumno;
-        
-        public eliminarAlumnoRequest() {
-        }
-        
-        public eliminarAlumnoRequest(int alumno) {
-            this.alumno = alumno;
+        public listarEvaluacionRequest() {
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarAlumnoResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarAlumnoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public eliminarAlumnoResponse() {
-        }
-        
-        public eliminarAlumnoResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarSesion", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarSesionRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.sesion sesion;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute("idAlumnos", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int[] idAlumnos;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idDocente;
-        
-        public insertarSesionRequest() {
-        }
-        
-        public insertarSesionRequest(Eduprog.EduprogWS.sesion sesion, int[] idAlumnos, int idDocente) {
-            this.sesion = sesion;
-            this.idAlumnos = idAlumnos;
-            this.idDocente = idDocente;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarSesionResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarSesionResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public insertarSesionResponse() {
-        }
-        
-        public insertarSesionResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosAlumnos", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTodosAlumnosRequest {
-        
-        public listarTodosAlumnosRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosAlumnosResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTodosAlumnosResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEvaluacionResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarEvaluacionResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.alumno[] @return;
+        public Eduprog.EduprogWS.evaluacion[] @return;
         
-        public listarTodosAlumnosResponse() {
+        public listarEvaluacionResponse() {
         }
         
-        public listarTodosAlumnosResponse(Eduprog.EduprogWS.alumno[] @return) {
+        public listarEvaluacionResponse(Eduprog.EduprogWS.evaluacion[] @return) {
             this.@return = @return;
         }
     }
@@ -4457,417 +4577,35 @@ namespace Eduprog.EduprogWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTareas", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTareasRequest {
-        
-        public listarTareasRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTareasResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTareasResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.tarea[] @return;
-        
-        public listarTareasResponse() {
-        }
-        
-        public listarTareasResponse(Eduprog.EduprogWS.tarea[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarReunion", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarReunionRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarMerito", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarMeritoRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.reunion reunion;
+        public int idMerito;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute("idAlumnos", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int[] idAlumnos;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idDocente;
-        
-        public insertarReunionRequest() {
+        public eliminarMeritoRequest() {
         }
         
-        public insertarReunionRequest(Eduprog.EduprogWS.reunion reunion, int[] idAlumnos, int idDocente) {
-            this.reunion = reunion;
-            this.idAlumnos = idAlumnos;
-            this.idDocente = idDocente;
+        public eliminarMeritoRequest(int idMerito) {
+            this.idMerito = idMerito;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarReunionResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarReunionResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarMeritoResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarMeritoResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public int @return;
         
-        public insertarReunionResponse() {
+        public eliminarMeritoResponse() {
         }
         
-        public insertarReunionResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerUsuarioSUperUsuarioPorID", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class obtenerUsuarioSUperUsuarioPorIDRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idSUario;
-        
-        public obtenerUsuarioSUperUsuarioPorIDRequest() {
-        }
-        
-        public obtenerUsuarioSUperUsuarioPorIDRequest(int idSUario) {
-            this.idSUario = idSUario;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerUsuarioSUperUsuarioPorIDResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class obtenerUsuarioSUperUsuarioPorIDResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.superUsuario @return;
-        
-        public obtenerUsuarioSUperUsuarioPorIDResponse() {
-        }
-        
-        public obtenerUsuarioSUperUsuarioPorIDResponse(Eduprog.EduprogWS.superUsuario @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerUsuarioTrabajadorPorID", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class obtenerUsuarioTrabajadorPorIDRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idSUario;
-        
-        public obtenerUsuarioTrabajadorPorIDRequest() {
-        }
-        
-        public obtenerUsuarioTrabajadorPorIDRequest(int idSUario) {
-            this.idSUario = idSUario;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerUsuarioTrabajadorPorIDResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class obtenerUsuarioTrabajadorPorIDResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.trabajador @return;
-        
-        public obtenerUsuarioTrabajadorPorIDResponse() {
-        }
-        
-        public obtenerUsuarioTrabajadorPorIDResponse(Eduprog.EduprogWS.trabajador @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarSuperusuario", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarSuperusuarioRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int superusuario;
-        
-        public eliminarSuperusuarioRequest() {
-        }
-        
-        public eliminarSuperusuarioRequest(int superusuario) {
-            this.superusuario = superusuario;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarSuperusuarioResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarSuperusuarioResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public eliminarSuperusuarioResponse() {
-        }
-        
-        public eliminarSuperusuarioResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="ObtenerAulaxAlumnoID", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class ObtenerAulaxAlumnoIDRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idUsuario;
-        
-        public ObtenerAulaxAlumnoIDRequest() {
-        }
-        
-        public ObtenerAulaxAlumnoIDRequest(int idUsuario) {
-            this.idUsuario = idUsuario;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="ObtenerAulaxAlumnoIDResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class ObtenerAulaxAlumnoIDResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.aula @return;
-        
-        public ObtenerAulaxAlumnoIDResponse() {
-        }
-        
-        public ObtenerAulaxAlumnoIDResponse(Eduprog.EduprogWS.aula @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerUsuarioIncidencia", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class obtenerUsuarioIncidenciaRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idIncidencia;
-        
-        public obtenerUsuarioIncidenciaRequest() {
-        }
-        
-        public obtenerUsuarioIncidenciaRequest(int idIncidencia) {
-            this.idIncidencia = idIncidencia;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerUsuarioIncidenciaResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class obtenerUsuarioIncidenciaResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string @return;
-        
-        public obtenerUsuarioIncidenciaResponse() {
-        }
-        
-        public obtenerUsuarioIncidenciaResponse(string @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTareasXDocenteId", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTareasXDocenteIdRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idUsuario;
-        
-        public listarTareasXDocenteIdRequest() {
-        }
-        
-        public listarTareasXDocenteIdRequest(int idUsuario) {
-            this.idUsuario = idUsuario;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTareasXDocenteIdResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTareasXDocenteIdResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.tarea[] @return;
-        
-        public listarTareasXDocenteIdResponse() {
-        }
-        
-        public listarTareasXDocenteIdResponse(Eduprog.EduprogWS.tarea[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerDocentePorID", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class obtenerDocentePorIDRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idSUario;
-        
-        public obtenerDocentePorIDRequest() {
-        }
-        
-        public obtenerDocentePorIDRequest(int idSUario) {
-            this.idSUario = idSUario;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerDocentePorIDResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class obtenerDocentePorIDResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.docente @return;
-        
-        public obtenerDocentePorIDResponse() {
-        }
-        
-        public obtenerDocentePorIDResponse(Eduprog.EduprogWS.docente @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarAlumnossAulasXId", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarAlumnossAulasXIdRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idAula;
-        
-        public listarAlumnossAulasXIdRequest() {
-        }
-        
-        public listarAlumnossAulasXIdRequest(int idAula) {
-            this.idAula = idAula;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarAlumnossAulasXIdResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarAlumnossAulasXIdResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int[] @return;
-        
-        public listarAlumnossAulasXIdResponse() {
-        }
-        
-        public listarAlumnossAulasXIdResponse(int[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarAlumnosSinSalon", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarAlumnosSinSalonRequest {
-        
-        public listarAlumnosSinSalonRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarAlumnosSinSalonResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarAlumnosSinSalonResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.alumno[] @return;
-        
-        public listarAlumnosSinSalonResponse() {
-        }
-        
-        public listarAlumnosSinSalonResponse(Eduprog.EduprogWS.alumno[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosDocentes", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTodosDocentesRequest {
-        
-        public listarTodosDocentesRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosDocentesResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTodosDocentesResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.docente[] @return;
-        
-        public listarTodosDocentesResponse() {
-        }
-        
-        public listarTodosDocentesResponse(Eduprog.EduprogWS.docente[] @return) {
+        public eliminarMeritoResponse(int @return) {
             this.@return = @return;
         }
     }
@@ -4911,27 +4649,27 @@ namespace Eduprog.EduprogWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosSuperusuarios", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTodosSuperusuariosRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosApoderados", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTodosApoderadosRequest {
         
-        public listarTodosSuperusuariosRequest() {
+        public listarTodosApoderadosRequest() {
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosSuperusuariosResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTodosSuperusuariosResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosApoderadosResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTodosApoderadosResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.superUsuario[] @return;
+        public Eduprog.EduprogWS.apoderado[] @return;
         
-        public listarTodosSuperusuariosResponse() {
+        public listarTodosApoderadosResponse() {
         }
         
-        public listarTodosSuperusuariosResponse(Eduprog.EduprogWS.superUsuario[] @return) {
+        public listarTodosApoderadosResponse(Eduprog.EduprogWS.apoderado[] @return) {
             this.@return = @return;
         }
     }
@@ -4939,35 +4677,35 @@ namespace Eduprog.EduprogWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarSesionesXAlumnoId", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarSesionesXAlumnoIdRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarSuperUsuario", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarSuperUsuarioRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idUsuario;
+        public Eduprog.EduprogWS.superUsuario superusuario;
         
-        public listarSesionesXAlumnoIdRequest() {
+        public insertarSuperUsuarioRequest() {
         }
         
-        public listarSesionesXAlumnoIdRequest(int idUsuario) {
-            this.idUsuario = idUsuario;
+        public insertarSuperUsuarioRequest(Eduprog.EduprogWS.superUsuario superusuario) {
+            this.superusuario = superusuario;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarSesionesXAlumnoIdResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarSesionesXAlumnoIdResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarSuperUsuarioResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarSuperUsuarioResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.sesion[] @return;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
         
-        public listarSesionesXAlumnoIdResponse() {
+        public insertarSuperUsuarioResponse() {
         }
         
-        public listarSesionesXAlumnoIdResponse(Eduprog.EduprogWS.sesion[] @return) {
+        public insertarSuperUsuarioResponse(int @return) {
             this.@return = @return;
         }
     }
@@ -5016,112 +4754,114 @@ namespace Eduprog.EduprogWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarPublicaciones", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarPublicacionesRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarPublicaciones", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarPublicacionesRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idDocente;
-        
-        public eliminarPublicacionesRequest() {
-        }
-        
-        public eliminarPublicacionesRequest(int idDocente) {
-            this.idDocente = idDocente;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarPublicacionesResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarPublicacionesResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public eliminarPublicacionesResponse() {
-        }
-        
-        public eliminarPublicacionesResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarSuperUsuario", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarSuperUsuarioRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.superUsuario superusuario;
-        
-        public insertarSuperUsuarioRequest() {
-        }
-        
-        public insertarSuperUsuarioRequest(Eduprog.EduprogWS.superUsuario superusuario) {
-            this.superusuario = superusuario;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarSuperUsuarioResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarSuperUsuarioResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public insertarSuperUsuarioResponse() {
-        }
-        
-        public insertarSuperUsuarioResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarSuperusuario", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarSuperusuarioRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.superUsuario superusuario;
+        public Eduprog.EduprogWS.publicaciones publicacion;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", IsNullable=true)]
-        public byte[] nuevaFoto;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idUsuario;
         
-        public modificarSuperusuarioRequest() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idPublicacion;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool estado;
+        
+        public modificarPublicacionesRequest() {
         }
         
-        public modificarSuperusuarioRequest(Eduprog.EduprogWS.superUsuario superusuario, byte[] nuevaFoto) {
-            this.superusuario = superusuario;
-            this.nuevaFoto = nuevaFoto;
+        public modificarPublicacionesRequest(Eduprog.EduprogWS.publicaciones publicacion, int idUsuario, int idPublicacion, bool estado) {
+            this.publicacion = publicacion;
+            this.idUsuario = idUsuario;
+            this.idPublicacion = idPublicacion;
+            this.estado = estado;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarSuperusuarioResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarSuperusuarioResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarPublicacionesResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarPublicacionesResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public int @return;
         
-        public modificarSuperusuarioResponse() {
+        public modificarPublicacionesResponse() {
         }
         
-        public modificarSuperusuarioResponse(int @return) {
+        public modificarPublicacionesResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="ObtenerAulaxAlumnoID", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class ObtenerAulaxAlumnoIDRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idUsuario;
+        
+        public ObtenerAulaxAlumnoIDRequest() {
+        }
+        
+        public ObtenerAulaxAlumnoIDRequest(int idUsuario) {
+            this.idUsuario = idUsuario;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="ObtenerAulaxAlumnoIDResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class ObtenerAulaxAlumnoIDResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.aula @return;
+        
+        public ObtenerAulaxAlumnoIDResponse() {
+        }
+        
+        public ObtenerAulaxAlumnoIDResponse(Eduprog.EduprogWS.aula @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosDocentes", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTodosDocentesRequest {
+        
+        public listarTodosDocentesRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosDocentesResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTodosDocentesResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.docente[] @return;
+        
+        public listarTodosDocentesResponse() {
+        }
+        
+        public listarTodosDocentesResponse(Eduprog.EduprogWS.docente[] @return) {
             this.@return = @return;
         }
     }
@@ -5150,6 +4890,70 @@ namespace Eduprog.EduprogWS {
         }
         
         public listarTodasPublicacionesResponse(Eduprog.EduprogWS.publicaciones[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarAtencionMedica", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarAtencionMedicaRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int identificador;
+        
+        public eliminarAtencionMedicaRequest() {
+        }
+        
+        public eliminarAtencionMedicaRequest(int identificador) {
+            this.identificador = identificador;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarAtencionMedicaResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarAtencionMedicaResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public eliminarAtencionMedicaResponse() {
+        }
+        
+        public eliminarAtencionMedicaResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosSuperusuarios", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTodosSuperusuariosRequest {
+        
+        public listarTodosSuperusuariosRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosSuperusuariosResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTodosSuperusuariosResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.superUsuario[] @return;
+        
+        public listarTodosSuperusuariosResponse() {
+        }
+        
+        public listarTodosSuperusuariosResponse(Eduprog.EduprogWS.superUsuario[] @return) {
             this.@return = @return;
         }
     }
@@ -5193,114 +4997,35 @@ namespace Eduprog.EduprogWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarEvaluacion", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarEvaluacionRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarSesionesXAlumnoId", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarSesionesXAlumnoIdRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.evaluacion evaluacion;
+        public int idUsuario;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute("idAlumnos", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int[] idAlumnos;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idDocente;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=3)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool estado;
-        
-        public modificarEvaluacionRequest() {
+        public listarSesionesXAlumnoIdRequest() {
         }
         
-        public modificarEvaluacionRequest(Eduprog.EduprogWS.evaluacion evaluacion, int[] idAlumnos, int idDocente, bool estado) {
-            this.evaluacion = evaluacion;
-            this.idAlumnos = idAlumnos;
-            this.idDocente = idDocente;
-            this.estado = estado;
+        public listarSesionesXAlumnoIdRequest(int idUsuario) {
+            this.idUsuario = idUsuario;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarEvaluacionResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarEvaluacionResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public modificarEvaluacionResponse() {
-        }
-        
-        public modificarEvaluacionResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerAulaxIDAlumno", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class obtenerAulaxIDAlumnoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idAlumno;
-        
-        public obtenerAulaxIDAlumnoRequest() {
-        }
-        
-        public obtenerAulaxIDAlumnoRequest(int idAlumno) {
-            this.idAlumno = idAlumno;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerAulaxIDAlumnoResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class obtenerAulaxIDAlumnoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.aula @return;
-        
-        public obtenerAulaxIDAlumnoResponse() {
-        }
-        
-        public obtenerAulaxIDAlumnoResponse(Eduprog.EduprogWS.aula @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarAtencionMedica", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarAtencionMedicaRequest {
-        
-        public listarAtencionMedicaRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarAtencionMedicaResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarAtencionMedicaResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarSesionesXAlumnoIdResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarSesionesXAlumnoIdResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.atencionMedica[] @return;
+        public Eduprog.EduprogWS.sesion[] @return;
         
-        public listarAtencionMedicaResponse() {
+        public listarSesionesXAlumnoIdResponse() {
         }
         
-        public listarAtencionMedicaResponse(Eduprog.EduprogWS.atencionMedica[] @return) {
+        public listarSesionesXAlumnoIdResponse(Eduprog.EduprogWS.sesion[] @return) {
             this.@return = @return;
         }
     }
@@ -5308,27 +5033,35 @@ namespace Eduprog.EduprogWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosTrabajadores", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTodosTrabajadoresRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarSesionesXDocenteId", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarSesionesXDocenteIdRequest {
         
-        public listarTodosTrabajadoresRequest() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idUsuario;
+        
+        public listarSesionesXDocenteIdRequest() {
+        }
+        
+        public listarSesionesXDocenteIdRequest(int idUsuario) {
+            this.idUsuario = idUsuario;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosTrabajadoresResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTodosTrabajadoresResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarSesionesXDocenteIdResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarSesionesXDocenteIdResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.trabajador[] @return;
+        public Eduprog.EduprogWS.sesion[] @return;
         
-        public listarTodosTrabajadoresResponse() {
+        public listarSesionesXDocenteIdResponse() {
         }
         
-        public listarTodosTrabajadoresResponse(Eduprog.EduprogWS.trabajador[] @return) {
+        public listarSesionesXDocenteIdResponse(Eduprog.EduprogWS.sesion[] @return) {
             this.@return = @return;
         }
     }
@@ -5372,35 +5105,35 @@ namespace Eduprog.EduprogWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTareasXAlumnoId", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTareasXAlumnoIdRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerUsuarioIncidencia", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtenerUsuarioIncidenciaRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idUsuario;
+        public int idIncidencia;
         
-        public listarTareasXAlumnoIdRequest() {
+        public obtenerUsuarioIncidenciaRequest() {
         }
         
-        public listarTareasXAlumnoIdRequest(int idUsuario) {
-            this.idUsuario = idUsuario;
+        public obtenerUsuarioIncidenciaRequest(int idIncidencia) {
+            this.idIncidencia = idIncidencia;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTareasXAlumnoIdResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTareasXAlumnoIdResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerUsuarioIncidenciaResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtenerUsuarioIncidenciaResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.tarea[] @return;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string @return;
         
-        public listarTareasXAlumnoIdResponse() {
+        public obtenerUsuarioIncidenciaResponse() {
         }
         
-        public listarTareasXAlumnoIdResponse(Eduprog.EduprogWS.tarea[] @return) {
+        public obtenerUsuarioIncidenciaResponse(string @return) {
             this.@return = @return;
         }
     }
@@ -5408,27 +5141,176 @@ namespace Eduprog.EduprogWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosApoderados", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTodosApoderadosRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerDocentePorID", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtenerDocentePorIDRequest {
         
-        public listarTodosApoderadosRequest() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idSUario;
+        
+        public obtenerDocentePorIDRequest() {
+        }
+        
+        public obtenerDocentePorIDRequest(int idSUario) {
+            this.idSUario = idSUario;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosApoderadosResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTodosApoderadosResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerDocentePorIDResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtenerDocentePorIDResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.docente @return;
+        
+        public obtenerDocentePorIDResponse() {
+        }
+        
+        public obtenerDocentePorIDResponse(Eduprog.EduprogWS.docente @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarAlumnosSinSalon", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarAlumnosSinSalonRequest {
+        
+        public listarAlumnosSinSalonRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarAlumnosSinSalonResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarAlumnosSinSalonResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.apoderado[] @return;
+        public Eduprog.EduprogWS.alumno[] @return;
         
-        public listarTodosApoderadosResponse() {
+        public listarAlumnosSinSalonResponse() {
         }
         
-        public listarTodosApoderadosResponse(Eduprog.EduprogWS.apoderado[] @return) {
+        public listarAlumnosSinSalonResponse(Eduprog.EduprogWS.alumno[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerApoderadoPorID", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtenerApoderadoPorIDRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idApoderado;
+        
+        public obtenerApoderadoPorIDRequest() {
+        }
+        
+        public obtenerApoderadoPorIDRequest(int idApoderado) {
+            this.idApoderado = idApoderado;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerApoderadoPorIDResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtenerApoderadoPorIDResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.apoderado @return;
+        
+        public obtenerApoderadoPorIDResponse() {
+        }
+        
+        public obtenerApoderadoPorIDResponse(Eduprog.EduprogWS.apoderado @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarAlumnossAulasXId", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarAlumnossAulasXIdRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idAula;
+        
+        public listarAlumnossAulasXIdRequest() {
+        }
+        
+        public listarAlumnossAulasXIdRequest(int idAula) {
+            this.idAula = idAula;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarAlumnossAulasXIdResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarAlumnossAulasXIdResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int[] @return;
+        
+        public listarAlumnossAulasXIdResponse() {
+        }
+        
+        public listarAlumnossAulasXIdResponse(int[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarSuperusuario", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarSuperusuarioRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.superUsuario superusuario;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", IsNullable=true)]
+        public byte[] nuevaFoto;
+        
+        public modificarSuperusuarioRequest() {
+        }
+        
+        public modificarSuperusuarioRequest(Eduprog.EduprogWS.superUsuario superusuario, byte[] nuevaFoto) {
+            this.superusuario = superusuario;
+            this.nuevaFoto = nuevaFoto;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarSuperusuarioResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarSuperusuarioResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public modificarSuperusuarioResponse() {
+        }
+        
+        public modificarSuperusuarioResponse(int @return) {
             this.@return = @return;
         }
     }
@@ -5513,6 +5395,70 @@ namespace Eduprog.EduprogWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosTrabajadores", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTodosTrabajadoresRequest {
+        
+        public listarTodosTrabajadoresRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosTrabajadoresResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTodosTrabajadoresResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.trabajador[] @return;
+        
+        public listarTodosTrabajadoresResponse() {
+        }
+        
+        public listarTodosTrabajadoresResponse(Eduprog.EduprogWS.trabajador[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarPublicaciones", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarPublicacionesRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idDocente;
+        
+        public eliminarPublicacionesRequest() {
+        }
+        
+        public eliminarPublicacionesRequest(int idDocente) {
+            this.idDocente = idDocente;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarPublicacionesResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarPublicacionesResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public eliminarPublicacionesResponse() {
+        }
+        
+        public eliminarPublicacionesResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="Obtener_sesionesxDocente", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
     public partial class Obtener_sesionesxDocenteRequest {
         
@@ -5549,35 +5495,50 @@ namespace Eduprog.EduprogWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarSesionesXDocenteId", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarSesionesXDocenteIdRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarEvaluacion", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarEvaluacionRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idUsuario;
+        public Eduprog.EduprogWS.evaluacion evaluacion;
         
-        public listarSesionesXDocenteIdRequest() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("idAlumnos", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int[] idAlumnos;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idDocente;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool estado;
+        
+        public modificarEvaluacionRequest() {
         }
         
-        public listarSesionesXDocenteIdRequest(int idUsuario) {
-            this.idUsuario = idUsuario;
+        public modificarEvaluacionRequest(Eduprog.EduprogWS.evaluacion evaluacion, int[] idAlumnos, int idDocente, bool estado) {
+            this.evaluacion = evaluacion;
+            this.idAlumnos = idAlumnos;
+            this.idDocente = idDocente;
+            this.estado = estado;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarSesionesXDocenteIdResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarSesionesXDocenteIdResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarEvaluacionResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarEvaluacionResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.sesion[] @return;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
         
-        public listarSesionesXDocenteIdResponse() {
+        public modificarEvaluacionResponse() {
         }
         
-        public listarSesionesXDocenteIdResponse(Eduprog.EduprogWS.sesion[] @return) {
+        public modificarEvaluacionResponse(int @return) {
             this.@return = @return;
         }
     }
@@ -5626,122 +5587,27 @@ namespace Eduprog.EduprogWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerApoderadoPorID", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class obtenerApoderadoPorIDRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarAtencionMedica", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarAtencionMedicaRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idApoderado;
-        
-        public obtenerApoderadoPorIDRequest() {
-        }
-        
-        public obtenerApoderadoPorIDRequest(int idApoderado) {
-            this.idApoderado = idApoderado;
+        public listarAtencionMedicaRequest() {
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerApoderadoPorIDResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class obtenerApoderadoPorIDResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarAtencionMedicaResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarAtencionMedicaResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.apoderado @return;
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.atencionMedica[] @return;
         
-        public obtenerApoderadoPorIDResponse() {
+        public listarAtencionMedicaResponse() {
         }
         
-        public obtenerApoderadoPorIDResponse(Eduprog.EduprogWS.apoderado @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarPublicaciones", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarPublicacionesRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public Eduprog.EduprogWS.publicaciones publicacion;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idUsuario;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idPublicacion;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=3)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool estado;
-        
-        public modificarPublicacionesRequest() {
-        }
-        
-        public modificarPublicacionesRequest(Eduprog.EduprogWS.publicaciones publicacion, int idUsuario, int idPublicacion, bool estado) {
-            this.publicacion = publicacion;
-            this.idUsuario = idUsuario;
-            this.idPublicacion = idPublicacion;
-            this.estado = estado;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarPublicacionesResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarPublicacionesResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public modificarPublicacionesResponse() {
-        }
-        
-        public modificarPublicacionesResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarAtencionMedica", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarAtencionMedicaRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int identificador;
-        
-        public eliminarAtencionMedicaRequest() {
-        }
-        
-        public eliminarAtencionMedicaRequest(int identificador) {
-            this.identificador = identificador;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarAtencionMedicaResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarAtencionMedicaResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public eliminarAtencionMedicaResponse() {
-        }
-        
-        public eliminarAtencionMedicaResponse(int @return) {
+        public listarAtencionMedicaResponse(Eduprog.EduprogWS.atencionMedica[] @return) {
             this.@return = @return;
         }
     }
@@ -5792,6 +5658,186 @@ namespace Eduprog.EduprogWS {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerAulaxIDAlumno", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtenerAulaxIDAlumnoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idAlumno;
+        
+        public obtenerAulaxIDAlumnoRequest() {
+        }
+        
+        public obtenerAulaxIDAlumnoRequest(int idAlumno) {
+            this.idAlumno = idAlumno;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerAulaxIDAlumnoResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtenerAulaxIDAlumnoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.aula @return;
+        
+        public obtenerAulaxIDAlumnoResponse() {
+        }
+        
+        public obtenerAulaxIDAlumnoResponse(Eduprog.EduprogWS.aula @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTareasXAlumnoId", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTareasXAlumnoIdRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idUsuario;
+        
+        public listarTareasXAlumnoIdRequest() {
+        }
+        
+        public listarTareasXAlumnoIdRequest(int idUsuario) {
+            this.idUsuario = idUsuario;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTareasXAlumnoIdResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTareasXAlumnoIdResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.tarea[] @return;
+        
+        public listarTareasXAlumnoIdResponse() {
+        }
+        
+        public listarTareasXAlumnoIdResponse(Eduprog.EduprogWS.tarea[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarSuperusuario", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarSuperusuarioRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int superusuario;
+        
+        public eliminarSuperusuarioRequest() {
+        }
+        
+        public eliminarSuperusuarioRequest(int superusuario) {
+            this.superusuario = superusuario;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarSuperusuarioResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarSuperusuarioResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public eliminarSuperusuarioResponse() {
+        }
+        
+        public eliminarSuperusuarioResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTareasXDocenteId", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTareasXDocenteIdRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idUsuario;
+        
+        public listarTareasXDocenteIdRequest() {
+        }
+        
+        public listarTareasXDocenteIdRequest(int idUsuario) {
+            this.idUsuario = idUsuario;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTareasXDocenteIdResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTareasXDocenteIdResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Eduprog.EduprogWS.tarea[] @return;
+        
+        public listarTareasXDocenteIdResponse() {
+        }
+        
+        public listarTareasXDocenteIdResponse(Eduprog.EduprogWS.tarea[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtener_horario_idDocente", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtener_horario_idDocenteRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idDocente;
+        
+        public obtener_horario_idDocenteRequest() {
+        }
+        
+        public obtener_horario_idDocenteRequest(int idDocente) {
+            this.idDocente = idDocente;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtener_horario_idDocenteResponse", WrapperNamespace="http://services.eduprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtener_horario_idDocenteResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.eduprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", IsNullable=true)]
+        public byte[] @return;
+        
+        public obtener_horario_idDocenteResponse() {
+        }
+        
+        public obtener_horario_idDocenteResponse(byte[] @return) {
+            this.@return = @return;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface EduprogWSChannel : Eduprog.EduprogWS.EduprogWS, System.ServiceModel.IClientChannel {
     }
@@ -5820,6 +5866,75 @@ namespace Eduprog.EduprogWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.obtenerUsuarioSUperUsuarioPorIDResponse Eduprog.EduprogWS.EduprogWS.obtenerUsuarioSUperUsuarioPorID(Eduprog.EduprogWS.obtenerUsuarioSUperUsuarioPorIDRequest request) {
+            return base.Channel.obtenerUsuarioSUperUsuarioPorID(request);
+        }
+        
+        public Eduprog.EduprogWS.superUsuario obtenerUsuarioSUperUsuarioPorID(int idSUario) {
+            Eduprog.EduprogWS.obtenerUsuarioSUperUsuarioPorIDRequest inValue = new Eduprog.EduprogWS.obtenerUsuarioSUperUsuarioPorIDRequest();
+            inValue.idSUario = idSUario;
+            Eduprog.EduprogWS.obtenerUsuarioSUperUsuarioPorIDResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).obtenerUsuarioSUperUsuarioPorID(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerUsuarioSUperUsuarioPorIDResponse> Eduprog.EduprogWS.EduprogWS.obtenerUsuarioSUperUsuarioPorIDAsync(Eduprog.EduprogWS.obtenerUsuarioSUperUsuarioPorIDRequest request) {
+            return base.Channel.obtenerUsuarioSUperUsuarioPorIDAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerUsuarioSUperUsuarioPorIDResponse> obtenerUsuarioSUperUsuarioPorIDAsync(int idSUario) {
+            Eduprog.EduprogWS.obtenerUsuarioSUperUsuarioPorIDRequest inValue = new Eduprog.EduprogWS.obtenerUsuarioSUperUsuarioPorIDRequest();
+            inValue.idSUario = idSUario;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).obtenerUsuarioSUperUsuarioPorIDAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.obtenerUsuarioTrabajadorPorIDResponse Eduprog.EduprogWS.EduprogWS.obtenerUsuarioTrabajadorPorID(Eduprog.EduprogWS.obtenerUsuarioTrabajadorPorIDRequest request) {
+            return base.Channel.obtenerUsuarioTrabajadorPorID(request);
+        }
+        
+        public Eduprog.EduprogWS.trabajador obtenerUsuarioTrabajadorPorID(int idSUario) {
+            Eduprog.EduprogWS.obtenerUsuarioTrabajadorPorIDRequest inValue = new Eduprog.EduprogWS.obtenerUsuarioTrabajadorPorIDRequest();
+            inValue.idSUario = idSUario;
+            Eduprog.EduprogWS.obtenerUsuarioTrabajadorPorIDResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).obtenerUsuarioTrabajadorPorID(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerUsuarioTrabajadorPorIDResponse> Eduprog.EduprogWS.EduprogWS.obtenerUsuarioTrabajadorPorIDAsync(Eduprog.EduprogWS.obtenerUsuarioTrabajadorPorIDRequest request) {
+            return base.Channel.obtenerUsuarioTrabajadorPorIDAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerUsuarioTrabajadorPorIDResponse> obtenerUsuarioTrabajadorPorIDAsync(int idSUario) {
+            Eduprog.EduprogWS.obtenerUsuarioTrabajadorPorIDRequest inValue = new Eduprog.EduprogWS.obtenerUsuarioTrabajadorPorIDRequest();
+            inValue.idSUario = idSUario;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).obtenerUsuarioTrabajadorPorIDAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.eliminarTrabajadorResponse Eduprog.EduprogWS.EduprogWS.eliminarTrabajador(Eduprog.EduprogWS.eliminarTrabajadorRequest request) {
+            return base.Channel.eliminarTrabajador(request);
+        }
+        
+        public int eliminarTrabajador(int trabajador) {
+            Eduprog.EduprogWS.eliminarTrabajadorRequest inValue = new Eduprog.EduprogWS.eliminarTrabajadorRequest();
+            inValue.trabajador = trabajador;
+            Eduprog.EduprogWS.eliminarTrabajadorResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarTrabajador(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarTrabajadorResponse> Eduprog.EduprogWS.EduprogWS.eliminarTrabajadorAsync(Eduprog.EduprogWS.eliminarTrabajadorRequest request) {
+            return base.Channel.eliminarTrabajadorAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarTrabajadorResponse> eliminarTrabajadorAsync(int trabajador) {
+            Eduprog.EduprogWS.eliminarTrabajadorRequest inValue = new Eduprog.EduprogWS.eliminarTrabajadorRequest();
+            inValue.trabajador = trabajador;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarTrabajadorAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         Eduprog.EduprogWS.insertarDemeritoResponse Eduprog.EduprogWS.EduprogWS.insertarDemerito(Eduprog.EduprogWS.insertarDemeritoRequest request) {
             return base.Channel.insertarDemerito(request);
         }
@@ -5845,550 +5960,24 @@ namespace Eduprog.EduprogWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.listarMeritoResponse Eduprog.EduprogWS.EduprogWS.listarMerito(Eduprog.EduprogWS.listarMeritoRequest request) {
-            return base.Channel.listarMerito(request);
+        Eduprog.EduprogWS.listarTodasAulasResponse Eduprog.EduprogWS.EduprogWS.listarTodasAulas(Eduprog.EduprogWS.listarTodasAulasRequest request) {
+            return base.Channel.listarTodasAulas(request);
         }
         
-        public Eduprog.EduprogWS.merito[] listarMerito() {
-            Eduprog.EduprogWS.listarMeritoRequest inValue = new Eduprog.EduprogWS.listarMeritoRequest();
-            Eduprog.EduprogWS.listarMeritoResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarMerito(inValue);
+        public Eduprog.EduprogWS.aula[] listarTodasAulas() {
+            Eduprog.EduprogWS.listarTodasAulasRequest inValue = new Eduprog.EduprogWS.listarTodasAulasRequest();
+            Eduprog.EduprogWS.listarTodasAulasResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarTodasAulas(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarMeritoResponse> Eduprog.EduprogWS.EduprogWS.listarMeritoAsync(Eduprog.EduprogWS.listarMeritoRequest request) {
-            return base.Channel.listarMeritoAsync(request);
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodasAulasResponse> Eduprog.EduprogWS.EduprogWS.listarTodasAulasAsync(Eduprog.EduprogWS.listarTodasAulasRequest request) {
+            return base.Channel.listarTodasAulasAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarMeritoResponse> listarMeritoAsync() {
-            Eduprog.EduprogWS.listarMeritoRequest inValue = new Eduprog.EduprogWS.listarMeritoRequest();
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarMeritoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.listarDemeritoResponse Eduprog.EduprogWS.EduprogWS.listarDemerito(Eduprog.EduprogWS.listarDemeritoRequest request) {
-            return base.Channel.listarDemerito(request);
-        }
-        
-        public Eduprog.EduprogWS.demerito[] listarDemerito() {
-            Eduprog.EduprogWS.listarDemeritoRequest inValue = new Eduprog.EduprogWS.listarDemeritoRequest();
-            Eduprog.EduprogWS.listarDemeritoResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarDemerito(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarDemeritoResponse> Eduprog.EduprogWS.EduprogWS.listarDemeritoAsync(Eduprog.EduprogWS.listarDemeritoRequest request) {
-            return base.Channel.listarDemeritoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarDemeritoResponse> listarDemeritoAsync() {
-            Eduprog.EduprogWS.listarDemeritoRequest inValue = new Eduprog.EduprogWS.listarDemeritoRequest();
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarDemeritoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.modificarDocenteResponse Eduprog.EduprogWS.EduprogWS.modificarDocente(Eduprog.EduprogWS.modificarDocenteRequest request) {
-            return base.Channel.modificarDocente(request);
-        }
-        
-        public int modificarDocente(Eduprog.EduprogWS.docente docente, byte[] nuevaFoto) {
-            Eduprog.EduprogWS.modificarDocenteRequest inValue = new Eduprog.EduprogWS.modificarDocenteRequest();
-            inValue.docente = docente;
-            inValue.nuevaFoto = nuevaFoto;
-            Eduprog.EduprogWS.modificarDocenteResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).modificarDocente(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarDocenteResponse> Eduprog.EduprogWS.EduprogWS.modificarDocenteAsync(Eduprog.EduprogWS.modificarDocenteRequest request) {
-            return base.Channel.modificarDocenteAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarDocenteResponse> modificarDocenteAsync(Eduprog.EduprogWS.docente docente, byte[] nuevaFoto) {
-            Eduprog.EduprogWS.modificarDocenteRequest inValue = new Eduprog.EduprogWS.modificarDocenteRequest();
-            inValue.docente = docente;
-            inValue.nuevaFoto = nuevaFoto;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).modificarDocenteAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.eliminarDocenteResponse Eduprog.EduprogWS.EduprogWS.eliminarDocente(Eduprog.EduprogWS.eliminarDocenteRequest request) {
-            return base.Channel.eliminarDocente(request);
-        }
-        
-        public int eliminarDocente(int docente) {
-            Eduprog.EduprogWS.eliminarDocenteRequest inValue = new Eduprog.EduprogWS.eliminarDocenteRequest();
-            inValue.docente = docente;
-            Eduprog.EduprogWS.eliminarDocenteResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarDocente(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarDocenteResponse> Eduprog.EduprogWS.EduprogWS.eliminarDocenteAsync(Eduprog.EduprogWS.eliminarDocenteRequest request) {
-            return base.Channel.eliminarDocenteAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarDocenteResponse> eliminarDocenteAsync(int docente) {
-            Eduprog.EduprogWS.eliminarDocenteRequest inValue = new Eduprog.EduprogWS.eliminarDocenteRequest();
-            inValue.docente = docente;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarDocenteAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.insertarDocenteResponse Eduprog.EduprogWS.EduprogWS.insertarDocente(Eduprog.EduprogWS.insertarDocenteRequest request) {
-            return base.Channel.insertarDocente(request);
-        }
-        
-        public int insertarDocente(Eduprog.EduprogWS.docente docente) {
-            Eduprog.EduprogWS.insertarDocenteRequest inValue = new Eduprog.EduprogWS.insertarDocenteRequest();
-            inValue.docente = docente;
-            Eduprog.EduprogWS.insertarDocenteResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).insertarDocente(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarDocenteResponse> Eduprog.EduprogWS.EduprogWS.insertarDocenteAsync(Eduprog.EduprogWS.insertarDocenteRequest request) {
-            return base.Channel.insertarDocenteAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarDocenteResponse> insertarDocenteAsync(Eduprog.EduprogWS.docente docente) {
-            Eduprog.EduprogWS.insertarDocenteRequest inValue = new Eduprog.EduprogWS.insertarDocenteRequest();
-            inValue.docente = docente;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).insertarDocenteAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.insertarMeritoResponse Eduprog.EduprogWS.EduprogWS.insertarMerito(Eduprog.EduprogWS.insertarMeritoRequest request) {
-            return base.Channel.insertarMerito(request);
-        }
-        
-        public int insertarMerito(Eduprog.EduprogWS.merito merito, int idAlumno) {
-            Eduprog.EduprogWS.insertarMeritoRequest inValue = new Eduprog.EduprogWS.insertarMeritoRequest();
-            inValue.merito = merito;
-            inValue.idAlumno = idAlumno;
-            Eduprog.EduprogWS.insertarMeritoResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).insertarMerito(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarMeritoResponse> Eduprog.EduprogWS.EduprogWS.insertarMeritoAsync(Eduprog.EduprogWS.insertarMeritoRequest request) {
-            return base.Channel.insertarMeritoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarMeritoResponse> insertarMeritoAsync(Eduprog.EduprogWS.merito merito, int idAlumno) {
-            Eduprog.EduprogWS.insertarMeritoRequest inValue = new Eduprog.EduprogWS.insertarMeritoRequest();
-            inValue.merito = merito;
-            inValue.idAlumno = idAlumno;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).insertarMeritoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.obtenerCursoXIdResponse Eduprog.EduprogWS.EduprogWS.obtenerCursoXId(Eduprog.EduprogWS.obtenerCursoXIdRequest request) {
-            return base.Channel.obtenerCursoXId(request);
-        }
-        
-        public Eduprog.EduprogWS.curso obtenerCursoXId(int idCurso) {
-            Eduprog.EduprogWS.obtenerCursoXIdRequest inValue = new Eduprog.EduprogWS.obtenerCursoXIdRequest();
-            inValue.idCurso = idCurso;
-            Eduprog.EduprogWS.obtenerCursoXIdResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).obtenerCursoXId(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerCursoXIdResponse> Eduprog.EduprogWS.EduprogWS.obtenerCursoXIdAsync(Eduprog.EduprogWS.obtenerCursoXIdRequest request) {
-            return base.Channel.obtenerCursoXIdAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerCursoXIdResponse> obtenerCursoXIdAsync(int idCurso) {
-            Eduprog.EduprogWS.obtenerCursoXIdRequest inValue = new Eduprog.EduprogWS.obtenerCursoXIdRequest();
-            inValue.idCurso = idCurso;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).obtenerCursoXIdAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.insertarAulaResponse Eduprog.EduprogWS.EduprogWS.insertarAula(Eduprog.EduprogWS.insertarAulaRequest request) {
-            return base.Channel.insertarAula(request);
-        }
-        
-        public int insertarAula(Eduprog.EduprogWS.aula aula) {
-            Eduprog.EduprogWS.insertarAulaRequest inValue = new Eduprog.EduprogWS.insertarAulaRequest();
-            inValue.aula = aula;
-            Eduprog.EduprogWS.insertarAulaResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).insertarAula(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarAulaResponse> Eduprog.EduprogWS.EduprogWS.insertarAulaAsync(Eduprog.EduprogWS.insertarAulaRequest request) {
-            return base.Channel.insertarAulaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarAulaResponse> insertarAulaAsync(Eduprog.EduprogWS.aula aula) {
-            Eduprog.EduprogWS.insertarAulaRequest inValue = new Eduprog.EduprogWS.insertarAulaRequest();
-            inValue.aula = aula;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).insertarAulaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.modificarAulaResponse Eduprog.EduprogWS.EduprogWS.modificarAula(Eduprog.EduprogWS.modificarAulaRequest request) {
-            return base.Channel.modificarAula(request);
-        }
-        
-        public int modificarAula(Eduprog.EduprogWS.aula aula, byte[] nuevaFoto, byte[] nuevoHorario) {
-            Eduprog.EduprogWS.modificarAulaRequest inValue = new Eduprog.EduprogWS.modificarAulaRequest();
-            inValue.aula = aula;
-            inValue.nuevaFoto = nuevaFoto;
-            inValue.nuevoHorario = nuevoHorario;
-            Eduprog.EduprogWS.modificarAulaResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).modificarAula(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarAulaResponse> Eduprog.EduprogWS.EduprogWS.modificarAulaAsync(Eduprog.EduprogWS.modificarAulaRequest request) {
-            return base.Channel.modificarAulaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarAulaResponse> modificarAulaAsync(Eduprog.EduprogWS.aula aula, byte[] nuevaFoto, byte[] nuevoHorario) {
-            Eduprog.EduprogWS.modificarAulaRequest inValue = new Eduprog.EduprogWS.modificarAulaRequest();
-            inValue.aula = aula;
-            inValue.nuevaFoto = nuevaFoto;
-            inValue.nuevoHorario = nuevoHorario;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).modificarAulaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.listarCursoResponse Eduprog.EduprogWS.EduprogWS.listarCurso(Eduprog.EduprogWS.listarCursoRequest request) {
-            return base.Channel.listarCurso(request);
-        }
-        
-        public Eduprog.EduprogWS.curso[] listarCurso() {
-            Eduprog.EduprogWS.listarCursoRequest inValue = new Eduprog.EduprogWS.listarCursoRequest();
-            Eduprog.EduprogWS.listarCursoResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarCurso(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarCursoResponse> Eduprog.EduprogWS.EduprogWS.listarCursoAsync(Eduprog.EduprogWS.listarCursoRequest request) {
-            return base.Channel.listarCursoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarCursoResponse> listarCursoAsync() {
-            Eduprog.EduprogWS.listarCursoRequest inValue = new Eduprog.EduprogWS.listarCursoRequest();
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarCursoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.insertarApoderadoResponse Eduprog.EduprogWS.EduprogWS.insertarApoderado(Eduprog.EduprogWS.insertarApoderadoRequest request) {
-            return base.Channel.insertarApoderado(request);
-        }
-        
-        public int insertarApoderado(Eduprog.EduprogWS.apoderado apoderado) {
-            Eduprog.EduprogWS.insertarApoderadoRequest inValue = new Eduprog.EduprogWS.insertarApoderadoRequest();
-            inValue.apoderado = apoderado;
-            Eduprog.EduprogWS.insertarApoderadoResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).insertarApoderado(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarApoderadoResponse> Eduprog.EduprogWS.EduprogWS.insertarApoderadoAsync(Eduprog.EduprogWS.insertarApoderadoRequest request) {
-            return base.Channel.insertarApoderadoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarApoderadoResponse> insertarApoderadoAsync(Eduprog.EduprogWS.apoderado apoderado) {
-            Eduprog.EduprogWS.insertarApoderadoRequest inValue = new Eduprog.EduprogWS.insertarApoderadoRequest();
-            inValue.apoderado = apoderado;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).insertarApoderadoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.insertarTareasResponse Eduprog.EduprogWS.EduprogWS.insertarTareas(Eduprog.EduprogWS.insertarTareasRequest request) {
-            return base.Channel.insertarTareas(request);
-        }
-        
-        public int insertarTareas(Eduprog.EduprogWS.tarea tarea, int[] idAlumno, int idDocente) {
-            Eduprog.EduprogWS.insertarTareasRequest inValue = new Eduprog.EduprogWS.insertarTareasRequest();
-            inValue.tarea = tarea;
-            inValue.idAlumno = idAlumno;
-            inValue.idDocente = idDocente;
-            Eduprog.EduprogWS.insertarTareasResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).insertarTareas(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarTareasResponse> Eduprog.EduprogWS.EduprogWS.insertarTareasAsync(Eduprog.EduprogWS.insertarTareasRequest request) {
-            return base.Channel.insertarTareasAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarTareasResponse> insertarTareasAsync(Eduprog.EduprogWS.tarea tarea, int[] idAlumno, int idDocente) {
-            Eduprog.EduprogWS.insertarTareasRequest inValue = new Eduprog.EduprogWS.insertarTareasRequest();
-            inValue.tarea = tarea;
-            inValue.idAlumno = idAlumno;
-            inValue.idDocente = idDocente;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).insertarTareasAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.listarReunionResponse Eduprog.EduprogWS.EduprogWS.listarReunion(Eduprog.EduprogWS.listarReunionRequest request) {
-            return base.Channel.listarReunion(request);
-        }
-        
-        public Eduprog.EduprogWS.reunion[] listarReunion() {
-            Eduprog.EduprogWS.listarReunionRequest inValue = new Eduprog.EduprogWS.listarReunionRequest();
-            Eduprog.EduprogWS.listarReunionResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarReunion(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarReunionResponse> Eduprog.EduprogWS.EduprogWS.listarReunionAsync(Eduprog.EduprogWS.listarReunionRequest request) {
-            return base.Channel.listarReunionAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarReunionResponse> listarReunionAsync() {
-            Eduprog.EduprogWS.listarReunionRequest inValue = new Eduprog.EduprogWS.listarReunionRequest();
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarReunionAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.eliminarApoderadoResponse Eduprog.EduprogWS.EduprogWS.eliminarApoderado(Eduprog.EduprogWS.eliminarApoderadoRequest request) {
-            return base.Channel.eliminarApoderado(request);
-        }
-        
-        public int eliminarApoderado(int apoderado) {
-            Eduprog.EduprogWS.eliminarApoderadoRequest inValue = new Eduprog.EduprogWS.eliminarApoderadoRequest();
-            inValue.apoderado = apoderado;
-            Eduprog.EduprogWS.eliminarApoderadoResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarApoderado(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarApoderadoResponse> Eduprog.EduprogWS.EduprogWS.eliminarApoderadoAsync(Eduprog.EduprogWS.eliminarApoderadoRequest request) {
-            return base.Channel.eliminarApoderadoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarApoderadoResponse> eliminarApoderadoAsync(int apoderado) {
-            Eduprog.EduprogWS.eliminarApoderadoRequest inValue = new Eduprog.EduprogWS.eliminarApoderadoRequest();
-            inValue.apoderado = apoderado;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarApoderadoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.eliminarAulaResponse Eduprog.EduprogWS.EduprogWS.eliminarAula(Eduprog.EduprogWS.eliminarAulaRequest request) {
-            return base.Channel.eliminarAula(request);
-        }
-        
-        public int eliminarAula(int aula, ushort seccion, int nivel) {
-            Eduprog.EduprogWS.eliminarAulaRequest inValue = new Eduprog.EduprogWS.eliminarAulaRequest();
-            inValue.aula = aula;
-            inValue.seccion = seccion;
-            inValue.nivel = nivel;
-            Eduprog.EduprogWS.eliminarAulaResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarAula(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarAulaResponse> Eduprog.EduprogWS.EduprogWS.eliminarAulaAsync(Eduprog.EduprogWS.eliminarAulaRequest request) {
-            return base.Channel.eliminarAulaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarAulaResponse> eliminarAulaAsync(int aula, ushort seccion, int nivel) {
-            Eduprog.EduprogWS.eliminarAulaRequest inValue = new Eduprog.EduprogWS.eliminarAulaRequest();
-            inValue.aula = aula;
-            inValue.seccion = seccion;
-            inValue.nivel = nivel;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarAulaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.insertarTrabajadorResponse Eduprog.EduprogWS.EduprogWS.insertarTrabajador(Eduprog.EduprogWS.insertarTrabajadorRequest request) {
-            return base.Channel.insertarTrabajador(request);
-        }
-        
-        public int insertarTrabajador(Eduprog.EduprogWS.trabajador trabajador) {
-            Eduprog.EduprogWS.insertarTrabajadorRequest inValue = new Eduprog.EduprogWS.insertarTrabajadorRequest();
-            inValue.trabajador = trabajador;
-            Eduprog.EduprogWS.insertarTrabajadorResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).insertarTrabajador(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarTrabajadorResponse> Eduprog.EduprogWS.EduprogWS.insertarTrabajadorAsync(Eduprog.EduprogWS.insertarTrabajadorRequest request) {
-            return base.Channel.insertarTrabajadorAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarTrabajadorResponse> insertarTrabajadorAsync(Eduprog.EduprogWS.trabajador trabajador) {
-            Eduprog.EduprogWS.insertarTrabajadorRequest inValue = new Eduprog.EduprogWS.insertarTrabajadorRequest();
-            inValue.trabajador = trabajador;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).insertarTrabajadorAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.modificarSesionResponse Eduprog.EduprogWS.EduprogWS.modificarSesion(Eduprog.EduprogWS.modificarSesionRequest request) {
-            return base.Channel.modificarSesion(request);
-        }
-        
-        public int modificarSesion(Eduprog.EduprogWS.sesion sesion, int[] idAlumnos, int idDocente, bool estado) {
-            Eduprog.EduprogWS.modificarSesionRequest inValue = new Eduprog.EduprogWS.modificarSesionRequest();
-            inValue.sesion = sesion;
-            inValue.idAlumnos = idAlumnos;
-            inValue.idDocente = idDocente;
-            inValue.estado = estado;
-            Eduprog.EduprogWS.modificarSesionResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).modificarSesion(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarSesionResponse> Eduprog.EduprogWS.EduprogWS.modificarSesionAsync(Eduprog.EduprogWS.modificarSesionRequest request) {
-            return base.Channel.modificarSesionAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarSesionResponse> modificarSesionAsync(Eduprog.EduprogWS.sesion sesion, int[] idAlumnos, int idDocente, bool estado) {
-            Eduprog.EduprogWS.modificarSesionRequest inValue = new Eduprog.EduprogWS.modificarSesionRequest();
-            inValue.sesion = sesion;
-            inValue.idAlumnos = idAlumnos;
-            inValue.idDocente = idDocente;
-            inValue.estado = estado;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).modificarSesionAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.modificarReunionResponse Eduprog.EduprogWS.EduprogWS.modificarReunion(Eduprog.EduprogWS.modificarReunionRequest request) {
-            return base.Channel.modificarReunion(request);
-        }
-        
-        public int modificarReunion(Eduprog.EduprogWS.reunion reunion, int[] idAlumnos, int idDocente, bool estado) {
-            Eduprog.EduprogWS.modificarReunionRequest inValue = new Eduprog.EduprogWS.modificarReunionRequest();
-            inValue.reunion = reunion;
-            inValue.idAlumnos = idAlumnos;
-            inValue.idDocente = idDocente;
-            inValue.estado = estado;
-            Eduprog.EduprogWS.modificarReunionResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).modificarReunion(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarReunionResponse> Eduprog.EduprogWS.EduprogWS.modificarReunionAsync(Eduprog.EduprogWS.modificarReunionRequest request) {
-            return base.Channel.modificarReunionAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarReunionResponse> modificarReunionAsync(Eduprog.EduprogWS.reunion reunion, int[] idAlumnos, int idDocente, bool estado) {
-            Eduprog.EduprogWS.modificarReunionRequest inValue = new Eduprog.EduprogWS.modificarReunionRequest();
-            inValue.reunion = reunion;
-            inValue.idAlumnos = idAlumnos;
-            inValue.idDocente = idDocente;
-            inValue.estado = estado;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).modificarReunionAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.listarEvaluacionResponse Eduprog.EduprogWS.EduprogWS.listarEvaluacion(Eduprog.EduprogWS.listarEvaluacionRequest request) {
-            return base.Channel.listarEvaluacion(request);
-        }
-        
-        public Eduprog.EduprogWS.evaluacion[] listarEvaluacion() {
-            Eduprog.EduprogWS.listarEvaluacionRequest inValue = new Eduprog.EduprogWS.listarEvaluacionRequest();
-            Eduprog.EduprogWS.listarEvaluacionResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarEvaluacion(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarEvaluacionResponse> Eduprog.EduprogWS.EduprogWS.listarEvaluacionAsync(Eduprog.EduprogWS.listarEvaluacionRequest request) {
-            return base.Channel.listarEvaluacionAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarEvaluacionResponse> listarEvaluacionAsync() {
-            Eduprog.EduprogWS.listarEvaluacionRequest inValue = new Eduprog.EduprogWS.listarEvaluacionRequest();
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarEvaluacionAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.modificarCursoResponse Eduprog.EduprogWS.EduprogWS.modificarCurso(Eduprog.EduprogWS.modificarCursoRequest request) {
-            return base.Channel.modificarCurso(request);
-        }
-        
-        public int modificarCurso(Eduprog.EduprogWS.curso curso) {
-            Eduprog.EduprogWS.modificarCursoRequest inValue = new Eduprog.EduprogWS.modificarCursoRequest();
-            inValue.curso = curso;
-            Eduprog.EduprogWS.modificarCursoResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).modificarCurso(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarCursoResponse> Eduprog.EduprogWS.EduprogWS.modificarCursoAsync(Eduprog.EduprogWS.modificarCursoRequest request) {
-            return base.Channel.modificarCursoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarCursoResponse> modificarCursoAsync(Eduprog.EduprogWS.curso curso) {
-            Eduprog.EduprogWS.modificarCursoRequest inValue = new Eduprog.EduprogWS.modificarCursoRequest();
-            inValue.curso = curso;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).modificarCursoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.obtenerAlumnoPorIDResponse Eduprog.EduprogWS.EduprogWS.obtenerAlumnoPorID(Eduprog.EduprogWS.obtenerAlumnoPorIDRequest request) {
-            return base.Channel.obtenerAlumnoPorID(request);
-        }
-        
-        public Eduprog.EduprogWS.alumno obtenerAlumnoPorID(int idAlumno) {
-            Eduprog.EduprogWS.obtenerAlumnoPorIDRequest inValue = new Eduprog.EduprogWS.obtenerAlumnoPorIDRequest();
-            inValue.idAlumno = idAlumno;
-            Eduprog.EduprogWS.obtenerAlumnoPorIDResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).obtenerAlumnoPorID(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerAlumnoPorIDResponse> Eduprog.EduprogWS.EduprogWS.obtenerAlumnoPorIDAsync(Eduprog.EduprogWS.obtenerAlumnoPorIDRequest request) {
-            return base.Channel.obtenerAlumnoPorIDAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerAlumnoPorIDResponse> obtenerAlumnoPorIDAsync(int idAlumno) {
-            Eduprog.EduprogWS.obtenerAlumnoPorIDRequest inValue = new Eduprog.EduprogWS.obtenerAlumnoPorIDRequest();
-            inValue.idAlumno = idAlumno;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).obtenerAlumnoPorIDAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.eliminarTareaResponse Eduprog.EduprogWS.EduprogWS.eliminarTarea(Eduprog.EduprogWS.eliminarTareaRequest request) {
-            return base.Channel.eliminarTarea(request);
-        }
-        
-        public int eliminarTarea(int tarea) {
-            Eduprog.EduprogWS.eliminarTareaRequest inValue = new Eduprog.EduprogWS.eliminarTareaRequest();
-            inValue.tarea = tarea;
-            Eduprog.EduprogWS.eliminarTareaResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarTarea(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarTareaResponse> Eduprog.EduprogWS.EduprogWS.eliminarTareaAsync(Eduprog.EduprogWS.eliminarTareaRequest request) {
-            return base.Channel.eliminarTareaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarTareaResponse> eliminarTareaAsync(int tarea) {
-            Eduprog.EduprogWS.eliminarTareaRequest inValue = new Eduprog.EduprogWS.eliminarTareaRequest();
-            inValue.tarea = tarea;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarTareaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.insertarAlumnoResponse Eduprog.EduprogWS.EduprogWS.insertarAlumno(Eduprog.EduprogWS.insertarAlumnoRequest request) {
-            return base.Channel.insertarAlumno(request);
-        }
-        
-        public int insertarAlumno(Eduprog.EduprogWS.alumno alumno) {
-            Eduprog.EduprogWS.insertarAlumnoRequest inValue = new Eduprog.EduprogWS.insertarAlumnoRequest();
-            inValue.alumno = alumno;
-            Eduprog.EduprogWS.insertarAlumnoResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).insertarAlumno(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarAlumnoResponse> Eduprog.EduprogWS.EduprogWS.insertarAlumnoAsync(Eduprog.EduprogWS.insertarAlumnoRequest request) {
-            return base.Channel.insertarAlumnoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarAlumnoResponse> insertarAlumnoAsync(Eduprog.EduprogWS.alumno alumno) {
-            Eduprog.EduprogWS.insertarAlumnoRequest inValue = new Eduprog.EduprogWS.insertarAlumnoRequest();
-            inValue.alumno = alumno;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).insertarAlumnoAsync(inValue);
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodasAulasResponse> listarTodasAulasAsync() {
+            Eduprog.EduprogWS.listarTodasAulasRequest inValue = new Eduprog.EduprogWS.listarTodasAulasRequest();
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarTodasAulasAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -6421,6 +6010,553 @@ namespace Eduprog.EduprogWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.insertarDocenteResponse Eduprog.EduprogWS.EduprogWS.insertarDocente(Eduprog.EduprogWS.insertarDocenteRequest request) {
+            return base.Channel.insertarDocente(request);
+        }
+        
+        public int insertarDocente(Eduprog.EduprogWS.docente docente) {
+            Eduprog.EduprogWS.insertarDocenteRequest inValue = new Eduprog.EduprogWS.insertarDocenteRequest();
+            inValue.docente = docente;
+            Eduprog.EduprogWS.insertarDocenteResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).insertarDocente(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarDocenteResponse> Eduprog.EduprogWS.EduprogWS.insertarDocenteAsync(Eduprog.EduprogWS.insertarDocenteRequest request) {
+            return base.Channel.insertarDocenteAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarDocenteResponse> insertarDocenteAsync(Eduprog.EduprogWS.docente docente) {
+            Eduprog.EduprogWS.insertarDocenteRequest inValue = new Eduprog.EduprogWS.insertarDocenteRequest();
+            inValue.docente = docente;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).insertarDocenteAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.eliminarDocenteResponse Eduprog.EduprogWS.EduprogWS.eliminarDocente(Eduprog.EduprogWS.eliminarDocenteRequest request) {
+            return base.Channel.eliminarDocente(request);
+        }
+        
+        public int eliminarDocente(int docente) {
+            Eduprog.EduprogWS.eliminarDocenteRequest inValue = new Eduprog.EduprogWS.eliminarDocenteRequest();
+            inValue.docente = docente;
+            Eduprog.EduprogWS.eliminarDocenteResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarDocente(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarDocenteResponse> Eduprog.EduprogWS.EduprogWS.eliminarDocenteAsync(Eduprog.EduprogWS.eliminarDocenteRequest request) {
+            return base.Channel.eliminarDocenteAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarDocenteResponse> eliminarDocenteAsync(int docente) {
+            Eduprog.EduprogWS.eliminarDocenteRequest inValue = new Eduprog.EduprogWS.eliminarDocenteRequest();
+            inValue.docente = docente;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarDocenteAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.listarDemeritoResponse Eduprog.EduprogWS.EduprogWS.listarDemerito(Eduprog.EduprogWS.listarDemeritoRequest request) {
+            return base.Channel.listarDemerito(request);
+        }
+        
+        public Eduprog.EduprogWS.demerito[] listarDemerito() {
+            Eduprog.EduprogWS.listarDemeritoRequest inValue = new Eduprog.EduprogWS.listarDemeritoRequest();
+            Eduprog.EduprogWS.listarDemeritoResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarDemerito(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarDemeritoResponse> Eduprog.EduprogWS.EduprogWS.listarDemeritoAsync(Eduprog.EduprogWS.listarDemeritoRequest request) {
+            return base.Channel.listarDemeritoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarDemeritoResponse> listarDemeritoAsync() {
+            Eduprog.EduprogWS.listarDemeritoRequest inValue = new Eduprog.EduprogWS.listarDemeritoRequest();
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarDemeritoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.eliminarTareaResponse Eduprog.EduprogWS.EduprogWS.eliminarTarea(Eduprog.EduprogWS.eliminarTareaRequest request) {
+            return base.Channel.eliminarTarea(request);
+        }
+        
+        public int eliminarTarea(int tarea) {
+            Eduprog.EduprogWS.eliminarTareaRequest inValue = new Eduprog.EduprogWS.eliminarTareaRequest();
+            inValue.tarea = tarea;
+            Eduprog.EduprogWS.eliminarTareaResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarTarea(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarTareaResponse> Eduprog.EduprogWS.EduprogWS.eliminarTareaAsync(Eduprog.EduprogWS.eliminarTareaRequest request) {
+            return base.Channel.eliminarTareaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarTareaResponse> eliminarTareaAsync(int tarea) {
+            Eduprog.EduprogWS.eliminarTareaRequest inValue = new Eduprog.EduprogWS.eliminarTareaRequest();
+            inValue.tarea = tarea;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarTareaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.insertarApoderadoResponse Eduprog.EduprogWS.EduprogWS.insertarApoderado(Eduprog.EduprogWS.insertarApoderadoRequest request) {
+            return base.Channel.insertarApoderado(request);
+        }
+        
+        public int insertarApoderado(Eduprog.EduprogWS.apoderado apoderado) {
+            Eduprog.EduprogWS.insertarApoderadoRequest inValue = new Eduprog.EduprogWS.insertarApoderadoRequest();
+            inValue.apoderado = apoderado;
+            Eduprog.EduprogWS.insertarApoderadoResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).insertarApoderado(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarApoderadoResponse> Eduprog.EduprogWS.EduprogWS.insertarApoderadoAsync(Eduprog.EduprogWS.insertarApoderadoRequest request) {
+            return base.Channel.insertarApoderadoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarApoderadoResponse> insertarApoderadoAsync(Eduprog.EduprogWS.apoderado apoderado) {
+            Eduprog.EduprogWS.insertarApoderadoRequest inValue = new Eduprog.EduprogWS.insertarApoderadoRequest();
+            inValue.apoderado = apoderado;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).insertarApoderadoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.eliminarAulaResponse Eduprog.EduprogWS.EduprogWS.eliminarAula(Eduprog.EduprogWS.eliminarAulaRequest request) {
+            return base.Channel.eliminarAula(request);
+        }
+        
+        public int eliminarAula(int aula, ushort seccion, int nivel) {
+            Eduprog.EduprogWS.eliminarAulaRequest inValue = new Eduprog.EduprogWS.eliminarAulaRequest();
+            inValue.aula = aula;
+            inValue.seccion = seccion;
+            inValue.nivel = nivel;
+            Eduprog.EduprogWS.eliminarAulaResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarAula(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarAulaResponse> Eduprog.EduprogWS.EduprogWS.eliminarAulaAsync(Eduprog.EduprogWS.eliminarAulaRequest request) {
+            return base.Channel.eliminarAulaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarAulaResponse> eliminarAulaAsync(int aula, ushort seccion, int nivel) {
+            Eduprog.EduprogWS.eliminarAulaRequest inValue = new Eduprog.EduprogWS.eliminarAulaRequest();
+            inValue.aula = aula;
+            inValue.seccion = seccion;
+            inValue.nivel = nivel;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarAulaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.eliminarApoderadoResponse Eduprog.EduprogWS.EduprogWS.eliminarApoderado(Eduprog.EduprogWS.eliminarApoderadoRequest request) {
+            return base.Channel.eliminarApoderado(request);
+        }
+        
+        public int eliminarApoderado(int apoderado) {
+            Eduprog.EduprogWS.eliminarApoderadoRequest inValue = new Eduprog.EduprogWS.eliminarApoderadoRequest();
+            inValue.apoderado = apoderado;
+            Eduprog.EduprogWS.eliminarApoderadoResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarApoderado(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarApoderadoResponse> Eduprog.EduprogWS.EduprogWS.eliminarApoderadoAsync(Eduprog.EduprogWS.eliminarApoderadoRequest request) {
+            return base.Channel.eliminarApoderadoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarApoderadoResponse> eliminarApoderadoAsync(int apoderado) {
+            Eduprog.EduprogWS.eliminarApoderadoRequest inValue = new Eduprog.EduprogWS.eliminarApoderadoRequest();
+            inValue.apoderado = apoderado;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarApoderadoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.modificarDocenteResponse Eduprog.EduprogWS.EduprogWS.modificarDocente(Eduprog.EduprogWS.modificarDocenteRequest request) {
+            return base.Channel.modificarDocente(request);
+        }
+        
+        public int modificarDocente(Eduprog.EduprogWS.docente docente, byte[] nuevaFoto) {
+            Eduprog.EduprogWS.modificarDocenteRequest inValue = new Eduprog.EduprogWS.modificarDocenteRequest();
+            inValue.docente = docente;
+            inValue.nuevaFoto = nuevaFoto;
+            Eduprog.EduprogWS.modificarDocenteResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).modificarDocente(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarDocenteResponse> Eduprog.EduprogWS.EduprogWS.modificarDocenteAsync(Eduprog.EduprogWS.modificarDocenteRequest request) {
+            return base.Channel.modificarDocenteAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarDocenteResponse> modificarDocenteAsync(Eduprog.EduprogWS.docente docente, byte[] nuevaFoto) {
+            Eduprog.EduprogWS.modificarDocenteRequest inValue = new Eduprog.EduprogWS.modificarDocenteRequest();
+            inValue.docente = docente;
+            inValue.nuevaFoto = nuevaFoto;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).modificarDocenteAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.modificarSesionResponse Eduprog.EduprogWS.EduprogWS.modificarSesion(Eduprog.EduprogWS.modificarSesionRequest request) {
+            return base.Channel.modificarSesion(request);
+        }
+        
+        public int modificarSesion(Eduprog.EduprogWS.sesion sesion, int[] idAlumnos, int idDocente, bool estado) {
+            Eduprog.EduprogWS.modificarSesionRequest inValue = new Eduprog.EduprogWS.modificarSesionRequest();
+            inValue.sesion = sesion;
+            inValue.idAlumnos = idAlumnos;
+            inValue.idDocente = idDocente;
+            inValue.estado = estado;
+            Eduprog.EduprogWS.modificarSesionResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).modificarSesion(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarSesionResponse> Eduprog.EduprogWS.EduprogWS.modificarSesionAsync(Eduprog.EduprogWS.modificarSesionRequest request) {
+            return base.Channel.modificarSesionAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarSesionResponse> modificarSesionAsync(Eduprog.EduprogWS.sesion sesion, int[] idAlumnos, int idDocente, bool estado) {
+            Eduprog.EduprogWS.modificarSesionRequest inValue = new Eduprog.EduprogWS.modificarSesionRequest();
+            inValue.sesion = sesion;
+            inValue.idAlumnos = idAlumnos;
+            inValue.idDocente = idDocente;
+            inValue.estado = estado;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).modificarSesionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.obtenerAlumnoPorIDResponse Eduprog.EduprogWS.EduprogWS.obtenerAlumnoPorID(Eduprog.EduprogWS.obtenerAlumnoPorIDRequest request) {
+            return base.Channel.obtenerAlumnoPorID(request);
+        }
+        
+        public Eduprog.EduprogWS.alumno obtenerAlumnoPorID(int idAlumno) {
+            Eduprog.EduprogWS.obtenerAlumnoPorIDRequest inValue = new Eduprog.EduprogWS.obtenerAlumnoPorIDRequest();
+            inValue.idAlumno = idAlumno;
+            Eduprog.EduprogWS.obtenerAlumnoPorIDResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).obtenerAlumnoPorID(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerAlumnoPorIDResponse> Eduprog.EduprogWS.EduprogWS.obtenerAlumnoPorIDAsync(Eduprog.EduprogWS.obtenerAlumnoPorIDRequest request) {
+            return base.Channel.obtenerAlumnoPorIDAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerAlumnoPorIDResponse> obtenerAlumnoPorIDAsync(int idAlumno) {
+            Eduprog.EduprogWS.obtenerAlumnoPorIDRequest inValue = new Eduprog.EduprogWS.obtenerAlumnoPorIDRequest();
+            inValue.idAlumno = idAlumno;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).obtenerAlumnoPorIDAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.insertarSesionResponse Eduprog.EduprogWS.EduprogWS.insertarSesion(Eduprog.EduprogWS.insertarSesionRequest request) {
+            return base.Channel.insertarSesion(request);
+        }
+        
+        public int insertarSesion(Eduprog.EduprogWS.sesion sesion, int[] idAlumnos, int idDocente) {
+            Eduprog.EduprogWS.insertarSesionRequest inValue = new Eduprog.EduprogWS.insertarSesionRequest();
+            inValue.sesion = sesion;
+            inValue.idAlumnos = idAlumnos;
+            inValue.idDocente = idDocente;
+            Eduprog.EduprogWS.insertarSesionResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).insertarSesion(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarSesionResponse> Eduprog.EduprogWS.EduprogWS.insertarSesionAsync(Eduprog.EduprogWS.insertarSesionRequest request) {
+            return base.Channel.insertarSesionAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarSesionResponse> insertarSesionAsync(Eduprog.EduprogWS.sesion sesion, int[] idAlumnos, int idDocente) {
+            Eduprog.EduprogWS.insertarSesionRequest inValue = new Eduprog.EduprogWS.insertarSesionRequest();
+            inValue.sesion = sesion;
+            inValue.idAlumnos = idAlumnos;
+            inValue.idDocente = idDocente;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).insertarSesionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.insertarMeritoResponse Eduprog.EduprogWS.EduprogWS.insertarMerito(Eduprog.EduprogWS.insertarMeritoRequest request) {
+            return base.Channel.insertarMerito(request);
+        }
+        
+        public int insertarMerito(Eduprog.EduprogWS.merito merito, int idAlumno) {
+            Eduprog.EduprogWS.insertarMeritoRequest inValue = new Eduprog.EduprogWS.insertarMeritoRequest();
+            inValue.merito = merito;
+            inValue.idAlumno = idAlumno;
+            Eduprog.EduprogWS.insertarMeritoResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).insertarMerito(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarMeritoResponse> Eduprog.EduprogWS.EduprogWS.insertarMeritoAsync(Eduprog.EduprogWS.insertarMeritoRequest request) {
+            return base.Channel.insertarMeritoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarMeritoResponse> insertarMeritoAsync(Eduprog.EduprogWS.merito merito, int idAlumno) {
+            Eduprog.EduprogWS.insertarMeritoRequest inValue = new Eduprog.EduprogWS.insertarMeritoRequest();
+            inValue.merito = merito;
+            inValue.idAlumno = idAlumno;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).insertarMeritoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.listarTodosAlumnosResponse Eduprog.EduprogWS.EduprogWS.listarTodosAlumnos(Eduprog.EduprogWS.listarTodosAlumnosRequest request) {
+            return base.Channel.listarTodosAlumnos(request);
+        }
+        
+        public Eduprog.EduprogWS.alumno[] listarTodosAlumnos() {
+            Eduprog.EduprogWS.listarTodosAlumnosRequest inValue = new Eduprog.EduprogWS.listarTodosAlumnosRequest();
+            Eduprog.EduprogWS.listarTodosAlumnosResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarTodosAlumnos(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodosAlumnosResponse> Eduprog.EduprogWS.EduprogWS.listarTodosAlumnosAsync(Eduprog.EduprogWS.listarTodosAlumnosRequest request) {
+            return base.Channel.listarTodosAlumnosAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodosAlumnosResponse> listarTodosAlumnosAsync() {
+            Eduprog.EduprogWS.listarTodosAlumnosRequest inValue = new Eduprog.EduprogWS.listarTodosAlumnosRequest();
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarTodosAlumnosAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.eliminarAlumnoResponse Eduprog.EduprogWS.EduprogWS.eliminarAlumno(Eduprog.EduprogWS.eliminarAlumnoRequest request) {
+            return base.Channel.eliminarAlumno(request);
+        }
+        
+        public int eliminarAlumno(int alumno) {
+            Eduprog.EduprogWS.eliminarAlumnoRequest inValue = new Eduprog.EduprogWS.eliminarAlumnoRequest();
+            inValue.alumno = alumno;
+            Eduprog.EduprogWS.eliminarAlumnoResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarAlumno(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarAlumnoResponse> Eduprog.EduprogWS.EduprogWS.eliminarAlumnoAsync(Eduprog.EduprogWS.eliminarAlumnoRequest request) {
+            return base.Channel.eliminarAlumnoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarAlumnoResponse> eliminarAlumnoAsync(int alumno) {
+            Eduprog.EduprogWS.eliminarAlumnoRequest inValue = new Eduprog.EduprogWS.eliminarAlumnoRequest();
+            inValue.alumno = alumno;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarAlumnoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.listarSesionResponse Eduprog.EduprogWS.EduprogWS.listarSesion(Eduprog.EduprogWS.listarSesionRequest request) {
+            return base.Channel.listarSesion(request);
+        }
+        
+        public Eduprog.EduprogWS.sesion[] listarSesion() {
+            Eduprog.EduprogWS.listarSesionRequest inValue = new Eduprog.EduprogWS.listarSesionRequest();
+            Eduprog.EduprogWS.listarSesionResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarSesion(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarSesionResponse> Eduprog.EduprogWS.EduprogWS.listarSesionAsync(Eduprog.EduprogWS.listarSesionRequest request) {
+            return base.Channel.listarSesionAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarSesionResponse> listarSesionAsync() {
+            Eduprog.EduprogWS.listarSesionRequest inValue = new Eduprog.EduprogWS.listarSesionRequest();
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarSesionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.listarTareasResponse Eduprog.EduprogWS.EduprogWS.listarTareas(Eduprog.EduprogWS.listarTareasRequest request) {
+            return base.Channel.listarTareas(request);
+        }
+        
+        public Eduprog.EduprogWS.tarea[] listarTareas() {
+            Eduprog.EduprogWS.listarTareasRequest inValue = new Eduprog.EduprogWS.listarTareasRequest();
+            Eduprog.EduprogWS.listarTareasResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarTareas(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTareasResponse> Eduprog.EduprogWS.EduprogWS.listarTareasAsync(Eduprog.EduprogWS.listarTareasRequest request) {
+            return base.Channel.listarTareasAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTareasResponse> listarTareasAsync() {
+            Eduprog.EduprogWS.listarTareasRequest inValue = new Eduprog.EduprogWS.listarTareasRequest();
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarTareasAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.insertarTareasResponse Eduprog.EduprogWS.EduprogWS.insertarTareas(Eduprog.EduprogWS.insertarTareasRequest request) {
+            return base.Channel.insertarTareas(request);
+        }
+        
+        public int insertarTareas(Eduprog.EduprogWS.tarea tarea, int[] idAlumno, int idDocente) {
+            Eduprog.EduprogWS.insertarTareasRequest inValue = new Eduprog.EduprogWS.insertarTareasRequest();
+            inValue.tarea = tarea;
+            inValue.idAlumno = idAlumno;
+            inValue.idDocente = idDocente;
+            Eduprog.EduprogWS.insertarTareasResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).insertarTareas(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarTareasResponse> Eduprog.EduprogWS.EduprogWS.insertarTareasAsync(Eduprog.EduprogWS.insertarTareasRequest request) {
+            return base.Channel.insertarTareasAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarTareasResponse> insertarTareasAsync(Eduprog.EduprogWS.tarea tarea, int[] idAlumno, int idDocente) {
+            Eduprog.EduprogWS.insertarTareasRequest inValue = new Eduprog.EduprogWS.insertarTareasRequest();
+            inValue.tarea = tarea;
+            inValue.idAlumno = idAlumno;
+            inValue.idDocente = idDocente;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).insertarTareasAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.insertarTrabajadorResponse Eduprog.EduprogWS.EduprogWS.insertarTrabajador(Eduprog.EduprogWS.insertarTrabajadorRequest request) {
+            return base.Channel.insertarTrabajador(request);
+        }
+        
+        public int insertarTrabajador(Eduprog.EduprogWS.trabajador trabajador) {
+            Eduprog.EduprogWS.insertarTrabajadorRequest inValue = new Eduprog.EduprogWS.insertarTrabajadorRequest();
+            inValue.trabajador = trabajador;
+            Eduprog.EduprogWS.insertarTrabajadorResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).insertarTrabajador(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarTrabajadorResponse> Eduprog.EduprogWS.EduprogWS.insertarTrabajadorAsync(Eduprog.EduprogWS.insertarTrabajadorRequest request) {
+            return base.Channel.insertarTrabajadorAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarTrabajadorResponse> insertarTrabajadorAsync(Eduprog.EduprogWS.trabajador trabajador) {
+            Eduprog.EduprogWS.insertarTrabajadorRequest inValue = new Eduprog.EduprogWS.insertarTrabajadorRequest();
+            inValue.trabajador = trabajador;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).insertarTrabajadorAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.obtenerCursoXIdResponse Eduprog.EduprogWS.EduprogWS.obtenerCursoXId(Eduprog.EduprogWS.obtenerCursoXIdRequest request) {
+            return base.Channel.obtenerCursoXId(request);
+        }
+        
+        public Eduprog.EduprogWS.curso obtenerCursoXId(int idCurso) {
+            Eduprog.EduprogWS.obtenerCursoXIdRequest inValue = new Eduprog.EduprogWS.obtenerCursoXIdRequest();
+            inValue.idCurso = idCurso;
+            Eduprog.EduprogWS.obtenerCursoXIdResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).obtenerCursoXId(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerCursoXIdResponse> Eduprog.EduprogWS.EduprogWS.obtenerCursoXIdAsync(Eduprog.EduprogWS.obtenerCursoXIdRequest request) {
+            return base.Channel.obtenerCursoXIdAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerCursoXIdResponse> obtenerCursoXIdAsync(int idCurso) {
+            Eduprog.EduprogWS.obtenerCursoXIdRequest inValue = new Eduprog.EduprogWS.obtenerCursoXIdRequest();
+            inValue.idCurso = idCurso;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).obtenerCursoXIdAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.modificarAulaResponse Eduprog.EduprogWS.EduprogWS.modificarAula(Eduprog.EduprogWS.modificarAulaRequest request) {
+            return base.Channel.modificarAula(request);
+        }
+        
+        public int modificarAula(Eduprog.EduprogWS.aula aula, byte[] nuevaFoto, byte[] nuevoHorario) {
+            Eduprog.EduprogWS.modificarAulaRequest inValue = new Eduprog.EduprogWS.modificarAulaRequest();
+            inValue.aula = aula;
+            inValue.nuevaFoto = nuevaFoto;
+            inValue.nuevoHorario = nuevoHorario;
+            Eduprog.EduprogWS.modificarAulaResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).modificarAula(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarAulaResponse> Eduprog.EduprogWS.EduprogWS.modificarAulaAsync(Eduprog.EduprogWS.modificarAulaRequest request) {
+            return base.Channel.modificarAulaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarAulaResponse> modificarAulaAsync(Eduprog.EduprogWS.aula aula, byte[] nuevaFoto, byte[] nuevoHorario) {
+            Eduprog.EduprogWS.modificarAulaRequest inValue = new Eduprog.EduprogWS.modificarAulaRequest();
+            inValue.aula = aula;
+            inValue.nuevaFoto = nuevaFoto;
+            inValue.nuevoHorario = nuevoHorario;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).modificarAulaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.insertarAlumnoResponse Eduprog.EduprogWS.EduprogWS.insertarAlumno(Eduprog.EduprogWS.insertarAlumnoRequest request) {
+            return base.Channel.insertarAlumno(request);
+        }
+        
+        public int insertarAlumno(Eduprog.EduprogWS.alumno alumno) {
+            Eduprog.EduprogWS.insertarAlumnoRequest inValue = new Eduprog.EduprogWS.insertarAlumnoRequest();
+            inValue.alumno = alumno;
+            Eduprog.EduprogWS.insertarAlumnoResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).insertarAlumno(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarAlumnoResponse> Eduprog.EduprogWS.EduprogWS.insertarAlumnoAsync(Eduprog.EduprogWS.insertarAlumnoRequest request) {
+            return base.Channel.insertarAlumnoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarAlumnoResponse> insertarAlumnoAsync(Eduprog.EduprogWS.alumno alumno) {
+            Eduprog.EduprogWS.insertarAlumnoRequest inValue = new Eduprog.EduprogWS.insertarAlumnoRequest();
+            inValue.alumno = alumno;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).insertarAlumnoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.listarMeritoResponse Eduprog.EduprogWS.EduprogWS.listarMerito(Eduprog.EduprogWS.listarMeritoRequest request) {
+            return base.Channel.listarMerito(request);
+        }
+        
+        public Eduprog.EduprogWS.merito[] listarMerito() {
+            Eduprog.EduprogWS.listarMeritoRequest inValue = new Eduprog.EduprogWS.listarMeritoRequest();
+            Eduprog.EduprogWS.listarMeritoResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarMerito(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarMeritoResponse> Eduprog.EduprogWS.EduprogWS.listarMeritoAsync(Eduprog.EduprogWS.listarMeritoRequest request) {
+            return base.Channel.listarMeritoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarMeritoResponse> listarMeritoAsync() {
+            Eduprog.EduprogWS.listarMeritoRequest inValue = new Eduprog.EduprogWS.listarMeritoRequest();
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarMeritoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.modificarAlumnoResponse Eduprog.EduprogWS.EduprogWS.modificarAlumno(Eduprog.EduprogWS.modificarAlumnoRequest request) {
+            return base.Channel.modificarAlumno(request);
+        }
+        
+        public int modificarAlumno(Eduprog.EduprogWS.alumno alumno, byte[] nuevaFoto) {
+            Eduprog.EduprogWS.modificarAlumnoRequest inValue = new Eduprog.EduprogWS.modificarAlumnoRequest();
+            inValue.alumno = alumno;
+            inValue.nuevaFoto = nuevaFoto;
+            Eduprog.EduprogWS.modificarAlumnoResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).modificarAlumno(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarAlumnoResponse> Eduprog.EduprogWS.EduprogWS.modificarAlumnoAsync(Eduprog.EduprogWS.modificarAlumnoRequest request) {
+            return base.Channel.modificarAlumnoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarAlumnoResponse> modificarAlumnoAsync(Eduprog.EduprogWS.alumno alumno, byte[] nuevaFoto) {
+            Eduprog.EduprogWS.modificarAlumnoRequest inValue = new Eduprog.EduprogWS.modificarAlumnoRequest();
+            inValue.alumno = alumno;
+            inValue.nuevaFoto = nuevaFoto;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).modificarAlumnoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         Eduprog.EduprogWS.eliminarSesionResponse Eduprog.EduprogWS.EduprogWS.eliminarSesion(Eduprog.EduprogWS.eliminarSesionRequest request) {
             return base.Channel.eliminarSesion(request);
         }
@@ -6444,26 +6580,249 @@ namespace Eduprog.EduprogWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.eliminarMeritoResponse Eduprog.EduprogWS.EduprogWS.eliminarMerito(Eduprog.EduprogWS.eliminarMeritoRequest request) {
-            return base.Channel.eliminarMerito(request);
+        Eduprog.EduprogWS.listarReunionResponse Eduprog.EduprogWS.EduprogWS.listarReunion(Eduprog.EduprogWS.listarReunionRequest request) {
+            return base.Channel.listarReunion(request);
         }
         
-        public int eliminarMerito(int idMerito) {
-            Eduprog.EduprogWS.eliminarMeritoRequest inValue = new Eduprog.EduprogWS.eliminarMeritoRequest();
-            inValue.idMerito = idMerito;
-            Eduprog.EduprogWS.eliminarMeritoResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarMerito(inValue);
+        public Eduprog.EduprogWS.reunion[] listarReunion() {
+            Eduprog.EduprogWS.listarReunionRequest inValue = new Eduprog.EduprogWS.listarReunionRequest();
+            Eduprog.EduprogWS.listarReunionResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarReunion(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarMeritoResponse> Eduprog.EduprogWS.EduprogWS.eliminarMeritoAsync(Eduprog.EduprogWS.eliminarMeritoRequest request) {
-            return base.Channel.eliminarMeritoAsync(request);
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarReunionResponse> Eduprog.EduprogWS.EduprogWS.listarReunionAsync(Eduprog.EduprogWS.listarReunionRequest request) {
+            return base.Channel.listarReunionAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarMeritoResponse> eliminarMeritoAsync(int idMerito) {
-            Eduprog.EduprogWS.eliminarMeritoRequest inValue = new Eduprog.EduprogWS.eliminarMeritoRequest();
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarReunionResponse> listarReunionAsync() {
+            Eduprog.EduprogWS.listarReunionRequest inValue = new Eduprog.EduprogWS.listarReunionRequest();
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarReunionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.insertarAulaResponse Eduprog.EduprogWS.EduprogWS.insertarAula(Eduprog.EduprogWS.insertarAulaRequest request) {
+            return base.Channel.insertarAula(request);
+        }
+        
+        public int insertarAula(Eduprog.EduprogWS.aula aula) {
+            Eduprog.EduprogWS.insertarAulaRequest inValue = new Eduprog.EduprogWS.insertarAulaRequest();
+            inValue.aula = aula;
+            Eduprog.EduprogWS.insertarAulaResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).insertarAula(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarAulaResponse> Eduprog.EduprogWS.EduprogWS.insertarAulaAsync(Eduprog.EduprogWS.insertarAulaRequest request) {
+            return base.Channel.insertarAulaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarAulaResponse> insertarAulaAsync(Eduprog.EduprogWS.aula aula) {
+            Eduprog.EduprogWS.insertarAulaRequest inValue = new Eduprog.EduprogWS.insertarAulaRequest();
+            inValue.aula = aula;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).insertarAulaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.modificarReunionResponse Eduprog.EduprogWS.EduprogWS.modificarReunion(Eduprog.EduprogWS.modificarReunionRequest request) {
+            return base.Channel.modificarReunion(request);
+        }
+        
+        public int modificarReunion(Eduprog.EduprogWS.reunion reunion, int[] idAlumnos, int idDocente, bool estado) {
+            Eduprog.EduprogWS.modificarReunionRequest inValue = new Eduprog.EduprogWS.modificarReunionRequest();
+            inValue.reunion = reunion;
+            inValue.idAlumnos = idAlumnos;
+            inValue.idDocente = idDocente;
+            inValue.estado = estado;
+            Eduprog.EduprogWS.modificarReunionResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).modificarReunion(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarReunionResponse> Eduprog.EduprogWS.EduprogWS.modificarReunionAsync(Eduprog.EduprogWS.modificarReunionRequest request) {
+            return base.Channel.modificarReunionAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarReunionResponse> modificarReunionAsync(Eduprog.EduprogWS.reunion reunion, int[] idAlumnos, int idDocente, bool estado) {
+            Eduprog.EduprogWS.modificarReunionRequest inValue = new Eduprog.EduprogWS.modificarReunionRequest();
+            inValue.reunion = reunion;
+            inValue.idAlumnos = idAlumnos;
+            inValue.idDocente = idDocente;
+            inValue.estado = estado;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).modificarReunionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.modificarApoderadoResponse Eduprog.EduprogWS.EduprogWS.modificarApoderado(Eduprog.EduprogWS.modificarApoderadoRequest request) {
+            return base.Channel.modificarApoderado(request);
+        }
+        
+        public int modificarApoderado(Eduprog.EduprogWS.apoderado apoderado, byte[] nuevaFoto) {
+            Eduprog.EduprogWS.modificarApoderadoRequest inValue = new Eduprog.EduprogWS.modificarApoderadoRequest();
+            inValue.apoderado = apoderado;
+            inValue.nuevaFoto = nuevaFoto;
+            Eduprog.EduprogWS.modificarApoderadoResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).modificarApoderado(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarApoderadoResponse> Eduprog.EduprogWS.EduprogWS.modificarApoderadoAsync(Eduprog.EduprogWS.modificarApoderadoRequest request) {
+            return base.Channel.modificarApoderadoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarApoderadoResponse> modificarApoderadoAsync(Eduprog.EduprogWS.apoderado apoderado, byte[] nuevaFoto) {
+            Eduprog.EduprogWS.modificarApoderadoRequest inValue = new Eduprog.EduprogWS.modificarApoderadoRequest();
+            inValue.apoderado = apoderado;
+            inValue.nuevaFoto = nuevaFoto;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).modificarApoderadoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.insertarReunionResponse Eduprog.EduprogWS.EduprogWS.insertarReunion(Eduprog.EduprogWS.insertarReunionRequest request) {
+            return base.Channel.insertarReunion(request);
+        }
+        
+        public int insertarReunion(Eduprog.EduprogWS.reunion reunion, int[] idAlumnos, int idDocente) {
+            Eduprog.EduprogWS.insertarReunionRequest inValue = new Eduprog.EduprogWS.insertarReunionRequest();
+            inValue.reunion = reunion;
+            inValue.idAlumnos = idAlumnos;
+            inValue.idDocente = idDocente;
+            Eduprog.EduprogWS.insertarReunionResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).insertarReunion(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarReunionResponse> Eduprog.EduprogWS.EduprogWS.insertarReunionAsync(Eduprog.EduprogWS.insertarReunionRequest request) {
+            return base.Channel.insertarReunionAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarReunionResponse> insertarReunionAsync(Eduprog.EduprogWS.reunion reunion, int[] idAlumnos, int idDocente) {
+            Eduprog.EduprogWS.insertarReunionRequest inValue = new Eduprog.EduprogWS.insertarReunionRequest();
+            inValue.reunion = reunion;
+            inValue.idAlumnos = idAlumnos;
+            inValue.idDocente = idDocente;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).insertarReunionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.eliminarReunionResponse Eduprog.EduprogWS.EduprogWS.eliminarReunion(Eduprog.EduprogWS.eliminarReunionRequest request) {
+            return base.Channel.eliminarReunion(request);
+        }
+        
+        public int eliminarReunion(int reunion) {
+            Eduprog.EduprogWS.eliminarReunionRequest inValue = new Eduprog.EduprogWS.eliminarReunionRequest();
+            inValue.reunion = reunion;
+            Eduprog.EduprogWS.eliminarReunionResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarReunion(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarReunionResponse> Eduprog.EduprogWS.EduprogWS.eliminarReunionAsync(Eduprog.EduprogWS.eliminarReunionRequest request) {
+            return base.Channel.eliminarReunionAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarReunionResponse> eliminarReunionAsync(int reunion) {
+            Eduprog.EduprogWS.eliminarReunionRequest inValue = new Eduprog.EduprogWS.eliminarReunionRequest();
+            inValue.reunion = reunion;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarReunionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.insertarCursoResponse Eduprog.EduprogWS.EduprogWS.insertarCurso(Eduprog.EduprogWS.insertarCursoRequest request) {
+            return base.Channel.insertarCurso(request);
+        }
+        
+        public int insertarCurso(Eduprog.EduprogWS.curso curso, int idDocente) {
+            Eduprog.EduprogWS.insertarCursoRequest inValue = new Eduprog.EduprogWS.insertarCursoRequest();
+            inValue.curso = curso;
+            inValue.idDocente = idDocente;
+            Eduprog.EduprogWS.insertarCursoResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).insertarCurso(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarCursoResponse> Eduprog.EduprogWS.EduprogWS.insertarCursoAsync(Eduprog.EduprogWS.insertarCursoRequest request) {
+            return base.Channel.insertarCursoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarCursoResponse> insertarCursoAsync(Eduprog.EduprogWS.curso curso, int idDocente) {
+            Eduprog.EduprogWS.insertarCursoRequest inValue = new Eduprog.EduprogWS.insertarCursoRequest();
+            inValue.curso = curso;
+            inValue.idDocente = idDocente;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).insertarCursoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.modificarCursoResponse Eduprog.EduprogWS.EduprogWS.modificarCurso(Eduprog.EduprogWS.modificarCursoRequest request) {
+            return base.Channel.modificarCurso(request);
+        }
+        
+        public int modificarCurso(Eduprog.EduprogWS.curso curso) {
+            Eduprog.EduprogWS.modificarCursoRequest inValue = new Eduprog.EduprogWS.modificarCursoRequest();
+            inValue.curso = curso;
+            Eduprog.EduprogWS.modificarCursoResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).modificarCurso(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarCursoResponse> Eduprog.EduprogWS.EduprogWS.modificarCursoAsync(Eduprog.EduprogWS.modificarCursoRequest request) {
+            return base.Channel.modificarCursoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarCursoResponse> modificarCursoAsync(Eduprog.EduprogWS.curso curso) {
+            Eduprog.EduprogWS.modificarCursoRequest inValue = new Eduprog.EduprogWS.modificarCursoRequest();
+            inValue.curso = curso;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).modificarCursoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.eliminarDemeritoResponse Eduprog.EduprogWS.EduprogWS.eliminarDemerito(Eduprog.EduprogWS.eliminarDemeritoRequest request) {
+            return base.Channel.eliminarDemerito(request);
+        }
+        
+        public int eliminarDemerito(int idMerito) {
+            Eduprog.EduprogWS.eliminarDemeritoRequest inValue = new Eduprog.EduprogWS.eliminarDemeritoRequest();
             inValue.idMerito = idMerito;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarMeritoAsync(inValue);
+            Eduprog.EduprogWS.eliminarDemeritoResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarDemerito(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarDemeritoResponse> Eduprog.EduprogWS.EduprogWS.eliminarDemeritoAsync(Eduprog.EduprogWS.eliminarDemeritoRequest request) {
+            return base.Channel.eliminarDemeritoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarDemeritoResponse> eliminarDemeritoAsync(int idMerito) {
+            Eduprog.EduprogWS.eliminarDemeritoRequest inValue = new Eduprog.EduprogWS.eliminarDemeritoRequest();
+            inValue.idMerito = idMerito;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarDemeritoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.insertarEvaluacionResponse Eduprog.EduprogWS.EduprogWS.insertarEvaluacion(Eduprog.EduprogWS.insertarEvaluacionRequest request) {
+            return base.Channel.insertarEvaluacion(request);
+        }
+        
+        public int insertarEvaluacion(Eduprog.EduprogWS.evaluacion evaluacion, int[] idAlumnos, int idDocente) {
+            Eduprog.EduprogWS.insertarEvaluacionRequest inValue = new Eduprog.EduprogWS.insertarEvaluacionRequest();
+            inValue.evaluacion = evaluacion;
+            inValue.idAlumnos = idAlumnos;
+            inValue.idDocente = idDocente;
+            Eduprog.EduprogWS.insertarEvaluacionResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).insertarEvaluacion(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarEvaluacionResponse> Eduprog.EduprogWS.EduprogWS.insertarEvaluacionAsync(Eduprog.EduprogWS.insertarEvaluacionRequest request) {
+            return base.Channel.insertarEvaluacionAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarEvaluacionResponse> insertarEvaluacionAsync(Eduprog.EduprogWS.evaluacion evaluacion, int[] idAlumnos, int idDocente) {
+            Eduprog.EduprogWS.insertarEvaluacionRequest inValue = new Eduprog.EduprogWS.insertarEvaluacionRequest();
+            inValue.evaluacion = evaluacion;
+            inValue.idAlumnos = idAlumnos;
+            inValue.idDocente = idDocente;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).insertarEvaluacionAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -6517,152 +6876,6 @@ namespace Eduprog.EduprogWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.modificarAlumnoResponse Eduprog.EduprogWS.EduprogWS.modificarAlumno(Eduprog.EduprogWS.modificarAlumnoRequest request) {
-            return base.Channel.modificarAlumno(request);
-        }
-        
-        public int modificarAlumno(Eduprog.EduprogWS.alumno alumno, byte[] nuevaFoto) {
-            Eduprog.EduprogWS.modificarAlumnoRequest inValue = new Eduprog.EduprogWS.modificarAlumnoRequest();
-            inValue.alumno = alumno;
-            inValue.nuevaFoto = nuevaFoto;
-            Eduprog.EduprogWS.modificarAlumnoResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).modificarAlumno(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarAlumnoResponse> Eduprog.EduprogWS.EduprogWS.modificarAlumnoAsync(Eduprog.EduprogWS.modificarAlumnoRequest request) {
-            return base.Channel.modificarAlumnoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarAlumnoResponse> modificarAlumnoAsync(Eduprog.EduprogWS.alumno alumno, byte[] nuevaFoto) {
-            Eduprog.EduprogWS.modificarAlumnoRequest inValue = new Eduprog.EduprogWS.modificarAlumnoRequest();
-            inValue.alumno = alumno;
-            inValue.nuevaFoto = nuevaFoto;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).modificarAlumnoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.listarTodasAulasResponse Eduprog.EduprogWS.EduprogWS.listarTodasAulas(Eduprog.EduprogWS.listarTodasAulasRequest request) {
-            return base.Channel.listarTodasAulas(request);
-        }
-        
-        public Eduprog.EduprogWS.aula[] listarTodasAulas() {
-            Eduprog.EduprogWS.listarTodasAulasRequest inValue = new Eduprog.EduprogWS.listarTodasAulasRequest();
-            Eduprog.EduprogWS.listarTodasAulasResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarTodasAulas(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodasAulasResponse> Eduprog.EduprogWS.EduprogWS.listarTodasAulasAsync(Eduprog.EduprogWS.listarTodasAulasRequest request) {
-            return base.Channel.listarTodasAulasAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodasAulasResponse> listarTodasAulasAsync() {
-            Eduprog.EduprogWS.listarTodasAulasRequest inValue = new Eduprog.EduprogWS.listarTodasAulasRequest();
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarTodasAulasAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.insertarCursoResponse Eduprog.EduprogWS.EduprogWS.insertarCurso(Eduprog.EduprogWS.insertarCursoRequest request) {
-            return base.Channel.insertarCurso(request);
-        }
-        
-        public int insertarCurso(Eduprog.EduprogWS.curso curso, int idDocente) {
-            Eduprog.EduprogWS.insertarCursoRequest inValue = new Eduprog.EduprogWS.insertarCursoRequest();
-            inValue.curso = curso;
-            inValue.idDocente = idDocente;
-            Eduprog.EduprogWS.insertarCursoResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).insertarCurso(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarCursoResponse> Eduprog.EduprogWS.EduprogWS.insertarCursoAsync(Eduprog.EduprogWS.insertarCursoRequest request) {
-            return base.Channel.insertarCursoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarCursoResponse> insertarCursoAsync(Eduprog.EduprogWS.curso curso, int idDocente) {
-            Eduprog.EduprogWS.insertarCursoRequest inValue = new Eduprog.EduprogWS.insertarCursoRequest();
-            inValue.curso = curso;
-            inValue.idDocente = idDocente;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).insertarCursoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.eliminarTrabajadorResponse Eduprog.EduprogWS.EduprogWS.eliminarTrabajador(Eduprog.EduprogWS.eliminarTrabajadorRequest request) {
-            return base.Channel.eliminarTrabajador(request);
-        }
-        
-        public int eliminarTrabajador(int trabajador) {
-            Eduprog.EduprogWS.eliminarTrabajadorRequest inValue = new Eduprog.EduprogWS.eliminarTrabajadorRequest();
-            inValue.trabajador = trabajador;
-            Eduprog.EduprogWS.eliminarTrabajadorResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarTrabajador(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarTrabajadorResponse> Eduprog.EduprogWS.EduprogWS.eliminarTrabajadorAsync(Eduprog.EduprogWS.eliminarTrabajadorRequest request) {
-            return base.Channel.eliminarTrabajadorAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarTrabajadorResponse> eliminarTrabajadorAsync(int trabajador) {
-            Eduprog.EduprogWS.eliminarTrabajadorRequest inValue = new Eduprog.EduprogWS.eliminarTrabajadorRequest();
-            inValue.trabajador = trabajador;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarTrabajadorAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.modificarApoderadoResponse Eduprog.EduprogWS.EduprogWS.modificarApoderado(Eduprog.EduprogWS.modificarApoderadoRequest request) {
-            return base.Channel.modificarApoderado(request);
-        }
-        
-        public int modificarApoderado(Eduprog.EduprogWS.apoderado apoderado, byte[] nuevaFoto) {
-            Eduprog.EduprogWS.modificarApoderadoRequest inValue = new Eduprog.EduprogWS.modificarApoderadoRequest();
-            inValue.apoderado = apoderado;
-            inValue.nuevaFoto = nuevaFoto;
-            Eduprog.EduprogWS.modificarApoderadoResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).modificarApoderado(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarApoderadoResponse> Eduprog.EduprogWS.EduprogWS.modificarApoderadoAsync(Eduprog.EduprogWS.modificarApoderadoRequest request) {
-            return base.Channel.modificarApoderadoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarApoderadoResponse> modificarApoderadoAsync(Eduprog.EduprogWS.apoderado apoderado, byte[] nuevaFoto) {
-            Eduprog.EduprogWS.modificarApoderadoRequest inValue = new Eduprog.EduprogWS.modificarApoderadoRequest();
-            inValue.apoderado = apoderado;
-            inValue.nuevaFoto = nuevaFoto;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).modificarApoderadoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.insertarEvaluacionResponse Eduprog.EduprogWS.EduprogWS.insertarEvaluacion(Eduprog.EduprogWS.insertarEvaluacionRequest request) {
-            return base.Channel.insertarEvaluacion(request);
-        }
-        
-        public int insertarEvaluacion(Eduprog.EduprogWS.evaluacion evaluacion, int[] idAlumnos, int idDocente) {
-            Eduprog.EduprogWS.insertarEvaluacionRequest inValue = new Eduprog.EduprogWS.insertarEvaluacionRequest();
-            inValue.evaluacion = evaluacion;
-            inValue.idAlumnos = idAlumnos;
-            inValue.idDocente = idDocente;
-            Eduprog.EduprogWS.insertarEvaluacionResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).insertarEvaluacion(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarEvaluacionResponse> Eduprog.EduprogWS.EduprogWS.insertarEvaluacionAsync(Eduprog.EduprogWS.insertarEvaluacionRequest request) {
-            return base.Channel.insertarEvaluacionAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarEvaluacionResponse> insertarEvaluacionAsync(Eduprog.EduprogWS.evaluacion evaluacion, int[] idAlumnos, int idDocente) {
-            Eduprog.EduprogWS.insertarEvaluacionRequest inValue = new Eduprog.EduprogWS.insertarEvaluacionRequest();
-            inValue.evaluacion = evaluacion;
-            inValue.idAlumnos = idAlumnos;
-            inValue.idDocente = idDocente;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).insertarEvaluacionAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         Eduprog.EduprogWS.eliminarEvaluacionResponse Eduprog.EduprogWS.EduprogWS.eliminarEvaluacion(Eduprog.EduprogWS.eliminarEvaluacionRequest request) {
             return base.Channel.eliminarEvaluacion(request);
         }
@@ -6686,141 +6899,45 @@ namespace Eduprog.EduprogWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.eliminarDemeritoResponse Eduprog.EduprogWS.EduprogWS.eliminarDemerito(Eduprog.EduprogWS.eliminarDemeritoRequest request) {
-            return base.Channel.eliminarDemerito(request);
+        Eduprog.EduprogWS.listarCursoResponse Eduprog.EduprogWS.EduprogWS.listarCurso(Eduprog.EduprogWS.listarCursoRequest request) {
+            return base.Channel.listarCurso(request);
         }
         
-        public int eliminarDemerito(int idMerito) {
-            Eduprog.EduprogWS.eliminarDemeritoRequest inValue = new Eduprog.EduprogWS.eliminarDemeritoRequest();
-            inValue.idMerito = idMerito;
-            Eduprog.EduprogWS.eliminarDemeritoResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarDemerito(inValue);
+        public Eduprog.EduprogWS.curso[] listarCurso() {
+            Eduprog.EduprogWS.listarCursoRequest inValue = new Eduprog.EduprogWS.listarCursoRequest();
+            Eduprog.EduprogWS.listarCursoResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarCurso(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarDemeritoResponse> Eduprog.EduprogWS.EduprogWS.eliminarDemeritoAsync(Eduprog.EduprogWS.eliminarDemeritoRequest request) {
-            return base.Channel.eliminarDemeritoAsync(request);
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarCursoResponse> Eduprog.EduprogWS.EduprogWS.listarCursoAsync(Eduprog.EduprogWS.listarCursoRequest request) {
+            return base.Channel.listarCursoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarDemeritoResponse> eliminarDemeritoAsync(int idMerito) {
-            Eduprog.EduprogWS.eliminarDemeritoRequest inValue = new Eduprog.EduprogWS.eliminarDemeritoRequest();
-            inValue.idMerito = idMerito;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarDemeritoAsync(inValue);
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarCursoResponse> listarCursoAsync() {
+            Eduprog.EduprogWS.listarCursoRequest inValue = new Eduprog.EduprogWS.listarCursoRequest();
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarCursoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.eliminarReunionResponse Eduprog.EduprogWS.EduprogWS.eliminarReunion(Eduprog.EduprogWS.eliminarReunionRequest request) {
-            return base.Channel.eliminarReunion(request);
+        Eduprog.EduprogWS.listarEvaluacionResponse Eduprog.EduprogWS.EduprogWS.listarEvaluacion(Eduprog.EduprogWS.listarEvaluacionRequest request) {
+            return base.Channel.listarEvaluacion(request);
         }
         
-        public int eliminarReunion(int reunion) {
-            Eduprog.EduprogWS.eliminarReunionRequest inValue = new Eduprog.EduprogWS.eliminarReunionRequest();
-            inValue.reunion = reunion;
-            Eduprog.EduprogWS.eliminarReunionResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarReunion(inValue);
+        public Eduprog.EduprogWS.evaluacion[] listarEvaluacion() {
+            Eduprog.EduprogWS.listarEvaluacionRequest inValue = new Eduprog.EduprogWS.listarEvaluacionRequest();
+            Eduprog.EduprogWS.listarEvaluacionResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarEvaluacion(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarReunionResponse> Eduprog.EduprogWS.EduprogWS.eliminarReunionAsync(Eduprog.EduprogWS.eliminarReunionRequest request) {
-            return base.Channel.eliminarReunionAsync(request);
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarEvaluacionResponse> Eduprog.EduprogWS.EduprogWS.listarEvaluacionAsync(Eduprog.EduprogWS.listarEvaluacionRequest request) {
+            return base.Channel.listarEvaluacionAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarReunionResponse> eliminarReunionAsync(int reunion) {
-            Eduprog.EduprogWS.eliminarReunionRequest inValue = new Eduprog.EduprogWS.eliminarReunionRequest();
-            inValue.reunion = reunion;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarReunionAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.listarSesionResponse Eduprog.EduprogWS.EduprogWS.listarSesion(Eduprog.EduprogWS.listarSesionRequest request) {
-            return base.Channel.listarSesion(request);
-        }
-        
-        public Eduprog.EduprogWS.sesion[] listarSesion() {
-            Eduprog.EduprogWS.listarSesionRequest inValue = new Eduprog.EduprogWS.listarSesionRequest();
-            Eduprog.EduprogWS.listarSesionResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarSesion(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarSesionResponse> Eduprog.EduprogWS.EduprogWS.listarSesionAsync(Eduprog.EduprogWS.listarSesionRequest request) {
-            return base.Channel.listarSesionAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarSesionResponse> listarSesionAsync() {
-            Eduprog.EduprogWS.listarSesionRequest inValue = new Eduprog.EduprogWS.listarSesionRequest();
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarSesionAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.eliminarAlumnoResponse Eduprog.EduprogWS.EduprogWS.eliminarAlumno(Eduprog.EduprogWS.eliminarAlumnoRequest request) {
-            return base.Channel.eliminarAlumno(request);
-        }
-        
-        public int eliminarAlumno(int alumno) {
-            Eduprog.EduprogWS.eliminarAlumnoRequest inValue = new Eduprog.EduprogWS.eliminarAlumnoRequest();
-            inValue.alumno = alumno;
-            Eduprog.EduprogWS.eliminarAlumnoResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarAlumno(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarAlumnoResponse> Eduprog.EduprogWS.EduprogWS.eliminarAlumnoAsync(Eduprog.EduprogWS.eliminarAlumnoRequest request) {
-            return base.Channel.eliminarAlumnoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarAlumnoResponse> eliminarAlumnoAsync(int alumno) {
-            Eduprog.EduprogWS.eliminarAlumnoRequest inValue = new Eduprog.EduprogWS.eliminarAlumnoRequest();
-            inValue.alumno = alumno;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarAlumnoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.insertarSesionResponse Eduprog.EduprogWS.EduprogWS.insertarSesion(Eduprog.EduprogWS.insertarSesionRequest request) {
-            return base.Channel.insertarSesion(request);
-        }
-        
-        public int insertarSesion(Eduprog.EduprogWS.sesion sesion, int[] idAlumnos, int idDocente) {
-            Eduprog.EduprogWS.insertarSesionRequest inValue = new Eduprog.EduprogWS.insertarSesionRequest();
-            inValue.sesion = sesion;
-            inValue.idAlumnos = idAlumnos;
-            inValue.idDocente = idDocente;
-            Eduprog.EduprogWS.insertarSesionResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).insertarSesion(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarSesionResponse> Eduprog.EduprogWS.EduprogWS.insertarSesionAsync(Eduprog.EduprogWS.insertarSesionRequest request) {
-            return base.Channel.insertarSesionAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarSesionResponse> insertarSesionAsync(Eduprog.EduprogWS.sesion sesion, int[] idAlumnos, int idDocente) {
-            Eduprog.EduprogWS.insertarSesionRequest inValue = new Eduprog.EduprogWS.insertarSesionRequest();
-            inValue.sesion = sesion;
-            inValue.idAlumnos = idAlumnos;
-            inValue.idDocente = idDocente;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).insertarSesionAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.listarTodosAlumnosResponse Eduprog.EduprogWS.EduprogWS.listarTodosAlumnos(Eduprog.EduprogWS.listarTodosAlumnosRequest request) {
-            return base.Channel.listarTodosAlumnos(request);
-        }
-        
-        public Eduprog.EduprogWS.alumno[] listarTodosAlumnos() {
-            Eduprog.EduprogWS.listarTodosAlumnosRequest inValue = new Eduprog.EduprogWS.listarTodosAlumnosRequest();
-            Eduprog.EduprogWS.listarTodosAlumnosResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarTodosAlumnos(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodosAlumnosResponse> Eduprog.EduprogWS.EduprogWS.listarTodosAlumnosAsync(Eduprog.EduprogWS.listarTodosAlumnosRequest request) {
-            return base.Channel.listarTodosAlumnosAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodosAlumnosResponse> listarTodosAlumnosAsync() {
-            Eduprog.EduprogWS.listarTodosAlumnosRequest inValue = new Eduprog.EduprogWS.listarTodosAlumnosRequest();
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarTodosAlumnosAsync(inValue);
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarEvaluacionResponse> listarEvaluacionAsync() {
+            Eduprog.EduprogWS.listarEvaluacionRequest inValue = new Eduprog.EduprogWS.listarEvaluacionRequest();
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarEvaluacionAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -6847,277 +6964,26 @@ namespace Eduprog.EduprogWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.listarTareasResponse Eduprog.EduprogWS.EduprogWS.listarTareas(Eduprog.EduprogWS.listarTareasRequest request) {
-            return base.Channel.listarTareas(request);
+        Eduprog.EduprogWS.eliminarMeritoResponse Eduprog.EduprogWS.EduprogWS.eliminarMerito(Eduprog.EduprogWS.eliminarMeritoRequest request) {
+            return base.Channel.eliminarMerito(request);
         }
         
-        public Eduprog.EduprogWS.tarea[] listarTareas() {
-            Eduprog.EduprogWS.listarTareasRequest inValue = new Eduprog.EduprogWS.listarTareasRequest();
-            Eduprog.EduprogWS.listarTareasResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarTareas(inValue);
+        public int eliminarMerito(int idMerito) {
+            Eduprog.EduprogWS.eliminarMeritoRequest inValue = new Eduprog.EduprogWS.eliminarMeritoRequest();
+            inValue.idMerito = idMerito;
+            Eduprog.EduprogWS.eliminarMeritoResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarMerito(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTareasResponse> Eduprog.EduprogWS.EduprogWS.listarTareasAsync(Eduprog.EduprogWS.listarTareasRequest request) {
-            return base.Channel.listarTareasAsync(request);
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarMeritoResponse> Eduprog.EduprogWS.EduprogWS.eliminarMeritoAsync(Eduprog.EduprogWS.eliminarMeritoRequest request) {
+            return base.Channel.eliminarMeritoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTareasResponse> listarTareasAsync() {
-            Eduprog.EduprogWS.listarTareasRequest inValue = new Eduprog.EduprogWS.listarTareasRequest();
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarTareasAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.insertarReunionResponse Eduprog.EduprogWS.EduprogWS.insertarReunion(Eduprog.EduprogWS.insertarReunionRequest request) {
-            return base.Channel.insertarReunion(request);
-        }
-        
-        public int insertarReunion(Eduprog.EduprogWS.reunion reunion, int[] idAlumnos, int idDocente) {
-            Eduprog.EduprogWS.insertarReunionRequest inValue = new Eduprog.EduprogWS.insertarReunionRequest();
-            inValue.reunion = reunion;
-            inValue.idAlumnos = idAlumnos;
-            inValue.idDocente = idDocente;
-            Eduprog.EduprogWS.insertarReunionResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).insertarReunion(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarReunionResponse> Eduprog.EduprogWS.EduprogWS.insertarReunionAsync(Eduprog.EduprogWS.insertarReunionRequest request) {
-            return base.Channel.insertarReunionAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarReunionResponse> insertarReunionAsync(Eduprog.EduprogWS.reunion reunion, int[] idAlumnos, int idDocente) {
-            Eduprog.EduprogWS.insertarReunionRequest inValue = new Eduprog.EduprogWS.insertarReunionRequest();
-            inValue.reunion = reunion;
-            inValue.idAlumnos = idAlumnos;
-            inValue.idDocente = idDocente;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).insertarReunionAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.obtenerUsuarioSUperUsuarioPorIDResponse Eduprog.EduprogWS.EduprogWS.obtenerUsuarioSUperUsuarioPorID(Eduprog.EduprogWS.obtenerUsuarioSUperUsuarioPorIDRequest request) {
-            return base.Channel.obtenerUsuarioSUperUsuarioPorID(request);
-        }
-        
-        public Eduprog.EduprogWS.superUsuario obtenerUsuarioSUperUsuarioPorID(int idSUario) {
-            Eduprog.EduprogWS.obtenerUsuarioSUperUsuarioPorIDRequest inValue = new Eduprog.EduprogWS.obtenerUsuarioSUperUsuarioPorIDRequest();
-            inValue.idSUario = idSUario;
-            Eduprog.EduprogWS.obtenerUsuarioSUperUsuarioPorIDResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).obtenerUsuarioSUperUsuarioPorID(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerUsuarioSUperUsuarioPorIDResponse> Eduprog.EduprogWS.EduprogWS.obtenerUsuarioSUperUsuarioPorIDAsync(Eduprog.EduprogWS.obtenerUsuarioSUperUsuarioPorIDRequest request) {
-            return base.Channel.obtenerUsuarioSUperUsuarioPorIDAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerUsuarioSUperUsuarioPorIDResponse> obtenerUsuarioSUperUsuarioPorIDAsync(int idSUario) {
-            Eduprog.EduprogWS.obtenerUsuarioSUperUsuarioPorIDRequest inValue = new Eduprog.EduprogWS.obtenerUsuarioSUperUsuarioPorIDRequest();
-            inValue.idSUario = idSUario;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).obtenerUsuarioSUperUsuarioPorIDAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.obtenerUsuarioTrabajadorPorIDResponse Eduprog.EduprogWS.EduprogWS.obtenerUsuarioTrabajadorPorID(Eduprog.EduprogWS.obtenerUsuarioTrabajadorPorIDRequest request) {
-            return base.Channel.obtenerUsuarioTrabajadorPorID(request);
-        }
-        
-        public Eduprog.EduprogWS.trabajador obtenerUsuarioTrabajadorPorID(int idSUario) {
-            Eduprog.EduprogWS.obtenerUsuarioTrabajadorPorIDRequest inValue = new Eduprog.EduprogWS.obtenerUsuarioTrabajadorPorIDRequest();
-            inValue.idSUario = idSUario;
-            Eduprog.EduprogWS.obtenerUsuarioTrabajadorPorIDResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).obtenerUsuarioTrabajadorPorID(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerUsuarioTrabajadorPorIDResponse> Eduprog.EduprogWS.EduprogWS.obtenerUsuarioTrabajadorPorIDAsync(Eduprog.EduprogWS.obtenerUsuarioTrabajadorPorIDRequest request) {
-            return base.Channel.obtenerUsuarioTrabajadorPorIDAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerUsuarioTrabajadorPorIDResponse> obtenerUsuarioTrabajadorPorIDAsync(int idSUario) {
-            Eduprog.EduprogWS.obtenerUsuarioTrabajadorPorIDRequest inValue = new Eduprog.EduprogWS.obtenerUsuarioTrabajadorPorIDRequest();
-            inValue.idSUario = idSUario;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).obtenerUsuarioTrabajadorPorIDAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.eliminarSuperusuarioResponse Eduprog.EduprogWS.EduprogWS.eliminarSuperusuario(Eduprog.EduprogWS.eliminarSuperusuarioRequest request) {
-            return base.Channel.eliminarSuperusuario(request);
-        }
-        
-        public int eliminarSuperusuario(int superusuario) {
-            Eduprog.EduprogWS.eliminarSuperusuarioRequest inValue = new Eduprog.EduprogWS.eliminarSuperusuarioRequest();
-            inValue.superusuario = superusuario;
-            Eduprog.EduprogWS.eliminarSuperusuarioResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarSuperusuario(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarSuperusuarioResponse> Eduprog.EduprogWS.EduprogWS.eliminarSuperusuarioAsync(Eduprog.EduprogWS.eliminarSuperusuarioRequest request) {
-            return base.Channel.eliminarSuperusuarioAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarSuperusuarioResponse> eliminarSuperusuarioAsync(int superusuario) {
-            Eduprog.EduprogWS.eliminarSuperusuarioRequest inValue = new Eduprog.EduprogWS.eliminarSuperusuarioRequest();
-            inValue.superusuario = superusuario;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarSuperusuarioAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.ObtenerAulaxAlumnoIDResponse Eduprog.EduprogWS.EduprogWS.ObtenerAulaxAlumnoID(Eduprog.EduprogWS.ObtenerAulaxAlumnoIDRequest request) {
-            return base.Channel.ObtenerAulaxAlumnoID(request);
-        }
-        
-        public Eduprog.EduprogWS.aula ObtenerAulaxAlumnoID(int idUsuario) {
-            Eduprog.EduprogWS.ObtenerAulaxAlumnoIDRequest inValue = new Eduprog.EduprogWS.ObtenerAulaxAlumnoIDRequest();
-            inValue.idUsuario = idUsuario;
-            Eduprog.EduprogWS.ObtenerAulaxAlumnoIDResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).ObtenerAulaxAlumnoID(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.ObtenerAulaxAlumnoIDResponse> Eduprog.EduprogWS.EduprogWS.ObtenerAulaxAlumnoIDAsync(Eduprog.EduprogWS.ObtenerAulaxAlumnoIDRequest request) {
-            return base.Channel.ObtenerAulaxAlumnoIDAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.ObtenerAulaxAlumnoIDResponse> ObtenerAulaxAlumnoIDAsync(int idUsuario) {
-            Eduprog.EduprogWS.ObtenerAulaxAlumnoIDRequest inValue = new Eduprog.EduprogWS.ObtenerAulaxAlumnoIDRequest();
-            inValue.idUsuario = idUsuario;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).ObtenerAulaxAlumnoIDAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.obtenerUsuarioIncidenciaResponse Eduprog.EduprogWS.EduprogWS.obtenerUsuarioIncidencia(Eduprog.EduprogWS.obtenerUsuarioIncidenciaRequest request) {
-            return base.Channel.obtenerUsuarioIncidencia(request);
-        }
-        
-        public string obtenerUsuarioIncidencia(int idIncidencia) {
-            Eduprog.EduprogWS.obtenerUsuarioIncidenciaRequest inValue = new Eduprog.EduprogWS.obtenerUsuarioIncidenciaRequest();
-            inValue.idIncidencia = idIncidencia;
-            Eduprog.EduprogWS.obtenerUsuarioIncidenciaResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).obtenerUsuarioIncidencia(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerUsuarioIncidenciaResponse> Eduprog.EduprogWS.EduprogWS.obtenerUsuarioIncidenciaAsync(Eduprog.EduprogWS.obtenerUsuarioIncidenciaRequest request) {
-            return base.Channel.obtenerUsuarioIncidenciaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerUsuarioIncidenciaResponse> obtenerUsuarioIncidenciaAsync(int idIncidencia) {
-            Eduprog.EduprogWS.obtenerUsuarioIncidenciaRequest inValue = new Eduprog.EduprogWS.obtenerUsuarioIncidenciaRequest();
-            inValue.idIncidencia = idIncidencia;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).obtenerUsuarioIncidenciaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.listarTareasXDocenteIdResponse Eduprog.EduprogWS.EduprogWS.listarTareasXDocenteId(Eduprog.EduprogWS.listarTareasXDocenteIdRequest request) {
-            return base.Channel.listarTareasXDocenteId(request);
-        }
-        
-        public Eduprog.EduprogWS.tarea[] listarTareasXDocenteId(int idUsuario) {
-            Eduprog.EduprogWS.listarTareasXDocenteIdRequest inValue = new Eduprog.EduprogWS.listarTareasXDocenteIdRequest();
-            inValue.idUsuario = idUsuario;
-            Eduprog.EduprogWS.listarTareasXDocenteIdResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarTareasXDocenteId(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTareasXDocenteIdResponse> Eduprog.EduprogWS.EduprogWS.listarTareasXDocenteIdAsync(Eduprog.EduprogWS.listarTareasXDocenteIdRequest request) {
-            return base.Channel.listarTareasXDocenteIdAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTareasXDocenteIdResponse> listarTareasXDocenteIdAsync(int idUsuario) {
-            Eduprog.EduprogWS.listarTareasXDocenteIdRequest inValue = new Eduprog.EduprogWS.listarTareasXDocenteIdRequest();
-            inValue.idUsuario = idUsuario;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarTareasXDocenteIdAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.obtenerDocentePorIDResponse Eduprog.EduprogWS.EduprogWS.obtenerDocentePorID(Eduprog.EduprogWS.obtenerDocentePorIDRequest request) {
-            return base.Channel.obtenerDocentePorID(request);
-        }
-        
-        public Eduprog.EduprogWS.docente obtenerDocentePorID(int idSUario) {
-            Eduprog.EduprogWS.obtenerDocentePorIDRequest inValue = new Eduprog.EduprogWS.obtenerDocentePorIDRequest();
-            inValue.idSUario = idSUario;
-            Eduprog.EduprogWS.obtenerDocentePorIDResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).obtenerDocentePorID(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerDocentePorIDResponse> Eduprog.EduprogWS.EduprogWS.obtenerDocentePorIDAsync(Eduprog.EduprogWS.obtenerDocentePorIDRequest request) {
-            return base.Channel.obtenerDocentePorIDAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerDocentePorIDResponse> obtenerDocentePorIDAsync(int idSUario) {
-            Eduprog.EduprogWS.obtenerDocentePorIDRequest inValue = new Eduprog.EduprogWS.obtenerDocentePorIDRequest();
-            inValue.idSUario = idSUario;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).obtenerDocentePorIDAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.listarAlumnossAulasXIdResponse Eduprog.EduprogWS.EduprogWS.listarAlumnossAulasXId(Eduprog.EduprogWS.listarAlumnossAulasXIdRequest request) {
-            return base.Channel.listarAlumnossAulasXId(request);
-        }
-        
-        public int[] listarAlumnossAulasXId(int idAula) {
-            Eduprog.EduprogWS.listarAlumnossAulasXIdRequest inValue = new Eduprog.EduprogWS.listarAlumnossAulasXIdRequest();
-            inValue.idAula = idAula;
-            Eduprog.EduprogWS.listarAlumnossAulasXIdResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarAlumnossAulasXId(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarAlumnossAulasXIdResponse> Eduprog.EduprogWS.EduprogWS.listarAlumnossAulasXIdAsync(Eduprog.EduprogWS.listarAlumnossAulasXIdRequest request) {
-            return base.Channel.listarAlumnossAulasXIdAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarAlumnossAulasXIdResponse> listarAlumnossAulasXIdAsync(int idAula) {
-            Eduprog.EduprogWS.listarAlumnossAulasXIdRequest inValue = new Eduprog.EduprogWS.listarAlumnossAulasXIdRequest();
-            inValue.idAula = idAula;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarAlumnossAulasXIdAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.listarAlumnosSinSalonResponse Eduprog.EduprogWS.EduprogWS.listarAlumnosSinSalon(Eduprog.EduprogWS.listarAlumnosSinSalonRequest request) {
-            return base.Channel.listarAlumnosSinSalon(request);
-        }
-        
-        public Eduprog.EduprogWS.alumno[] listarAlumnosSinSalon() {
-            Eduprog.EduprogWS.listarAlumnosSinSalonRequest inValue = new Eduprog.EduprogWS.listarAlumnosSinSalonRequest();
-            Eduprog.EduprogWS.listarAlumnosSinSalonResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarAlumnosSinSalon(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarAlumnosSinSalonResponse> Eduprog.EduprogWS.EduprogWS.listarAlumnosSinSalonAsync(Eduprog.EduprogWS.listarAlumnosSinSalonRequest request) {
-            return base.Channel.listarAlumnosSinSalonAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarAlumnosSinSalonResponse> listarAlumnosSinSalonAsync() {
-            Eduprog.EduprogWS.listarAlumnosSinSalonRequest inValue = new Eduprog.EduprogWS.listarAlumnosSinSalonRequest();
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarAlumnosSinSalonAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.listarTodosDocentesResponse Eduprog.EduprogWS.EduprogWS.listarTodosDocentes(Eduprog.EduprogWS.listarTodosDocentesRequest request) {
-            return base.Channel.listarTodosDocentes(request);
-        }
-        
-        public Eduprog.EduprogWS.docente[] listarTodosDocentes() {
-            Eduprog.EduprogWS.listarTodosDocentesRequest inValue = new Eduprog.EduprogWS.listarTodosDocentesRequest();
-            Eduprog.EduprogWS.listarTodosDocentesResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarTodosDocentes(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodosDocentesResponse> Eduprog.EduprogWS.EduprogWS.listarTodosDocentesAsync(Eduprog.EduprogWS.listarTodosDocentesRequest request) {
-            return base.Channel.listarTodosDocentesAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodosDocentesResponse> listarTodosDocentesAsync() {
-            Eduprog.EduprogWS.listarTodosDocentesRequest inValue = new Eduprog.EduprogWS.listarTodosDocentesRequest();
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarTodosDocentesAsync(inValue);
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarMeritoResponse> eliminarMeritoAsync(int idMerito) {
+            Eduprog.EduprogWS.eliminarMeritoRequest inValue = new Eduprog.EduprogWS.eliminarMeritoRequest();
+            inValue.idMerito = idMerito;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarMeritoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -7144,47 +7010,47 @@ namespace Eduprog.EduprogWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.listarTodosSuperusuariosResponse Eduprog.EduprogWS.EduprogWS.listarTodosSuperusuarios(Eduprog.EduprogWS.listarTodosSuperusuariosRequest request) {
-            return base.Channel.listarTodosSuperusuarios(request);
+        Eduprog.EduprogWS.listarTodosApoderadosResponse Eduprog.EduprogWS.EduprogWS.listarTodosApoderados(Eduprog.EduprogWS.listarTodosApoderadosRequest request) {
+            return base.Channel.listarTodosApoderados(request);
         }
         
-        public Eduprog.EduprogWS.superUsuario[] listarTodosSuperusuarios() {
-            Eduprog.EduprogWS.listarTodosSuperusuariosRequest inValue = new Eduprog.EduprogWS.listarTodosSuperusuariosRequest();
-            Eduprog.EduprogWS.listarTodosSuperusuariosResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarTodosSuperusuarios(inValue);
+        public Eduprog.EduprogWS.apoderado[] listarTodosApoderados() {
+            Eduprog.EduprogWS.listarTodosApoderadosRequest inValue = new Eduprog.EduprogWS.listarTodosApoderadosRequest();
+            Eduprog.EduprogWS.listarTodosApoderadosResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarTodosApoderados(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodosSuperusuariosResponse> Eduprog.EduprogWS.EduprogWS.listarTodosSuperusuariosAsync(Eduprog.EduprogWS.listarTodosSuperusuariosRequest request) {
-            return base.Channel.listarTodosSuperusuariosAsync(request);
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodosApoderadosResponse> Eduprog.EduprogWS.EduprogWS.listarTodosApoderadosAsync(Eduprog.EduprogWS.listarTodosApoderadosRequest request) {
+            return base.Channel.listarTodosApoderadosAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodosSuperusuariosResponse> listarTodosSuperusuariosAsync() {
-            Eduprog.EduprogWS.listarTodosSuperusuariosRequest inValue = new Eduprog.EduprogWS.listarTodosSuperusuariosRequest();
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarTodosSuperusuariosAsync(inValue);
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodosApoderadosResponse> listarTodosApoderadosAsync() {
+            Eduprog.EduprogWS.listarTodosApoderadosRequest inValue = new Eduprog.EduprogWS.listarTodosApoderadosRequest();
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarTodosApoderadosAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.listarSesionesXAlumnoIdResponse Eduprog.EduprogWS.EduprogWS.listarSesionesXAlumnoId(Eduprog.EduprogWS.listarSesionesXAlumnoIdRequest request) {
-            return base.Channel.listarSesionesXAlumnoId(request);
+        Eduprog.EduprogWS.insertarSuperUsuarioResponse Eduprog.EduprogWS.EduprogWS.insertarSuperUsuario(Eduprog.EduprogWS.insertarSuperUsuarioRequest request) {
+            return base.Channel.insertarSuperUsuario(request);
         }
         
-        public Eduprog.EduprogWS.sesion[] listarSesionesXAlumnoId(int idUsuario) {
-            Eduprog.EduprogWS.listarSesionesXAlumnoIdRequest inValue = new Eduprog.EduprogWS.listarSesionesXAlumnoIdRequest();
-            inValue.idUsuario = idUsuario;
-            Eduprog.EduprogWS.listarSesionesXAlumnoIdResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarSesionesXAlumnoId(inValue);
+        public int insertarSuperUsuario(Eduprog.EduprogWS.superUsuario superusuario) {
+            Eduprog.EduprogWS.insertarSuperUsuarioRequest inValue = new Eduprog.EduprogWS.insertarSuperUsuarioRequest();
+            inValue.superusuario = superusuario;
+            Eduprog.EduprogWS.insertarSuperUsuarioResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).insertarSuperUsuario(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarSesionesXAlumnoIdResponse> Eduprog.EduprogWS.EduprogWS.listarSesionesXAlumnoIdAsync(Eduprog.EduprogWS.listarSesionesXAlumnoIdRequest request) {
-            return base.Channel.listarSesionesXAlumnoIdAsync(request);
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarSuperUsuarioResponse> Eduprog.EduprogWS.EduprogWS.insertarSuperUsuarioAsync(Eduprog.EduprogWS.insertarSuperUsuarioRequest request) {
+            return base.Channel.insertarSuperUsuarioAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarSesionesXAlumnoIdResponse> listarSesionesXAlumnoIdAsync(int idUsuario) {
-            Eduprog.EduprogWS.listarSesionesXAlumnoIdRequest inValue = new Eduprog.EduprogWS.listarSesionesXAlumnoIdRequest();
-            inValue.idUsuario = idUsuario;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarSesionesXAlumnoIdAsync(inValue);
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarSuperUsuarioResponse> insertarSuperUsuarioAsync(Eduprog.EduprogWS.superUsuario superusuario) {
+            Eduprog.EduprogWS.insertarSuperUsuarioRequest inValue = new Eduprog.EduprogWS.insertarSuperUsuarioRequest();
+            inValue.superusuario = superusuario;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).insertarSuperUsuarioAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -7213,74 +7079,76 @@ namespace Eduprog.EduprogWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.eliminarPublicacionesResponse Eduprog.EduprogWS.EduprogWS.eliminarPublicaciones(Eduprog.EduprogWS.eliminarPublicacionesRequest request) {
-            return base.Channel.eliminarPublicaciones(request);
+        Eduprog.EduprogWS.modificarPublicacionesResponse Eduprog.EduprogWS.EduprogWS.modificarPublicaciones(Eduprog.EduprogWS.modificarPublicacionesRequest request) {
+            return base.Channel.modificarPublicaciones(request);
         }
         
-        public int eliminarPublicaciones(int idDocente) {
-            Eduprog.EduprogWS.eliminarPublicacionesRequest inValue = new Eduprog.EduprogWS.eliminarPublicacionesRequest();
-            inValue.idDocente = idDocente;
-            Eduprog.EduprogWS.eliminarPublicacionesResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarPublicaciones(inValue);
+        public int modificarPublicaciones(Eduprog.EduprogWS.publicaciones publicacion, int idUsuario, int idPublicacion, bool estado) {
+            Eduprog.EduprogWS.modificarPublicacionesRequest inValue = new Eduprog.EduprogWS.modificarPublicacionesRequest();
+            inValue.publicacion = publicacion;
+            inValue.idUsuario = idUsuario;
+            inValue.idPublicacion = idPublicacion;
+            inValue.estado = estado;
+            Eduprog.EduprogWS.modificarPublicacionesResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).modificarPublicaciones(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarPublicacionesResponse> Eduprog.EduprogWS.EduprogWS.eliminarPublicacionesAsync(Eduprog.EduprogWS.eliminarPublicacionesRequest request) {
-            return base.Channel.eliminarPublicacionesAsync(request);
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarPublicacionesResponse> Eduprog.EduprogWS.EduprogWS.modificarPublicacionesAsync(Eduprog.EduprogWS.modificarPublicacionesRequest request) {
+            return base.Channel.modificarPublicacionesAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarPublicacionesResponse> eliminarPublicacionesAsync(int idDocente) {
-            Eduprog.EduprogWS.eliminarPublicacionesRequest inValue = new Eduprog.EduprogWS.eliminarPublicacionesRequest();
-            inValue.idDocente = idDocente;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarPublicacionesAsync(inValue);
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarPublicacionesResponse> modificarPublicacionesAsync(Eduprog.EduprogWS.publicaciones publicacion, int idUsuario, int idPublicacion, bool estado) {
+            Eduprog.EduprogWS.modificarPublicacionesRequest inValue = new Eduprog.EduprogWS.modificarPublicacionesRequest();
+            inValue.publicacion = publicacion;
+            inValue.idUsuario = idUsuario;
+            inValue.idPublicacion = idPublicacion;
+            inValue.estado = estado;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).modificarPublicacionesAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.insertarSuperUsuarioResponse Eduprog.EduprogWS.EduprogWS.insertarSuperUsuario(Eduprog.EduprogWS.insertarSuperUsuarioRequest request) {
-            return base.Channel.insertarSuperUsuario(request);
+        Eduprog.EduprogWS.ObtenerAulaxAlumnoIDResponse Eduprog.EduprogWS.EduprogWS.ObtenerAulaxAlumnoID(Eduprog.EduprogWS.ObtenerAulaxAlumnoIDRequest request) {
+            return base.Channel.ObtenerAulaxAlumnoID(request);
         }
         
-        public int insertarSuperUsuario(Eduprog.EduprogWS.superUsuario superusuario) {
-            Eduprog.EduprogWS.insertarSuperUsuarioRequest inValue = new Eduprog.EduprogWS.insertarSuperUsuarioRequest();
-            inValue.superusuario = superusuario;
-            Eduprog.EduprogWS.insertarSuperUsuarioResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).insertarSuperUsuario(inValue);
+        public Eduprog.EduprogWS.aula ObtenerAulaxAlumnoID(int idUsuario) {
+            Eduprog.EduprogWS.ObtenerAulaxAlumnoIDRequest inValue = new Eduprog.EduprogWS.ObtenerAulaxAlumnoIDRequest();
+            inValue.idUsuario = idUsuario;
+            Eduprog.EduprogWS.ObtenerAulaxAlumnoIDResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).ObtenerAulaxAlumnoID(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarSuperUsuarioResponse> Eduprog.EduprogWS.EduprogWS.insertarSuperUsuarioAsync(Eduprog.EduprogWS.insertarSuperUsuarioRequest request) {
-            return base.Channel.insertarSuperUsuarioAsync(request);
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.ObtenerAulaxAlumnoIDResponse> Eduprog.EduprogWS.EduprogWS.ObtenerAulaxAlumnoIDAsync(Eduprog.EduprogWS.ObtenerAulaxAlumnoIDRequest request) {
+            return base.Channel.ObtenerAulaxAlumnoIDAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.insertarSuperUsuarioResponse> insertarSuperUsuarioAsync(Eduprog.EduprogWS.superUsuario superusuario) {
-            Eduprog.EduprogWS.insertarSuperUsuarioRequest inValue = new Eduprog.EduprogWS.insertarSuperUsuarioRequest();
-            inValue.superusuario = superusuario;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).insertarSuperUsuarioAsync(inValue);
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.ObtenerAulaxAlumnoIDResponse> ObtenerAulaxAlumnoIDAsync(int idUsuario) {
+            Eduprog.EduprogWS.ObtenerAulaxAlumnoIDRequest inValue = new Eduprog.EduprogWS.ObtenerAulaxAlumnoIDRequest();
+            inValue.idUsuario = idUsuario;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).ObtenerAulaxAlumnoIDAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.modificarSuperusuarioResponse Eduprog.EduprogWS.EduprogWS.modificarSuperusuario(Eduprog.EduprogWS.modificarSuperusuarioRequest request) {
-            return base.Channel.modificarSuperusuario(request);
+        Eduprog.EduprogWS.listarTodosDocentesResponse Eduprog.EduprogWS.EduprogWS.listarTodosDocentes(Eduprog.EduprogWS.listarTodosDocentesRequest request) {
+            return base.Channel.listarTodosDocentes(request);
         }
         
-        public int modificarSuperusuario(Eduprog.EduprogWS.superUsuario superusuario, byte[] nuevaFoto) {
-            Eduprog.EduprogWS.modificarSuperusuarioRequest inValue = new Eduprog.EduprogWS.modificarSuperusuarioRequest();
-            inValue.superusuario = superusuario;
-            inValue.nuevaFoto = nuevaFoto;
-            Eduprog.EduprogWS.modificarSuperusuarioResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).modificarSuperusuario(inValue);
+        public Eduprog.EduprogWS.docente[] listarTodosDocentes() {
+            Eduprog.EduprogWS.listarTodosDocentesRequest inValue = new Eduprog.EduprogWS.listarTodosDocentesRequest();
+            Eduprog.EduprogWS.listarTodosDocentesResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarTodosDocentes(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarSuperusuarioResponse> Eduprog.EduprogWS.EduprogWS.modificarSuperusuarioAsync(Eduprog.EduprogWS.modificarSuperusuarioRequest request) {
-            return base.Channel.modificarSuperusuarioAsync(request);
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodosDocentesResponse> Eduprog.EduprogWS.EduprogWS.listarTodosDocentesAsync(Eduprog.EduprogWS.listarTodosDocentesRequest request) {
+            return base.Channel.listarTodosDocentesAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarSuperusuarioResponse> modificarSuperusuarioAsync(Eduprog.EduprogWS.superUsuario superusuario, byte[] nuevaFoto) {
-            Eduprog.EduprogWS.modificarSuperusuarioRequest inValue = new Eduprog.EduprogWS.modificarSuperusuarioRequest();
-            inValue.superusuario = superusuario;
-            inValue.nuevaFoto = nuevaFoto;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).modificarSuperusuarioAsync(inValue);
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodosDocentesResponse> listarTodosDocentesAsync() {
+            Eduprog.EduprogWS.listarTodosDocentesRequest inValue = new Eduprog.EduprogWS.listarTodosDocentesRequest();
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarTodosDocentesAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -7302,6 +7170,50 @@ namespace Eduprog.EduprogWS {
         public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodasPublicacionesResponse> listarTodasPublicacionesAsync() {
             Eduprog.EduprogWS.listarTodasPublicacionesRequest inValue = new Eduprog.EduprogWS.listarTodasPublicacionesRequest();
             return ((Eduprog.EduprogWS.EduprogWS)(this)).listarTodasPublicacionesAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.eliminarAtencionMedicaResponse Eduprog.EduprogWS.EduprogWS.eliminarAtencionMedica(Eduprog.EduprogWS.eliminarAtencionMedicaRequest request) {
+            return base.Channel.eliminarAtencionMedica(request);
+        }
+        
+        public int eliminarAtencionMedica(int identificador) {
+            Eduprog.EduprogWS.eliminarAtencionMedicaRequest inValue = new Eduprog.EduprogWS.eliminarAtencionMedicaRequest();
+            inValue.identificador = identificador;
+            Eduprog.EduprogWS.eliminarAtencionMedicaResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarAtencionMedica(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarAtencionMedicaResponse> Eduprog.EduprogWS.EduprogWS.eliminarAtencionMedicaAsync(Eduprog.EduprogWS.eliminarAtencionMedicaRequest request) {
+            return base.Channel.eliminarAtencionMedicaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarAtencionMedicaResponse> eliminarAtencionMedicaAsync(int identificador) {
+            Eduprog.EduprogWS.eliminarAtencionMedicaRequest inValue = new Eduprog.EduprogWS.eliminarAtencionMedicaRequest();
+            inValue.identificador = identificador;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarAtencionMedicaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.listarTodosSuperusuariosResponse Eduprog.EduprogWS.EduprogWS.listarTodosSuperusuarios(Eduprog.EduprogWS.listarTodosSuperusuariosRequest request) {
+            return base.Channel.listarTodosSuperusuarios(request);
+        }
+        
+        public Eduprog.EduprogWS.superUsuario[] listarTodosSuperusuarios() {
+            Eduprog.EduprogWS.listarTodosSuperusuariosRequest inValue = new Eduprog.EduprogWS.listarTodosSuperusuariosRequest();
+            Eduprog.EduprogWS.listarTodosSuperusuariosResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarTodosSuperusuarios(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodosSuperusuariosResponse> Eduprog.EduprogWS.EduprogWS.listarTodosSuperusuariosAsync(Eduprog.EduprogWS.listarTodosSuperusuariosRequest request) {
+            return base.Channel.listarTodosSuperusuariosAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodosSuperusuariosResponse> listarTodosSuperusuariosAsync() {
+            Eduprog.EduprogWS.listarTodosSuperusuariosRequest inValue = new Eduprog.EduprogWS.listarTodosSuperusuariosRequest();
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarTodosSuperusuariosAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -7328,97 +7240,49 @@ namespace Eduprog.EduprogWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.modificarEvaluacionResponse Eduprog.EduprogWS.EduprogWS.modificarEvaluacion(Eduprog.EduprogWS.modificarEvaluacionRequest request) {
-            return base.Channel.modificarEvaluacion(request);
+        Eduprog.EduprogWS.listarSesionesXAlumnoIdResponse Eduprog.EduprogWS.EduprogWS.listarSesionesXAlumnoId(Eduprog.EduprogWS.listarSesionesXAlumnoIdRequest request) {
+            return base.Channel.listarSesionesXAlumnoId(request);
         }
         
-        public int modificarEvaluacion(Eduprog.EduprogWS.evaluacion evaluacion, int[] idAlumnos, int idDocente, bool estado) {
-            Eduprog.EduprogWS.modificarEvaluacionRequest inValue = new Eduprog.EduprogWS.modificarEvaluacionRequest();
-            inValue.evaluacion = evaluacion;
-            inValue.idAlumnos = idAlumnos;
-            inValue.idDocente = idDocente;
-            inValue.estado = estado;
-            Eduprog.EduprogWS.modificarEvaluacionResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).modificarEvaluacion(inValue);
+        public Eduprog.EduprogWS.sesion[] listarSesionesXAlumnoId(int idUsuario) {
+            Eduprog.EduprogWS.listarSesionesXAlumnoIdRequest inValue = new Eduprog.EduprogWS.listarSesionesXAlumnoIdRequest();
+            inValue.idUsuario = idUsuario;
+            Eduprog.EduprogWS.listarSesionesXAlumnoIdResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarSesionesXAlumnoId(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarEvaluacionResponse> Eduprog.EduprogWS.EduprogWS.modificarEvaluacionAsync(Eduprog.EduprogWS.modificarEvaluacionRequest request) {
-            return base.Channel.modificarEvaluacionAsync(request);
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarSesionesXAlumnoIdResponse> Eduprog.EduprogWS.EduprogWS.listarSesionesXAlumnoIdAsync(Eduprog.EduprogWS.listarSesionesXAlumnoIdRequest request) {
+            return base.Channel.listarSesionesXAlumnoIdAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarEvaluacionResponse> modificarEvaluacionAsync(Eduprog.EduprogWS.evaluacion evaluacion, int[] idAlumnos, int idDocente, bool estado) {
-            Eduprog.EduprogWS.modificarEvaluacionRequest inValue = new Eduprog.EduprogWS.modificarEvaluacionRequest();
-            inValue.evaluacion = evaluacion;
-            inValue.idAlumnos = idAlumnos;
-            inValue.idDocente = idDocente;
-            inValue.estado = estado;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).modificarEvaluacionAsync(inValue);
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarSesionesXAlumnoIdResponse> listarSesionesXAlumnoIdAsync(int idUsuario) {
+            Eduprog.EduprogWS.listarSesionesXAlumnoIdRequest inValue = new Eduprog.EduprogWS.listarSesionesXAlumnoIdRequest();
+            inValue.idUsuario = idUsuario;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarSesionesXAlumnoIdAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.obtenerAulaxIDAlumnoResponse Eduprog.EduprogWS.EduprogWS.obtenerAulaxIDAlumno(Eduprog.EduprogWS.obtenerAulaxIDAlumnoRequest request) {
-            return base.Channel.obtenerAulaxIDAlumno(request);
+        Eduprog.EduprogWS.listarSesionesXDocenteIdResponse Eduprog.EduprogWS.EduprogWS.listarSesionesXDocenteId(Eduprog.EduprogWS.listarSesionesXDocenteIdRequest request) {
+            return base.Channel.listarSesionesXDocenteId(request);
         }
         
-        public Eduprog.EduprogWS.aula obtenerAulaxIDAlumno(int idAlumno) {
-            Eduprog.EduprogWS.obtenerAulaxIDAlumnoRequest inValue = new Eduprog.EduprogWS.obtenerAulaxIDAlumnoRequest();
-            inValue.idAlumno = idAlumno;
-            Eduprog.EduprogWS.obtenerAulaxIDAlumnoResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).obtenerAulaxIDAlumno(inValue);
+        public Eduprog.EduprogWS.sesion[] listarSesionesXDocenteId(int idUsuario) {
+            Eduprog.EduprogWS.listarSesionesXDocenteIdRequest inValue = new Eduprog.EduprogWS.listarSesionesXDocenteIdRequest();
+            inValue.idUsuario = idUsuario;
+            Eduprog.EduprogWS.listarSesionesXDocenteIdResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarSesionesXDocenteId(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerAulaxIDAlumnoResponse> Eduprog.EduprogWS.EduprogWS.obtenerAulaxIDAlumnoAsync(Eduprog.EduprogWS.obtenerAulaxIDAlumnoRequest request) {
-            return base.Channel.obtenerAulaxIDAlumnoAsync(request);
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarSesionesXDocenteIdResponse> Eduprog.EduprogWS.EduprogWS.listarSesionesXDocenteIdAsync(Eduprog.EduprogWS.listarSesionesXDocenteIdRequest request) {
+            return base.Channel.listarSesionesXDocenteIdAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerAulaxIDAlumnoResponse> obtenerAulaxIDAlumnoAsync(int idAlumno) {
-            Eduprog.EduprogWS.obtenerAulaxIDAlumnoRequest inValue = new Eduprog.EduprogWS.obtenerAulaxIDAlumnoRequest();
-            inValue.idAlumno = idAlumno;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).obtenerAulaxIDAlumnoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.listarAtencionMedicaResponse Eduprog.EduprogWS.EduprogWS.listarAtencionMedica(Eduprog.EduprogWS.listarAtencionMedicaRequest request) {
-            return base.Channel.listarAtencionMedica(request);
-        }
-        
-        public Eduprog.EduprogWS.atencionMedica[] listarAtencionMedica() {
-            Eduprog.EduprogWS.listarAtencionMedicaRequest inValue = new Eduprog.EduprogWS.listarAtencionMedicaRequest();
-            Eduprog.EduprogWS.listarAtencionMedicaResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarAtencionMedica(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarAtencionMedicaResponse> Eduprog.EduprogWS.EduprogWS.listarAtencionMedicaAsync(Eduprog.EduprogWS.listarAtencionMedicaRequest request) {
-            return base.Channel.listarAtencionMedicaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarAtencionMedicaResponse> listarAtencionMedicaAsync() {
-            Eduprog.EduprogWS.listarAtencionMedicaRequest inValue = new Eduprog.EduprogWS.listarAtencionMedicaRequest();
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarAtencionMedicaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.listarTodosTrabajadoresResponse Eduprog.EduprogWS.EduprogWS.listarTodosTrabajadores(Eduprog.EduprogWS.listarTodosTrabajadoresRequest request) {
-            return base.Channel.listarTodosTrabajadores(request);
-        }
-        
-        public Eduprog.EduprogWS.trabajador[] listarTodosTrabajadores() {
-            Eduprog.EduprogWS.listarTodosTrabajadoresRequest inValue = new Eduprog.EduprogWS.listarTodosTrabajadoresRequest();
-            Eduprog.EduprogWS.listarTodosTrabajadoresResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarTodosTrabajadores(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodosTrabajadoresResponse> Eduprog.EduprogWS.EduprogWS.listarTodosTrabajadoresAsync(Eduprog.EduprogWS.listarTodosTrabajadoresRequest request) {
-            return base.Channel.listarTodosTrabajadoresAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodosTrabajadoresResponse> listarTodosTrabajadoresAsync() {
-            Eduprog.EduprogWS.listarTodosTrabajadoresRequest inValue = new Eduprog.EduprogWS.listarTodosTrabajadoresRequest();
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarTodosTrabajadoresAsync(inValue);
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarSesionesXDocenteIdResponse> listarSesionesXDocenteIdAsync(int idUsuario) {
+            Eduprog.EduprogWS.listarSesionesXDocenteIdRequest inValue = new Eduprog.EduprogWS.listarSesionesXDocenteIdRequest();
+            inValue.idUsuario = idUsuario;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarSesionesXDocenteIdAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -7445,47 +7309,141 @@ namespace Eduprog.EduprogWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.listarTareasXAlumnoIdResponse Eduprog.EduprogWS.EduprogWS.listarTareasXAlumnoId(Eduprog.EduprogWS.listarTareasXAlumnoIdRequest request) {
-            return base.Channel.listarTareasXAlumnoId(request);
+        Eduprog.EduprogWS.obtenerUsuarioIncidenciaResponse Eduprog.EduprogWS.EduprogWS.obtenerUsuarioIncidencia(Eduprog.EduprogWS.obtenerUsuarioIncidenciaRequest request) {
+            return base.Channel.obtenerUsuarioIncidencia(request);
         }
         
-        public Eduprog.EduprogWS.tarea[] listarTareasXAlumnoId(int idUsuario) {
-            Eduprog.EduprogWS.listarTareasXAlumnoIdRequest inValue = new Eduprog.EduprogWS.listarTareasXAlumnoIdRequest();
-            inValue.idUsuario = idUsuario;
-            Eduprog.EduprogWS.listarTareasXAlumnoIdResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarTareasXAlumnoId(inValue);
+        public string obtenerUsuarioIncidencia(int idIncidencia) {
+            Eduprog.EduprogWS.obtenerUsuarioIncidenciaRequest inValue = new Eduprog.EduprogWS.obtenerUsuarioIncidenciaRequest();
+            inValue.idIncidencia = idIncidencia;
+            Eduprog.EduprogWS.obtenerUsuarioIncidenciaResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).obtenerUsuarioIncidencia(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTareasXAlumnoIdResponse> Eduprog.EduprogWS.EduprogWS.listarTareasXAlumnoIdAsync(Eduprog.EduprogWS.listarTareasXAlumnoIdRequest request) {
-            return base.Channel.listarTareasXAlumnoIdAsync(request);
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerUsuarioIncidenciaResponse> Eduprog.EduprogWS.EduprogWS.obtenerUsuarioIncidenciaAsync(Eduprog.EduprogWS.obtenerUsuarioIncidenciaRequest request) {
+            return base.Channel.obtenerUsuarioIncidenciaAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTareasXAlumnoIdResponse> listarTareasXAlumnoIdAsync(int idUsuario) {
-            Eduprog.EduprogWS.listarTareasXAlumnoIdRequest inValue = new Eduprog.EduprogWS.listarTareasXAlumnoIdRequest();
-            inValue.idUsuario = idUsuario;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarTareasXAlumnoIdAsync(inValue);
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerUsuarioIncidenciaResponse> obtenerUsuarioIncidenciaAsync(int idIncidencia) {
+            Eduprog.EduprogWS.obtenerUsuarioIncidenciaRequest inValue = new Eduprog.EduprogWS.obtenerUsuarioIncidenciaRequest();
+            inValue.idIncidencia = idIncidencia;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).obtenerUsuarioIncidenciaAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.listarTodosApoderadosResponse Eduprog.EduprogWS.EduprogWS.listarTodosApoderados(Eduprog.EduprogWS.listarTodosApoderadosRequest request) {
-            return base.Channel.listarTodosApoderados(request);
+        Eduprog.EduprogWS.obtenerDocentePorIDResponse Eduprog.EduprogWS.EduprogWS.obtenerDocentePorID(Eduprog.EduprogWS.obtenerDocentePorIDRequest request) {
+            return base.Channel.obtenerDocentePorID(request);
         }
         
-        public Eduprog.EduprogWS.apoderado[] listarTodosApoderados() {
-            Eduprog.EduprogWS.listarTodosApoderadosRequest inValue = new Eduprog.EduprogWS.listarTodosApoderadosRequest();
-            Eduprog.EduprogWS.listarTodosApoderadosResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarTodosApoderados(inValue);
+        public Eduprog.EduprogWS.docente obtenerDocentePorID(int idSUario) {
+            Eduprog.EduprogWS.obtenerDocentePorIDRequest inValue = new Eduprog.EduprogWS.obtenerDocentePorIDRequest();
+            inValue.idSUario = idSUario;
+            Eduprog.EduprogWS.obtenerDocentePorIDResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).obtenerDocentePorID(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodosApoderadosResponse> Eduprog.EduprogWS.EduprogWS.listarTodosApoderadosAsync(Eduprog.EduprogWS.listarTodosApoderadosRequest request) {
-            return base.Channel.listarTodosApoderadosAsync(request);
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerDocentePorIDResponse> Eduprog.EduprogWS.EduprogWS.obtenerDocentePorIDAsync(Eduprog.EduprogWS.obtenerDocentePorIDRequest request) {
+            return base.Channel.obtenerDocentePorIDAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodosApoderadosResponse> listarTodosApoderadosAsync() {
-            Eduprog.EduprogWS.listarTodosApoderadosRequest inValue = new Eduprog.EduprogWS.listarTodosApoderadosRequest();
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarTodosApoderadosAsync(inValue);
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerDocentePorIDResponse> obtenerDocentePorIDAsync(int idSUario) {
+            Eduprog.EduprogWS.obtenerDocentePorIDRequest inValue = new Eduprog.EduprogWS.obtenerDocentePorIDRequest();
+            inValue.idSUario = idSUario;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).obtenerDocentePorIDAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.listarAlumnosSinSalonResponse Eduprog.EduprogWS.EduprogWS.listarAlumnosSinSalon(Eduprog.EduprogWS.listarAlumnosSinSalonRequest request) {
+            return base.Channel.listarAlumnosSinSalon(request);
+        }
+        
+        public Eduprog.EduprogWS.alumno[] listarAlumnosSinSalon() {
+            Eduprog.EduprogWS.listarAlumnosSinSalonRequest inValue = new Eduprog.EduprogWS.listarAlumnosSinSalonRequest();
+            Eduprog.EduprogWS.listarAlumnosSinSalonResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarAlumnosSinSalon(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarAlumnosSinSalonResponse> Eduprog.EduprogWS.EduprogWS.listarAlumnosSinSalonAsync(Eduprog.EduprogWS.listarAlumnosSinSalonRequest request) {
+            return base.Channel.listarAlumnosSinSalonAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarAlumnosSinSalonResponse> listarAlumnosSinSalonAsync() {
+            Eduprog.EduprogWS.listarAlumnosSinSalonRequest inValue = new Eduprog.EduprogWS.listarAlumnosSinSalonRequest();
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarAlumnosSinSalonAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.obtenerApoderadoPorIDResponse Eduprog.EduprogWS.EduprogWS.obtenerApoderadoPorID(Eduprog.EduprogWS.obtenerApoderadoPorIDRequest request) {
+            return base.Channel.obtenerApoderadoPorID(request);
+        }
+        
+        public Eduprog.EduprogWS.apoderado obtenerApoderadoPorID(int idApoderado) {
+            Eduprog.EduprogWS.obtenerApoderadoPorIDRequest inValue = new Eduprog.EduprogWS.obtenerApoderadoPorIDRequest();
+            inValue.idApoderado = idApoderado;
+            Eduprog.EduprogWS.obtenerApoderadoPorIDResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).obtenerApoderadoPorID(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerApoderadoPorIDResponse> Eduprog.EduprogWS.EduprogWS.obtenerApoderadoPorIDAsync(Eduprog.EduprogWS.obtenerApoderadoPorIDRequest request) {
+            return base.Channel.obtenerApoderadoPorIDAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerApoderadoPorIDResponse> obtenerApoderadoPorIDAsync(int idApoderado) {
+            Eduprog.EduprogWS.obtenerApoderadoPorIDRequest inValue = new Eduprog.EduprogWS.obtenerApoderadoPorIDRequest();
+            inValue.idApoderado = idApoderado;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).obtenerApoderadoPorIDAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.listarAlumnossAulasXIdResponse Eduprog.EduprogWS.EduprogWS.listarAlumnossAulasXId(Eduprog.EduprogWS.listarAlumnossAulasXIdRequest request) {
+            return base.Channel.listarAlumnossAulasXId(request);
+        }
+        
+        public int[] listarAlumnossAulasXId(int idAula) {
+            Eduprog.EduprogWS.listarAlumnossAulasXIdRequest inValue = new Eduprog.EduprogWS.listarAlumnossAulasXIdRequest();
+            inValue.idAula = idAula;
+            Eduprog.EduprogWS.listarAlumnossAulasXIdResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarAlumnossAulasXId(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarAlumnossAulasXIdResponse> Eduprog.EduprogWS.EduprogWS.listarAlumnossAulasXIdAsync(Eduprog.EduprogWS.listarAlumnossAulasXIdRequest request) {
+            return base.Channel.listarAlumnossAulasXIdAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarAlumnossAulasXIdResponse> listarAlumnossAulasXIdAsync(int idAula) {
+            Eduprog.EduprogWS.listarAlumnossAulasXIdRequest inValue = new Eduprog.EduprogWS.listarAlumnossAulasXIdRequest();
+            inValue.idAula = idAula;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarAlumnossAulasXIdAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.modificarSuperusuarioResponse Eduprog.EduprogWS.EduprogWS.modificarSuperusuario(Eduprog.EduprogWS.modificarSuperusuarioRequest request) {
+            return base.Channel.modificarSuperusuario(request);
+        }
+        
+        public int modificarSuperusuario(Eduprog.EduprogWS.superUsuario superusuario, byte[] nuevaFoto) {
+            Eduprog.EduprogWS.modificarSuperusuarioRequest inValue = new Eduprog.EduprogWS.modificarSuperusuarioRequest();
+            inValue.superusuario = superusuario;
+            inValue.nuevaFoto = nuevaFoto;
+            Eduprog.EduprogWS.modificarSuperusuarioResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).modificarSuperusuario(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarSuperusuarioResponse> Eduprog.EduprogWS.EduprogWS.modificarSuperusuarioAsync(Eduprog.EduprogWS.modificarSuperusuarioRequest request) {
+            return base.Channel.modificarSuperusuarioAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarSuperusuarioResponse> modificarSuperusuarioAsync(Eduprog.EduprogWS.superUsuario superusuario, byte[] nuevaFoto) {
+            Eduprog.EduprogWS.modificarSuperusuarioRequest inValue = new Eduprog.EduprogWS.modificarSuperusuarioRequest();
+            inValue.superusuario = superusuario;
+            inValue.nuevaFoto = nuevaFoto;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).modificarSuperusuarioAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -7537,6 +7495,50 @@ namespace Eduprog.EduprogWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.listarTodosTrabajadoresResponse Eduprog.EduprogWS.EduprogWS.listarTodosTrabajadores(Eduprog.EduprogWS.listarTodosTrabajadoresRequest request) {
+            return base.Channel.listarTodosTrabajadores(request);
+        }
+        
+        public Eduprog.EduprogWS.trabajador[] listarTodosTrabajadores() {
+            Eduprog.EduprogWS.listarTodosTrabajadoresRequest inValue = new Eduprog.EduprogWS.listarTodosTrabajadoresRequest();
+            Eduprog.EduprogWS.listarTodosTrabajadoresResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarTodosTrabajadores(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodosTrabajadoresResponse> Eduprog.EduprogWS.EduprogWS.listarTodosTrabajadoresAsync(Eduprog.EduprogWS.listarTodosTrabajadoresRequest request) {
+            return base.Channel.listarTodosTrabajadoresAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTodosTrabajadoresResponse> listarTodosTrabajadoresAsync() {
+            Eduprog.EduprogWS.listarTodosTrabajadoresRequest inValue = new Eduprog.EduprogWS.listarTodosTrabajadoresRequest();
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarTodosTrabajadoresAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.eliminarPublicacionesResponse Eduprog.EduprogWS.EduprogWS.eliminarPublicaciones(Eduprog.EduprogWS.eliminarPublicacionesRequest request) {
+            return base.Channel.eliminarPublicaciones(request);
+        }
+        
+        public int eliminarPublicaciones(int idDocente) {
+            Eduprog.EduprogWS.eliminarPublicacionesRequest inValue = new Eduprog.EduprogWS.eliminarPublicacionesRequest();
+            inValue.idDocente = idDocente;
+            Eduprog.EduprogWS.eliminarPublicacionesResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarPublicaciones(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarPublicacionesResponse> Eduprog.EduprogWS.EduprogWS.eliminarPublicacionesAsync(Eduprog.EduprogWS.eliminarPublicacionesRequest request) {
+            return base.Channel.eliminarPublicacionesAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarPublicacionesResponse> eliminarPublicacionesAsync(int idDocente) {
+            Eduprog.EduprogWS.eliminarPublicacionesRequest inValue = new Eduprog.EduprogWS.eliminarPublicacionesRequest();
+            inValue.idDocente = idDocente;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarPublicacionesAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         Eduprog.EduprogWS.Obtener_sesionesxDocenteResponse Eduprog.EduprogWS.EduprogWS.Obtener_sesionesxDocente(Eduprog.EduprogWS.Obtener_sesionesxDocenteRequest request) {
             return base.Channel.Obtener_sesionesxDocente(request);
         }
@@ -7560,26 +7562,32 @@ namespace Eduprog.EduprogWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.listarSesionesXDocenteIdResponse Eduprog.EduprogWS.EduprogWS.listarSesionesXDocenteId(Eduprog.EduprogWS.listarSesionesXDocenteIdRequest request) {
-            return base.Channel.listarSesionesXDocenteId(request);
+        Eduprog.EduprogWS.modificarEvaluacionResponse Eduprog.EduprogWS.EduprogWS.modificarEvaluacion(Eduprog.EduprogWS.modificarEvaluacionRequest request) {
+            return base.Channel.modificarEvaluacion(request);
         }
         
-        public Eduprog.EduprogWS.sesion[] listarSesionesXDocenteId(int idUsuario) {
-            Eduprog.EduprogWS.listarSesionesXDocenteIdRequest inValue = new Eduprog.EduprogWS.listarSesionesXDocenteIdRequest();
-            inValue.idUsuario = idUsuario;
-            Eduprog.EduprogWS.listarSesionesXDocenteIdResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarSesionesXDocenteId(inValue);
+        public int modificarEvaluacion(Eduprog.EduprogWS.evaluacion evaluacion, int[] idAlumnos, int idDocente, bool estado) {
+            Eduprog.EduprogWS.modificarEvaluacionRequest inValue = new Eduprog.EduprogWS.modificarEvaluacionRequest();
+            inValue.evaluacion = evaluacion;
+            inValue.idAlumnos = idAlumnos;
+            inValue.idDocente = idDocente;
+            inValue.estado = estado;
+            Eduprog.EduprogWS.modificarEvaluacionResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).modificarEvaluacion(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarSesionesXDocenteIdResponse> Eduprog.EduprogWS.EduprogWS.listarSesionesXDocenteIdAsync(Eduprog.EduprogWS.listarSesionesXDocenteIdRequest request) {
-            return base.Channel.listarSesionesXDocenteIdAsync(request);
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarEvaluacionResponse> Eduprog.EduprogWS.EduprogWS.modificarEvaluacionAsync(Eduprog.EduprogWS.modificarEvaluacionRequest request) {
+            return base.Channel.modificarEvaluacionAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarSesionesXDocenteIdResponse> listarSesionesXDocenteIdAsync(int idUsuario) {
-            Eduprog.EduprogWS.listarSesionesXDocenteIdRequest inValue = new Eduprog.EduprogWS.listarSesionesXDocenteIdRequest();
-            inValue.idUsuario = idUsuario;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarSesionesXDocenteIdAsync(inValue);
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarEvaluacionResponse> modificarEvaluacionAsync(Eduprog.EduprogWS.evaluacion evaluacion, int[] idAlumnos, int idDocente, bool estado) {
+            Eduprog.EduprogWS.modificarEvaluacionRequest inValue = new Eduprog.EduprogWS.modificarEvaluacionRequest();
+            inValue.evaluacion = evaluacion;
+            inValue.idAlumnos = idAlumnos;
+            inValue.idDocente = idDocente;
+            inValue.estado = estado;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).modificarEvaluacionAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -7608,78 +7616,24 @@ namespace Eduprog.EduprogWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.obtenerApoderadoPorIDResponse Eduprog.EduprogWS.EduprogWS.obtenerApoderadoPorID(Eduprog.EduprogWS.obtenerApoderadoPorIDRequest request) {
-            return base.Channel.obtenerApoderadoPorID(request);
+        Eduprog.EduprogWS.listarAtencionMedicaResponse Eduprog.EduprogWS.EduprogWS.listarAtencionMedica(Eduprog.EduprogWS.listarAtencionMedicaRequest request) {
+            return base.Channel.listarAtencionMedica(request);
         }
         
-        public Eduprog.EduprogWS.apoderado obtenerApoderadoPorID(int idApoderado) {
-            Eduprog.EduprogWS.obtenerApoderadoPorIDRequest inValue = new Eduprog.EduprogWS.obtenerApoderadoPorIDRequest();
-            inValue.idApoderado = idApoderado;
-            Eduprog.EduprogWS.obtenerApoderadoPorIDResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).obtenerApoderadoPorID(inValue);
+        public Eduprog.EduprogWS.atencionMedica[] listarAtencionMedica() {
+            Eduprog.EduprogWS.listarAtencionMedicaRequest inValue = new Eduprog.EduprogWS.listarAtencionMedicaRequest();
+            Eduprog.EduprogWS.listarAtencionMedicaResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarAtencionMedica(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerApoderadoPorIDResponse> Eduprog.EduprogWS.EduprogWS.obtenerApoderadoPorIDAsync(Eduprog.EduprogWS.obtenerApoderadoPorIDRequest request) {
-            return base.Channel.obtenerApoderadoPorIDAsync(request);
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarAtencionMedicaResponse> Eduprog.EduprogWS.EduprogWS.listarAtencionMedicaAsync(Eduprog.EduprogWS.listarAtencionMedicaRequest request) {
+            return base.Channel.listarAtencionMedicaAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerApoderadoPorIDResponse> obtenerApoderadoPorIDAsync(int idApoderado) {
-            Eduprog.EduprogWS.obtenerApoderadoPorIDRequest inValue = new Eduprog.EduprogWS.obtenerApoderadoPorIDRequest();
-            inValue.idApoderado = idApoderado;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).obtenerApoderadoPorIDAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.modificarPublicacionesResponse Eduprog.EduprogWS.EduprogWS.modificarPublicaciones(Eduprog.EduprogWS.modificarPublicacionesRequest request) {
-            return base.Channel.modificarPublicaciones(request);
-        }
-        
-        public int modificarPublicaciones(Eduprog.EduprogWS.publicaciones publicacion, int idUsuario, int idPublicacion, bool estado) {
-            Eduprog.EduprogWS.modificarPublicacionesRequest inValue = new Eduprog.EduprogWS.modificarPublicacionesRequest();
-            inValue.publicacion = publicacion;
-            inValue.idUsuario = idUsuario;
-            inValue.idPublicacion = idPublicacion;
-            inValue.estado = estado;
-            Eduprog.EduprogWS.modificarPublicacionesResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).modificarPublicaciones(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarPublicacionesResponse> Eduprog.EduprogWS.EduprogWS.modificarPublicacionesAsync(Eduprog.EduprogWS.modificarPublicacionesRequest request) {
-            return base.Channel.modificarPublicacionesAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.modificarPublicacionesResponse> modificarPublicacionesAsync(Eduprog.EduprogWS.publicaciones publicacion, int idUsuario, int idPublicacion, bool estado) {
-            Eduprog.EduprogWS.modificarPublicacionesRequest inValue = new Eduprog.EduprogWS.modificarPublicacionesRequest();
-            inValue.publicacion = publicacion;
-            inValue.idUsuario = idUsuario;
-            inValue.idPublicacion = idPublicacion;
-            inValue.estado = estado;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).modificarPublicacionesAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Eduprog.EduprogWS.eliminarAtencionMedicaResponse Eduprog.EduprogWS.EduprogWS.eliminarAtencionMedica(Eduprog.EduprogWS.eliminarAtencionMedicaRequest request) {
-            return base.Channel.eliminarAtencionMedica(request);
-        }
-        
-        public int eliminarAtencionMedica(int identificador) {
-            Eduprog.EduprogWS.eliminarAtencionMedicaRequest inValue = new Eduprog.EduprogWS.eliminarAtencionMedicaRequest();
-            inValue.identificador = identificador;
-            Eduprog.EduprogWS.eliminarAtencionMedicaResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarAtencionMedica(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarAtencionMedicaResponse> Eduprog.EduprogWS.EduprogWS.eliminarAtencionMedicaAsync(Eduprog.EduprogWS.eliminarAtencionMedicaRequest request) {
-            return base.Channel.eliminarAtencionMedicaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarAtencionMedicaResponse> eliminarAtencionMedicaAsync(int identificador) {
-            Eduprog.EduprogWS.eliminarAtencionMedicaRequest inValue = new Eduprog.EduprogWS.eliminarAtencionMedicaRequest();
-            inValue.identificador = identificador;
-            return ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarAtencionMedicaAsync(inValue);
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarAtencionMedicaResponse> listarAtencionMedicaAsync() {
+            Eduprog.EduprogWS.listarAtencionMedicaRequest inValue = new Eduprog.EduprogWS.listarAtencionMedicaRequest();
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarAtencionMedicaAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -7707,6 +7661,121 @@ namespace Eduprog.EduprogWS {
             inValue.atencionMedica = atencionMedica;
             inValue.idAlumno = idAlumno;
             return ((Eduprog.EduprogWS.EduprogWS)(this)).modificarAtencionMedicaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.obtenerAulaxIDAlumnoResponse Eduprog.EduprogWS.EduprogWS.obtenerAulaxIDAlumno(Eduprog.EduprogWS.obtenerAulaxIDAlumnoRequest request) {
+            return base.Channel.obtenerAulaxIDAlumno(request);
+        }
+        
+        public Eduprog.EduprogWS.aula obtenerAulaxIDAlumno(int idAlumno) {
+            Eduprog.EduprogWS.obtenerAulaxIDAlumnoRequest inValue = new Eduprog.EduprogWS.obtenerAulaxIDAlumnoRequest();
+            inValue.idAlumno = idAlumno;
+            Eduprog.EduprogWS.obtenerAulaxIDAlumnoResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).obtenerAulaxIDAlumno(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerAulaxIDAlumnoResponse> Eduprog.EduprogWS.EduprogWS.obtenerAulaxIDAlumnoAsync(Eduprog.EduprogWS.obtenerAulaxIDAlumnoRequest request) {
+            return base.Channel.obtenerAulaxIDAlumnoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.obtenerAulaxIDAlumnoResponse> obtenerAulaxIDAlumnoAsync(int idAlumno) {
+            Eduprog.EduprogWS.obtenerAulaxIDAlumnoRequest inValue = new Eduprog.EduprogWS.obtenerAulaxIDAlumnoRequest();
+            inValue.idAlumno = idAlumno;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).obtenerAulaxIDAlumnoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.listarTareasXAlumnoIdResponse Eduprog.EduprogWS.EduprogWS.listarTareasXAlumnoId(Eduprog.EduprogWS.listarTareasXAlumnoIdRequest request) {
+            return base.Channel.listarTareasXAlumnoId(request);
+        }
+        
+        public Eduprog.EduprogWS.tarea[] listarTareasXAlumnoId(int idUsuario) {
+            Eduprog.EduprogWS.listarTareasXAlumnoIdRequest inValue = new Eduprog.EduprogWS.listarTareasXAlumnoIdRequest();
+            inValue.idUsuario = idUsuario;
+            Eduprog.EduprogWS.listarTareasXAlumnoIdResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarTareasXAlumnoId(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTareasXAlumnoIdResponse> Eduprog.EduprogWS.EduprogWS.listarTareasXAlumnoIdAsync(Eduprog.EduprogWS.listarTareasXAlumnoIdRequest request) {
+            return base.Channel.listarTareasXAlumnoIdAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTareasXAlumnoIdResponse> listarTareasXAlumnoIdAsync(int idUsuario) {
+            Eduprog.EduprogWS.listarTareasXAlumnoIdRequest inValue = new Eduprog.EduprogWS.listarTareasXAlumnoIdRequest();
+            inValue.idUsuario = idUsuario;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarTareasXAlumnoIdAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.eliminarSuperusuarioResponse Eduprog.EduprogWS.EduprogWS.eliminarSuperusuario(Eduprog.EduprogWS.eliminarSuperusuarioRequest request) {
+            return base.Channel.eliminarSuperusuario(request);
+        }
+        
+        public int eliminarSuperusuario(int superusuario) {
+            Eduprog.EduprogWS.eliminarSuperusuarioRequest inValue = new Eduprog.EduprogWS.eliminarSuperusuarioRequest();
+            inValue.superusuario = superusuario;
+            Eduprog.EduprogWS.eliminarSuperusuarioResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarSuperusuario(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarSuperusuarioResponse> Eduprog.EduprogWS.EduprogWS.eliminarSuperusuarioAsync(Eduprog.EduprogWS.eliminarSuperusuarioRequest request) {
+            return base.Channel.eliminarSuperusuarioAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.eliminarSuperusuarioResponse> eliminarSuperusuarioAsync(int superusuario) {
+            Eduprog.EduprogWS.eliminarSuperusuarioRequest inValue = new Eduprog.EduprogWS.eliminarSuperusuarioRequest();
+            inValue.superusuario = superusuario;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).eliminarSuperusuarioAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.listarTareasXDocenteIdResponse Eduprog.EduprogWS.EduprogWS.listarTareasXDocenteId(Eduprog.EduprogWS.listarTareasXDocenteIdRequest request) {
+            return base.Channel.listarTareasXDocenteId(request);
+        }
+        
+        public Eduprog.EduprogWS.tarea[] listarTareasXDocenteId(int idUsuario) {
+            Eduprog.EduprogWS.listarTareasXDocenteIdRequest inValue = new Eduprog.EduprogWS.listarTareasXDocenteIdRequest();
+            inValue.idUsuario = idUsuario;
+            Eduprog.EduprogWS.listarTareasXDocenteIdResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).listarTareasXDocenteId(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTareasXDocenteIdResponse> Eduprog.EduprogWS.EduprogWS.listarTareasXDocenteIdAsync(Eduprog.EduprogWS.listarTareasXDocenteIdRequest request) {
+            return base.Channel.listarTareasXDocenteIdAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.listarTareasXDocenteIdResponse> listarTareasXDocenteIdAsync(int idUsuario) {
+            Eduprog.EduprogWS.listarTareasXDocenteIdRequest inValue = new Eduprog.EduprogWS.listarTareasXDocenteIdRequest();
+            inValue.idUsuario = idUsuario;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).listarTareasXDocenteIdAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Eduprog.EduprogWS.obtener_horario_idDocenteResponse Eduprog.EduprogWS.EduprogWS.obtener_horario_idDocente(Eduprog.EduprogWS.obtener_horario_idDocenteRequest request) {
+            return base.Channel.obtener_horario_idDocente(request);
+        }
+        
+        public byte[] obtener_horario_idDocente(int idDocente) {
+            Eduprog.EduprogWS.obtener_horario_idDocenteRequest inValue = new Eduprog.EduprogWS.obtener_horario_idDocenteRequest();
+            inValue.idDocente = idDocente;
+            Eduprog.EduprogWS.obtener_horario_idDocenteResponse retVal = ((Eduprog.EduprogWS.EduprogWS)(this)).obtener_horario_idDocente(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Eduprog.EduprogWS.obtener_horario_idDocenteResponse> Eduprog.EduprogWS.EduprogWS.obtener_horario_idDocenteAsync(Eduprog.EduprogWS.obtener_horario_idDocenteRequest request) {
+            return base.Channel.obtener_horario_idDocenteAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Eduprog.EduprogWS.obtener_horario_idDocenteResponse> obtener_horario_idDocenteAsync(int idDocente) {
+            Eduprog.EduprogWS.obtener_horario_idDocenteRequest inValue = new Eduprog.EduprogWS.obtener_horario_idDocenteRequest();
+            inValue.idDocente = idDocente;
+            return ((Eduprog.EduprogWS.EduprogWS)(this)).obtener_horario_idDocenteAsync(inValue);
         }
     }
 }

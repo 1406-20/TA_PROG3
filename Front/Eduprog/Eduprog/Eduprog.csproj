@@ -374,6 +374,9 @@
     <Content Include="Connected Services\EduprogWS\Eduprog.EduprogWS.obtenerCursoXIdResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Connected Services\EduprogWS\Eduprog.EduprogWS.obtener_horario_idDocenteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Connected Services\EduprogWS\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
@@ -422,6 +425,7 @@
     <Content Include="Docente\mis_notas.aspx" />
     <Content Include="Docente\Publicaciones.aspx" />
     <Content Include="Estilos\actividades.css" />
+    <Content Include="Estilos\Docente.css" />
     <Content Include="Estilos\incidencias.css" />
     <Content Include="Estilos\login.css" />
     <Content Include="Estilos\misalon.css" />
