@@ -1,13 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\dolso\\OneDrive\\Escritorio\\Universidad\\Repositorios\\TAProg3-2024-1\\Front\\Eduprog\\",
+  "WorkspaceRootPath": "C:\\Users\\d_fra\\Documents\\PUCP\\Programaci\u00F3n3\\TA\\Front\\Eduprog\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F944A172-8E18-4630-BDBB-5244D42E3F13}|Eduprog\\Eduprog.csproj|c:\\users\\dolso\\onedrive\\escritorio\\universidad\\repositorios\\taprog3-2024-1\\front\\eduprog\\eduprog\\docente\\actividades.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{F944A172-8E18-4630-BDBB-5244D42E3F13}|Eduprog\\Eduprog.csproj|solutionrelative:eduprog\\docente\\actividades.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{F944A172-8E18-4630-BDBB-5244D42E3F13}|Eduprog\\Eduprog.csproj|c:\\users\\d_fra\\documents\\pucp\\programaci\u00F3n3\\ta\\front\\eduprog\\eduprog\\alumno\\actividades.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F944A172-8E18-4630-BDBB-5244D42E3F13}|Eduprog\\Eduprog.csproj|solutionrelative:eduprog\\alumno\\actividades.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F944A172-8E18-4630-BDBB-5244D42E3F13}|Eduprog\\Eduprog.csproj|c:\\users\\dolso\\onedrive\\escritorio\\universidad\\repositorios\\taprog3-2024-1\\front\\eduprog\\eduprog\\docente\\actividades.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F944A172-8E18-4630-BDBB-5244D42E3F13}|Eduprog\\Eduprog.csproj|c:\\users\\d_fra\\documents\\pucp\\programaci\u00F3n3\\ta\\front\\eduprog\\eduprog\\alumno\\actividades.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{F944A172-8E18-4630-BDBB-5244D42E3F13}|Eduprog\\Eduprog.csproj|solutionrelative:eduprog\\alumno\\actividades.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F944A172-8E18-4630-BDBB-5244D42E3F13}|Eduprog\\Eduprog.csproj|c:\\users\\d_fra\\documents\\pucp\\programaci\u00F3n3\\ta\\front\\eduprog\\eduprog\\docente\\actividades.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F944A172-8E18-4630-BDBB-5244D42E3F13}|Eduprog\\Eduprog.csproj|solutionrelative:eduprog\\docente\\actividades.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,28 +26,41 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "actividades.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\dolso\\OneDrive\\Escritorio\\Universidad\\Repositorios\\TAProg3-2024-1\\Front\\Eduprog\\Eduprog\\Docente\\actividades.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\d_fra\\Documents\\PUCP\\Programaci\u00F3n3\\TA\\Front\\Eduprog\\Eduprog\\Docente\\actividades.aspx.cs",
               "RelativeDocumentMoniker": "Eduprog\\Docente\\actividades.aspx.cs",
-              "ToolTip": "C:\\Users\\dolso\\OneDrive\\Escritorio\\Universidad\\Repositorios\\TAProg3-2024-1\\Front\\Eduprog\\Eduprog\\Docente\\actividades.aspx.cs",
+              "ToolTip": "C:\\Users\\d_fra\\Documents\\PUCP\\Programaci\u00F3n3\\TA\\Front\\Eduprog\\Eduprog\\Docente\\actividades.aspx.cs",
               "RelativeToolTip": "Eduprog\\Docente\\actividades.aspx.cs",
-              "ViewState": "AQIAANUAAAAAAAAAAAAiwAAAAAAAAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T09:23:29.342Z",
+              "WhenOpened": "2024-06-12T22:40:48.968Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "actividades.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\d_fra\\Documents\\PUCP\\Programaci\u00F3n3\\TA\\Front\\Eduprog\\Eduprog\\Alumno\\actividades.aspx.cs",
+              "RelativeDocumentMoniker": "Eduprog\\Alumno\\actividades.aspx.cs",
+              "ToolTip": "C:\\Users\\d_fra\\Documents\\PUCP\\Programaci\u00F3n3\\TA\\Front\\Eduprog\\Eduprog\\Alumno\\actividades.aspx.cs",
+              "RelativeToolTip": "Eduprog\\Alumno\\actividades.aspx.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAxwFQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T19:46:12.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "actividades.aspx",
-              "DocumentMoniker": "C:\\Users\\dolso\\OneDrive\\Escritorio\\Universidad\\Repositorios\\TAProg3-2024-1\\Front\\Eduprog\\Eduprog\\Docente\\actividades.aspx",
-              "RelativeDocumentMoniker": "Eduprog\\Docente\\actividades.aspx",
-              "ToolTip": "C:\\Users\\dolso\\OneDrive\\Escritorio\\Universidad\\Repositorios\\TAProg3-2024-1\\Front\\Eduprog\\Eduprog\\Docente\\actividades.aspx",
-              "RelativeToolTip": "Eduprog\\Docente\\actividades.aspx",
+              "DocumentMoniker": "C:\\Users\\d_fra\\Documents\\PUCP\\Programaci\u00F3n3\\TA\\Front\\Eduprog\\Eduprog\\Alumno\\actividades.aspx",
+              "RelativeDocumentMoniker": "Eduprog\\Alumno\\actividades.aspx",
+              "ToolTip": "C:\\Users\\d_fra\\Documents\\PUCP\\Programaci\u00F3n3\\TA\\Front\\Eduprog\\Eduprog\\Alumno\\actividades.aspx",
+              "RelativeToolTip": "Eduprog\\Alumno\\actividades.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-06-12T09:20:09.845Z",
+              "WhenOpened": "2024-06-12T19:46:06.319Z",
               "EditorCaption": ""
             }
           ]

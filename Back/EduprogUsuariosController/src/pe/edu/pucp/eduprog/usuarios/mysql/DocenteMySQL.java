@@ -183,5 +183,27 @@ public class DocenteMySQL implements DocenteDAO{
         }
         return docente;
     }
+
+    @Override
+    public byte[] obtenerFotoHorario(int idDocente) {
+        byte[] horario= null;
+        try{
+            con = DBManager.getInstance().getConnection();
+            cs = con.prepareCall("{call OBTENER_HORARIO_IDDOCENTE(?)}");
+            cs.setInt("_id_docente", idDocente);
+            rs = cs.executeQuery();
+            while(rs.next()){      
+                Blob blob = rs.getBlob("fotoHorario");                
+                if(blob!=null)
+                    horario = blob.getBytes(1, (int) blob.length());
+            }
+        }catch(SQLException ex){
+            System.out.println(ex.getMessage());
+        }finally{
+            try{con.close();}catch(SQLException ex){System.out.println(ex.getMessage());}
+        }
+        return horario;
+    }   
+    
     
 }

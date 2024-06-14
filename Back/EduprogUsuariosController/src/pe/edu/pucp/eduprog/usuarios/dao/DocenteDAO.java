@@ -17,4 +17,5 @@ public interface DocenteDAO {
     int eliminar (int idDocente);
     ArrayList<Docente> listarTodos();
     Docente obtenerUsuarioPorID(int idUsuario);
+    byte [] obtenerFotoHorario(int idDocente);
 }

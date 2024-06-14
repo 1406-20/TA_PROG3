@@ -44,19 +44,12 @@
             <%-- Modificar Tabla para el calendario semanal --%>
             <asp:Table ID="tbActividades" runat="server" CssClass="table text-center">
                 <asp:TableHeaderRow CssClass="card-header">
-                    <asp:TableHeaderCell>Lunes</asp:TableHeaderCell>
-                    <asp:TableHeaderCell>Martes</asp:TableHeaderCell>
-                    <asp:TableHeaderCell>Miércoles</asp:TableHeaderCell>
-                    <asp:TableHeaderCell>Jueves</asp:TableHeaderCell>
-                    <asp:TableHeaderCell>Viernes</asp:TableHeaderCell>
+                    <asp:TableHeaderCell ID="tdLunesFecha">Lunes<hr></asp:TableHeaderCell>
+                    <asp:TableHeaderCell ID="tdMartesFecha">Martes<hr></asp:TableHeaderCell>
+                    <asp:TableHeaderCell ID="tdMiercolesFecha" >Miércoles<hr></asp:TableHeaderCell>
+                    <asp:TableHeaderCell ID="tdJuevesFecha" >Jueves<hr></asp:TableHeaderCell>
+                    <asp:TableHeaderCell ID="tdViernesFecha">Viernes<hr></asp:TableHeaderCell>
                 </asp:TableHeaderRow>
-                <asp:TableRow CssClass="fecha-row">
-                    <asp:TableCell ID="tdLunesFecha" runat="server"></asp:TableCell>
-                    <asp:TableCell ID="tdMartesFecha" runat="server"></asp:TableCell>
-                    <asp:TableCell ID="tdMiercolesFecha" runat="server"></asp:TableCell>
-                    <asp:TableCell ID="tdJuevesFecha" runat="server"></asp:TableCell>
-                    <asp:TableCell ID="tdViernesFecha" runat="server"></asp:TableCell>
-                </asp:TableRow>
                 <asp:TableRow>
                     <asp:TableCell ID="tdLunes" runat="server"></asp:TableCell>
                     <asp:TableCell ID="tdMartes" runat="server"></asp:TableCell>

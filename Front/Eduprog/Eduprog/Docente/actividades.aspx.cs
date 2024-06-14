@@ -25,7 +25,6 @@ namespace Eduprog.Docente
                 idUsuarioS = (string)Session["idUsuarioActivo"];
                 idUsuario = int.Parse(idUsuarioS);
                 lblNombre.Text = ObtenerNombre(idUsuario);
-
                 daoServicio = new EduprogWSClient(); // Inicializa el cliente del servicio web aquí
                 InicializarActividades();
 
@@ -42,7 +41,7 @@ namespace Eduprog.Docente
         private string ObtenerNombre(int id)
         {
             daoServicio = new EduprogWSClient();
-            usuario usuario = daoServicio.obtenerDocentePorID(id);
+            usuario usuario = daoServicio.obtenerAlumnoPorID(id);
             return usuario.nombre + " " + usuario.apellidoPaterno + " " + usuario.apellidoMaterno;
         }
 

@@ -35,7 +35,6 @@ namespace Eduprog.Docente
                 idUsuario = int.Parse(idUsuarioS);
                 idDocente = int.Parse(idUsuarioS);
                 daoServicio = new EduprogWSClient();
-
                 CargarDatosIniciales();
             }
         }
@@ -51,7 +50,7 @@ namespace Eduprog.Docente
             ddlCurso.DataBind();
 
             ddlAula.DataSource = listaAulas;
-            ddlAula.DataTextField = "grado";
+            ddlAula.DataTextField = "seccion";
             ddlAula.DataValueField = "idAula";
             ddlAula.DataBind();
 

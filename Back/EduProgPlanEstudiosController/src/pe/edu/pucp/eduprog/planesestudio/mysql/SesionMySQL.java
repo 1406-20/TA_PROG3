@@ -11,6 +11,7 @@ import java.sql.Statement;
 import java.sql.ResultSet;
 import pe.edu.pucp.eduprog.planestudios.model.Sesion;
 import java.sql.CallableStatement;
+import java.text.SimpleDateFormat;
 import pe.edu.pucp.eduprog.planesestudio.dao.SesionDAO;
 
 /**
@@ -186,6 +187,8 @@ public class SesionMySQL implements SesionDAO{
     @Override
     public ArrayList<String> obtenerSesionDocente(int idDocente) {
         ArrayList<String> sesiones = new ArrayList<>();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm"); 
+
         try{
             con = DBManager.getInstance().getConnection();
             cs = con.prepareCall("{call OBTENER_SESION_CURSOXDOCENTE(?)}");
@@ -193,8 +196,8 @@ public class SesionMySQL implements SesionDAO{
             rs = cs.executeQuery();
             while(rs.next()){
                 String cadena = new String();
-                String fechaIni = rs.getDate("fechaInicio").toString();
-                String fechaFin = rs.getDate("fechaFin").toString();
+                String fechaIni = sdf.format(rs.getTimestamp("fechaInicio"));
+                String fechaFin = sdf.format(rs.getTimestamp("fechaFin"));
                 String curso = rs.getString("nombreCurso");
                 cadena = curso + ";" + fechaIni + ";" + fechaFin;
                 sesiones.add(cadena);

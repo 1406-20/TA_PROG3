@@ -93,6 +93,19 @@ public class EduprogWS {
         }
         return docente;
     }
+    @WebMethod(operationName = "obtener_horario_idDocente")
+    public byte[] obtener_horario_idDocente(@WebParam(name = "idDocente")int idDocente){
+        byte[] horario = null;
+        try{
+            daoDocente=new DocenteMySQL();
+            horario=daoDocente.obtenerFotoHorario(idDocente);
+        }catch(Exception ex){
+            System.out.println(ex.getMessage());
+        }
+        return horario;
+    }
+    
+    
     //Aula
     AulaDAO daoAula;
     @WebMethod(operationName = "insertarAula")
